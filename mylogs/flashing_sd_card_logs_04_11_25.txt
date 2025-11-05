@@ -1,0 +1,367 @@
+nhazarik@nhazarik:~/Projects/flexbuild$ docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+nhazarik@nhazarik:~/Projects/flexbuild$ docker
+Usage:  docker [OPTIONS] COMMAND
+
+A self-sufficient runtime for containers
+
+Common Commands:
+  run         Create and run a new container from an image
+  exec        Execute a command in a running container
+  ps          List containers
+  build       Build an image from a Dockerfile
+  bake        Build from a file
+  pull        Download an image from a registry
+  push        Upload an image to a registry
+  images      List images
+  login       Authenticate to a registry
+  logout      Log out from a registry
+  search      Search Docker Hub for images
+  version     Show the Docker version information
+  info        Display system-wide information
+
+Management Commands:
+  builder     Manage builds
+  buildx*     Docker Buildx
+  compose*    Docker Compose
+  container   Manage containers
+  context     Manage contexts
+  image       Manage images
+  manifest    Manage Docker image manifests and manifest lists
+  network     Manage networks
+  plugin      Manage plugins
+  system      Manage Docker
+  trust       Manage trust on Docker images
+  volume      Manage volumes
+
+Swarm Commands:
+  swarm       Manage Swarm
+
+Commands:
+  attach      Attach local standard input, output, and error streams to a running container
+  commit      Create a new image from a container's changes
+  cp          Copy files/folders between a container and the local filesystem
+  create      Create a new container
+  diff        Inspect changes to files or directories on a container's filesystem
+  events      Get real time events from the server
+  export      Export a container's filesystem as a tar archive
+  history     Show the history of an image
+  import      Import the contents from a tarball to create a filesystem image
+  inspect     Return low-level information on Docker objects
+  kill        Kill one or more running containers
+  load        Load an image from a tar archive or STDIN
+  logs        Fetch the logs of a container
+  pause       Pause all processes within one or more containers
+  port        List port mappings or a specific mapping for the container
+  rename      Rename a container
+  restart     Restart one or more containers
+  rm          Remove one or more containers
+  rmi         Remove one or more images
+  save        Save one or more images to a tar archive (streamed to STDOUT by default)
+  start       Start one or more stopped containers
+  stats       Display a live stream of container(s) resource usage statistics
+  stop        Stop one or more running containers
+  tag         Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
+  top         Display the running processes of a container
+  unpause     Unpause all processes within one or more containers
+  update      Update configuration of one or more containers
+  wait        Block until one or more containers stop, then print their exit codes
+
+Global Options:
+      --config string      Location of client config files (default "/home/nhazarik/.docker")
+  -c, --context string     Name of the context to use to connect to the daemon (overrides DOCKER_HOST env var and
+                           default context set with "docker context use")
+  -D, --debug              Enable debug mode
+  -H, --host string        Daemon socket to connect to
+  -l, --log-level string   Set the logging level ("debug", "info", "warn", "error", "fatal") (default "info")
+      --tls                Use TLS; implied by --tlsverify
+      --tlscacert string   Trust certs signed only by this CA (default "/home/nhazarik/.docker/ca.pem")
+      --tlscert string     Path to TLS certificate file (default "/home/nhazarik/.docker/cert.pem")
+      --tlskey string      Path to TLS key file (default "/home/nhazarik/.docker/key.pem")
+      --tlsverify          Use TLS and verify the remote
+  -v, --version            Print version information and quit
+
+Run 'docker COMMAND --help' for more information on a command.
+
+For more help on how to use Docker, head to https://docs.docker.com/go/guides/
+nhazarik@nhazarik:~/Projects/flexbuild$ bld docker
+Command 'bld' not found, did you mean:
+  command 'wld' from deb wcc (0.0.2+dfsg-4.4)
+  command 'bd' from deb bd (1.03-3)
+  command 'bls' from deb bacula-sd (9.6.7-7)
+  command 'bcd' from deb bsdgames (2.17-30)
+  command 'gld' from deb postfix-gld (1.7-9)
+  command 'bvd' from deb boogie (2.4.1+dfsg-0.1)
+  command 'ld' from deb binutils (2.42-4ubuntu2.6)
+  command 'bnd' from deb bnd (5.0.1-4)
+  command 'lld' from deb lld (1:17.0-58~exp1)
+Try: sudo apt install <deb name>
+nhazarik@nhazarik:~/Projects/flexbuild$ source .setup.env
+bash: .setup.env: No such file or directory
+nhazarik@nhazarik:~/Projects/flexbuild$ ls
+5gtsn_masterthesisproposal.pdf  configs  include                             logs    README.md  src
+build_lsdk2506                  docker   LICENSE-Flexbuild-BSD-3-CLAUSE.txt  mylogs  SCR.txt    tools
+components_lsdk2506             docs     LICENSE_SDK.txt                     patch   setup.env
+nhazarik@nhazarik:~/Projects/flexbuild$ source setup.env 
+nhazarik@nhazarik:~/Projects/flexbuild$ bld docker
+[sudo] password for nhazarik: 
+Sorry, try again.
+[sudo] password for nhazarik: 
+make: Entering directory '/home/nhazarik/Projects/flexbuild/docker/debian'
+[+] Building 708.5s (11/11) FINISHED                                                                       docker:default
+ => [internal] load build definition from Dockerfile                                                                 1.0s
+ => => transferring dockerfile: 1.99kB                                                                               0.0s
+ => [internal] load metadata for docker.io/library/debian:bookworm                                                   2.2s
+ => [internal] load .dockerignore                                                                                    0.5s
+ => => transferring context: 2B                                                                                      0.0s
+ => [1/7] FROM docker.io/library/debian:bookworm@sha256:26f2a7cab45014541c65f9d140ccfa6aaefbb49686c6759bea9c6f7f5bb  4.7s
+ => => resolve docker.io/library/debian:bookworm@sha256:26f2a7cab45014541c65f9d140ccfa6aaefbb49686c6759bea9c6f7f5bb  0.4s
+ => => sha256:26f2a7cab45014541c65f9d140ccfa6aaefbb49686c6759bea9c6f7f5bb3d72f 8.52kB / 8.52kB                       0.0s
+ => => sha256:0f112dd6b85a0fccd9d43465a0a32b6ad427f2d337f00a03b6a65f229e64e959 1.02kB / 1.02kB                       0.0s
+ => => sha256:d89cafb62862bc5d193596b449e052d7b78c8aaaf14629daf20dd958a09454a8 453B / 453B                           0.0s
+ => => sha256:cd01849e3cbdfc6993640303768edbb56372cf9f1ae101d516334c8d462341af 48.48MB / 48.48MB                     1.4s
+ => => extracting sha256:cd01849e3cbdfc6993640303768edbb56372cf9f1ae101d516334c8d462341af                            1.7s
+ => [2/7] RUN echo "Acquire::http::proxy "";" | tee -a /etc/apt/apt.conf &&     echo "Acquire::https::proxy "";" |   3.9s
+ => [3/7] RUN rm -rf /var/lib/apt/lists/* && apt autoclean                                                           1.2s 
+ => [4/7] RUN apt-get update --fix-missing && apt-get install -y locales &&     localedef -i en_US -c -f UTF-8 -A   12.7s 
+ => [5/7] RUN apt-get update && apt-get install -y         u-boot-tools device-tree-compiler autoconf automake dh  643.0s
+ => [6/7] RUN git config --global user.email  "debian@nxp.com"                                                       1.3s
+ => [7/7] RUN git config --global user.name "NXP debian"                                                             1.3s
+ => exporting to image                                                                                              34.8s
+ => => exporting layers                                                                                             34.4s
+ => => writing image sha256:e63cf325c6a73ca5be80f2dacb50fc9d92a8b60892c6aa8468a0b01d686be1f4                         0.0s
+ => => naming to docker.io/library/fbdebian:12                                                                       0.1s
+make: Leaving directory '/home/nhazarik/Projects/flexbuild/docker/debian'
+[root@fbdebian flexbuild]$ ls
+#5gtsn_masterthesisproposal.pdf     README.md       components_lsdk2506  docs     mylogs     src
+LICENSE-Flexbuild-BSD-3-CLAUSE.txt  SCR.txt         configs              include  patch      tools
+LICENSE_SDK.txt                     build_lsdk2506  docker               logs     setup.env
+[root@fbdebian flexbuild]$ bld debian:menuconfig
+bash: bld: command not found
+[root@fbdebian flexbuild]$ bld -c linux -m ls1028ardb
+bash: bld: command not found
+[root@fbdebian flexbuild]$ source setup.env 
+[root@fbdebian flexbuild]$ bld -c linux -m ls1028ardb
+COMPONENT: linux
+
+Prepare the build environment on host ... 
+Time of fetching repo: Mon Nov  3 17:46:42 CET 2025
+Flexbuild HEAD commit: 76720c9 enable secure http protocol support
+Time of build: Mon Nov  3 17:46:46 CET 2025
+Cloning into 'linux'...
+Updating files: 100% (89017/89017), done.
+Switched to a new branch 'lf-6.6.52-2.2.0'
+
+linux in /home/nhazarik/Projects/flexbuild/components_lsdk2506/linux 
+
+Building linux with lf-6.6.52-2.2.0 ... 
+Compiler = aarch64-linux-gnu-gcc (Debian 12.2.0-14) 12.2.0 
+Total Config List = defconfig lsdk.config  
+
+
+linux lf-6.6.52-2.2.0 in /home/nhazarik/Projects/flexbuild/build_lsdk2506/linux/linux/arm64/LS  [Done] 
+
+Generating initial rootfs: /home/nhazarik/Projects/flexbuild/build_lsdk2506/rfs/rootfs_lsdk2506_debian_desktop_arm64 ... 
+This might take some time, please be patient 
+/home/nhazarik/Projects/flexbuild/build_lsdk2506/rfs/rootfs_lsdk2506_debian_desktop_arm64     [Done] 
+
+Building cryptodev_linux ... 
+cryptodev_linux  [Done] 
+
+Building mdio-proxy-module ... 
+mdio_proxy_module  [Done] 
+linux-modules  [Done] 
+/home/nhazarik/Projects/flexbuild/build_lsdk2506/images/lsdk2506_poky_tiny_LS_arm64.itb     [Done] 
+bsp/u-boot/ls1028ardb/ls1028ardb_boot.scr     [Done] 
+
+Building ATF lf-6.6.52-2.2.0 for ls1028ardb ... 
+
+Building RCW for ls1028ardb ... 
+RCW  [Done] 
+
+Building u-boot lf-6.6.52-2.2.0 for ls1028ardb ... 
+config = ls1028ardb_tfa_defconfig 
+u-boot for ls1028ardb in /home/nhazarik/Projects/flexbuild/build_lsdk2506/bsp/u-boot/ls1028ardb  [Done] 
+config = ls1028ardb_tfa_SECURE_BOOT_defconfig 
+u-boot for ls1028ardb in /home/nhazarik/Projects/flexbuild/build_lsdk2506/bsp/u-boot/ls1028ardb  [Done] 
+ATF for ls1028ardb sd boot  [Done] 
+
+Building ATF lf-6.6.52-2.2.0 for ls1028ardb ... 
+ATF for ls1028ardb emmc boot  [Done] 
+
+Building ATF lf-6.6.52-2.2.0 for ls1028ardb ... 
+ATF for ls1028ardb flexspi_nor boot  [Done] 
+RCW  [Done] 
+mc_bin  [Done] 
+mc_utils  [Done] 
+fm_ucode  [Done] 
+qe_ucode  [Done] 
+dp_fw_cadence  [Done] 
+phy_cortina  [Done] 
+phy_inphi  [Done] 
+pfe_bin  [Done] 
+ddr_phy_bin  [Done] 
+/home/nhazarik/Projects/flexbuild/build_lsdk2506/images/firmware_ls1028ardb_sdboot.img     [Done] 
+
+/home/nhazarik/Projects/flexbuild/build_lsdk2506/images/firmware_ls1028ardb_emmcboot.img     [Done] 
+
+/home/nhazarik/Projects/flexbuild/build_lsdk2506/images/firmware_ls1028ardb_xspiboot.img     [Done] 
+
+Build all composite firmware     [Done] 
+
+Installing kernel and dtb ... 
+
+Installing kernel modules ... 
+
+Installing distro boot script ... 
+bsp/u-boot/ls1028ardb/ls1028ardb_boot.scr     [Done] 
+
+Building kernel tools/perf ... 
+kernel tools/perf  [Done] 
+/home/nhazarik/Projects/flexbuild/build_lsdk2506/images/boot_LS_arm64_lts_6.6.52_202511031945.tar.zst     [Done] 
+linux-headers  [Done] 
+
+Building gpu_viv  ... 
+gpu_viv  [Done] 
+
+Building libdrm ... 
+libdrm  [Done] 
+
+Building gstreamer ... 
+gstreamer  [Done] 
+
+Building imx_gpu_g2d ... 
+imx_gpu_g2d  [Done] 
+
+Building alsa_lib ... 
+alsa_lib  [Done] 
+
+Building wayland_protocols ... 
+wayland_protocols  [Done] 
+
+Building gst_plugins_base ... 
+gst_plugins_base  [Done] 
+
+Building gst_plugins_bad ... 
+gst_plugins_bad  [Done] 
+
+Building cogl ... 
+cogl  [Done] 
+
+Building clutter_gst ... 
+clutter_gst  [Done] 
+
+Building libgpuperfcnt ... 
+libgpuperfcnt  [Done] 
+
+Building gputop ... 
+gputop  [Done] 
+
+Building vulkan_headers ... 
+vulkan_headers  [Done] 
+
+Building weston ... 
+weston  [Done] 
+
+Building alsa_state ... 
+alsa_state  [Done] 
+
+Building gst_plugins_good ... 
+gst_plugins_good  [Done] 
+
+Building imx_sw_pdm ... 
+imx_sw_pdm  [Done] 
+
+Building imx_alsa_plugin ... 
+imx_alsa_plugin  [Done] 
+
+Building imx_codec ... 
+imx_codec  [Done] 
+
+Building imx_parser ... 
+imx_parser  [Done] 
+
+Building imx_gst_plugin ... 
+imx_gst_plugin  [Done] 
+
+Building imx_lib ... 
+imx_lib  [Done] 
+
+Building CEETM ... 
+CEETM  [Done] 
+
+Building dpdk ... 
+dpdk  [Done] 
+
+Building tsntool ... 
+tsntool  [Done] 
+
+Building crconf ... 
+crconf  [Done] 
+
+Building CST ... 
+CST  [Done] 
+
+Building secure_obj ... 
+secure_obj  [Done] 
+
+Building libpkcs11 ... 
+libpkcs11  [Done] 
+
+Building OpenSSL ... 
+OpenSSL  [Done] 
+apps components  [Done] 
+merge apps to /home/nhazarik/Projects/flexbuild/build_lsdk2506/rfs/rootfs_lsdk2506_debian_desktop_arm64     [Done] 
+
+Generating rootfs_lsdk2506_debian_desktop_arm64_202511032003.tar.zst ... 
+/home/nhazarik/Projects/flexbuild/build_lsdk2506/images/rootfs_lsdk2506_debian_desktop_arm64_202511032003.tar.zst     [Done] 
+
+Build Done: Mon Nov  3 20:08:56 CET 2025 
+
+Duration of build: 142 minutes 10 seconds 
+[root@fbdebian flexbuild]$ bld linux:menuconfig
+
+Building linux with lf-6.6.52-2.2.0 ... 
+Compiler = aarch64-linux-gnu-gcc (Debian 12.2.0-14) 12.2.0 
+/usr/bin/ld: skipping incompatible /home/nhazarik/Projects/flexbuild/build_lsdk2506/rfs/rootfs_lsdk2506_debian_desktop_arm64/usr/lib/aarch64-linux-gnu/libncursesw.so.6 when searching for libncursesw.so.6
+/usr/bin/ld: skipping incompatible /home/nhazarik/Projects/flexbuild/build_lsdk2506/rfs/rootfs_lsdk2506_debian_desktop_arm64/usr/lib/aarch64-linux-gnu/libncursesw.so.6 when searching for libncursesw.so.6
+/usr/bin/ld: skipping incompatible /home/nhazarik/Projects/flexbuild/build_lsdk2506/rfs/rootfs_lsdk2506_debian_desktop_arm64/usr/lib/aarch64-linux-gnu/libtinfo.so when searching for -ltinfo
+/usr/bin/ld: skipping incompatible /home/nhazarik/Projects/flexbuild/build_lsdk2506/rfs/rootfs_lsdk2506_debian_desktop_arm64/usr/lib/aarch64-linux-gnu/libtinfo.a when searching for -ltinfo
+/usr/bin/ld: skipping incompatible /home/nhazarik/Projects/flexbuild/build_lsdk2506/rfs/rootfs_lsdk2506_debian_desktop_arm64/usr/lib/aarch64-linux-gnu/libtinfo.so when searching for -ltinfo
+/usr/bin/ld: skipping incompatible /home/nhazarik/Projects/flexbuild/build_lsdk2506/rfs/rootfs_lsdk2506_debian_desktop_arm64/usr/lib/aarch64-linux-gnu/libtinfo.a when searching for -ltinfo
+/usr/bin/ld: skipping incompatible /home/nhazarik/Projects/flexbuild/build_lsdk2506/rfs/rootfs_lsdk2506_debian_desktop_arm64/usr/lib/aarch64-linux-gnu/libgcc_s.so.1 when searching for libgcc_s.so.1
+/usr/bin/ld: skipping incompatible /home/nhazarik/Projects/flexbuild/build_lsdk2506/rfs/rootfs_lsdk2506_debian_desktop_arm64/usr/lib/aarch64-linux-gnu/libc.so when searching for -lc
+/usr/bin/ld: skipping incompatible /home/nhazarik/Projects/flexbuild/build_lsdk2506/rfs/rootfs_lsdk2506_debian_desktop_arm64/usr/lib/aarch64-linux-gnu/libc.a when searching for -lc
+/usr/bin/ld: skipping incompatible /home/nhazarik/Projects/flexbuild/build_lsdk2506/rfs/rootfs_lsdk2506_debian_desktop_arm64/usr/lib/aarch64-linux-gnu/libgcc_s.so.1 when searching for libgcc_s.so.1
+Your display is too small to run Menuconfig!
+It must be at least 19 lines by 80 columns.
+make[3]: *** [/home/nhazarik/Projects/flexbuild/components_lsdk2506/linux/linux/scripts/kconfig/Makefile:48: menuconfig] Error 1
+make[2]: *** [/home/nhazarik/Projects/flexbuild/components_lsdk2506/linux/linux/Makefile:697: menuconfig] Error 2
+make[1]: *** [Makefile:234: __sub-make] Error 2
+Total Config List = imx_v8_defconfig  
+
+
+^Cmake: *** [linux.mk:9: linux] Interrupt
+
+[root@fbdebian flexbuild]$ bld linux:menuconfig
+
+Building linux with lf-6.6.52-2.2.0 ... 
+Compiler = aarch64-linux-gnu-gcc (Debian 12.2.0-14) 12.2.0 
+Custom kernel config: /home/nhazarik/Projects/flexbuild/build_lsdk2506/linux/linux/arm64/IMX/output/lf-6.6.52-2.2.0/.config  [Done] 
+Run bld linux to proceed with the customized .config above 
+[root@fbdebian flexbuild]$ bld bsp -b sd
+/home/nhazarik/Projects/flexbuild/configs/board/all.conf not exist!
+[root@fbdebian flexbuild]$ bld bsp -m ls1028ardb -b sd
+/home/nhazarik/Projects/flexbuild/build_lsdk2506/images/firmware_ls1028ardb_sdboot.img     [Done] 
+
+[root@fbdebian flexbuild]$ ls
+5gtsn_masterthesisproposal.pdf      docs
+LICENSE-Flexbuild-BSD-3-CLAUSE.txt  include
+LICENSE_SDK.txt                     logs
+README.md                           mylogs
+SCR.txt                             patch
+build_lsdk2506                      setup.env
+components_lsdk2506                 src
+configs                             tools
+docker
+[root@fbdebian flexbuild]$ 
