@@ -1,0 +1,17 @@
+^Croot@ls1028ardb:/home/debian# man ptp4l
+root@ls1028ardb:/home/debian# man phc
+phc2sys  phc_ctl  
+root@ls1028ardb:/home/debian# man phc_ctl 
+root@ls1028ardb:/home/debian# man ts2phc 
+root@ls1028ardb:/home/debian# ls /usr/share/doc
+doc/      doc-base/ 
+root@ls1028ardb:/home/debian# ls /usr/share/doc/li
+Display all 1232 possibilities? (y or n)
+root@ls1028ardb:/home/debian# ls /usr/share/doc/linux
+linux-base/     linux-libc-dev/ linuxptp/
+root@ls1028ardb:/home/debian# ls /usr/share/doc/linuxptp/configs/
+automotive-master.cfg  G.8275.1.cfg  ts2phc-generic.cfg
+automotive-slave.cfg   G.8275.2.cfg  ts2phc-TC.cfg
+default.cfg            gPTP.cfg      UNICAST-MASTER.cfg
+E2E-TC.cfg             P2P-TC.cfg    UNICAST-SLAVE.cfg
+G.8265.1.cfg           snmpd.conf
