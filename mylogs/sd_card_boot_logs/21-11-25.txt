@@ -409,3 +409,4 @@ Debian GNU/Linux 12 ls1028ardb ttyS0
 NXP Linux SDK 2506 Debian Server (optimized with NXP-specific hardware acceleration)
 ls1028ardb login: [  OK  ] Finished platcfg.servicefor various NXP i.MX/LS platforms.
 [  OK  ] Finished systemd-update-ut… - Record Runlevel Change in UTMP.
+
