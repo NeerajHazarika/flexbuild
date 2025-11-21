@@ -1,0 +1,1549 @@
+[    4.674114] i2c i2c-0: Added multiplexed i2c bus 8
+[    4.674119] pca954x 0-0077: registered 8 multiplexed busses for I2C mux pca9847
+[    4.676656] sp805-wdt c000000.watchdog: registration successful
+[    4.676783] sp805-wdt c010000.watchdog: registration successful
+[    4.688766] qoriq-cpufreq qoriq-cpufreq: Freescale QorIQ CPU frequency scaling driver
+[    4.689580] sdhci: Secure Digital Host Controller Interface driver
+[    4.689584] sdhci: Copyright(c) Pierre Ossman
+[    4.689980] Synopsys Designware Multimedia Card Interface Driver
+[    4.690496] sdhci-pltfm: SDHCI platform and OF driver helper
+[    4.691759] sdhci-esdhc 2150000.mmc: Adding to iommu group 9
+[    4.691958] sdhci-esdhc 2140000.mmc: Adding to iommu group 10
+[    4.695129] ledtrig-cpu: registered to indicate activity on CPUs
+[    4.707857] SMCCC: SOC_ID: ARCH_SOC_ID not implemented, skipping ....
+[    4.714611] usbcore: registered new interface driver usbhid
+[    4.714615] usbhid: USB HID core driver
+[    4.714900] No fsl,qman node
+[    4.714904] Freescale USDPAA process driver
+[    4.714906] fsl-usdpaa: no region found
+[    4.714907] Freescale USDPAA process IRQ driver
+[    4.719784] mmc1: SDHCI controller on 2150000.mmc [2150000.mmc] using ADMA
+[    4.720260] hw perfevents: enabled with armv8_cortex_a72 PMU driver, 7 counters available
+[    4.726737] mmc0: SDHCI controller on 2140000.mmc [2140000.mmc] using ADMA
+[    4.727471]  cs_system_cfg: CoreSight Configuration manager initialised
+[    4.728455] optee: probing for conduit method.
+[    4.728461] optee: api uid mismatch
+[    4.728463] optee: probe of firmware:optee failed with error -22
+[    4.729458] Galcore version 6.4.11.p2.745085
+[    4.759490] [drm] Initialized vivante 1.0.0 20170808 for f0c0000.gpu on minor 0
+[    4.760890] NET: Registered PF_LLC protocol family
+[    4.760913] u32 classifier
+[    4.760915]     input device check on
+[    4.760917]     Actions configured
+[    4.761562] Initializing XFRM netlink socket
+[    4.761599] NET: Registered PF_INET6 protocol family
+[    4.761997] Segment Routing with IPv6
+[    4.762017] In-situ OAM (IOAM) with IPv6
+[    4.762063] sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+[    4.762333] NET: Registered PF_PACKET protocol family
+[    4.762340] NET: Registered PF_KEY protocol family
+[    4.762361] Bridge firewalling registered
+[    4.762546] 8021q: 802.1Q VLAN Support v1.8
+[    4.762557] lib80211: common routines for IEEE802.11 drivers
+[    4.762586] 9pnet: Installing 9P2000 support
+[    4.762654] Key type dns_resolver registered
+[    4.770186] ata1: SATA link down (SStatus 0 SControl 300)
+[    4.773018] registered taskstats version 1
+[    4.773079] Loading compiled-in X.509 certificates
+[    4.778372] Btrfs loaded, zoned=no, fsverity=no
+[    4.781196] fsl-edma 22c0000.dma-controller: Adding to iommu group 11
+[    4.782194] pcieport 0001:00:00.0: Adding to iommu group 12
+[    4.782321] pcieport 0001:00:00.0: PME: Signaling with IRQ 103
+[    4.782503] pcieport 0001:00:00.0: AER: enabled with IRQ 102
+[    4.782648] pcieport 0002:00:00.0: Adding to iommu group 13
+[    4.782773] pcieport 0002:00:00.0: PME: Signaling with IRQ 105
+[    4.782892] pcieport 0002:00:00.0: AER: enabled with IRQ 104
+[    4.899748] fsl_enetc 0000:00:00.0: enabling device (0400 -> 0402)
+[    4.900386] fsl_enetc 0000:00:00.0: no MAC address specified for SI1, using 6e:e4:99:68:92:b9
+[    4.900394] fsl_enetc 0000:00:00.0: no MAC address specified for SI2, using 1a:40:ce:7f:e7:b0
+[    4.901223] fsl_enetc 0000:00:00.0 eth0: TSN capabilities: 0x2f
+[    4.968411] mmc0: new ultra high speed SDR104 SDXC card at address 0001
+[    4.968785] mmcblk0: mmc0:0001 SD16G 116 GiB
+[    4.976106]  mmcblk0: p1 p2 p3
+[    5.009395] mmc1: new HS400 MMC card at address 0001
+[    5.009737] mmcblk1: mmc1:0001 Q2J55L 7.13 GiB
+[    5.011765] fsl_enetc 0000:00:00.2: enabling device (0400 -> 0402)
+[    5.012631] fsl_enetc 0000:00:00.2 eth1: TSN capabilities: 0x2f
+[    5.014050] mmcblk1boot0: mmc1:0001 Q2J55L 2.00 MiB
+[    5.014908] mmcblk1boot1: mmc1:0001 Q2J55L 2.00 MiB
+[    5.015637] mmcblk1rpmb: mmc1:0001 Q2J55L 4.00 MiB, chardev (510:0)
+[    5.119757] fsl_enetc 0000:00:00.6: enabling device (0400 -> 0402)
+[    5.120038] fsl_enetc 0000:00:00.6: no MAC address specified for SI0, using 46:1e:be:2f:0c:0d
+[    5.120667] fsl_enetc 0000:00:00.6 eth2: TSN capabilities: 0x2a
+[    5.468273] mscc_felix 0000:00:00.5: Found PCS at internal MDIO address 0
+[    5.468287] mscc_felix 0000:00:00.5: Found PCS at internal MDIO address 1
+[    5.468297] mscc_felix 0000:00:00.5: Found PCS at internal MDIO address 2
+[    5.468304] mscc_felix 0000:00:00.5: Found PCS at internal MDIO address 3
+[    5.491785] mscc_felix 0000:00:00.5: configuring for fixed/internal link mode
+[    5.491830] mscc_felix 0000:00:00.5: Link is Up - 2.5Gbps/Full - flow control rx/tx
+[    5.501908] mscc_felix 0000:00:00.5: configuring for fixed/internal link mode
+[    5.501951] mscc_felix 0000:00:00.5: Link is Up - 1Gbps/Full - flow control rx/tx
+[    6.201854] mscc_felix 0000:00:00.5 swp0 (uninitialized): PHY [0000:00:00.3:10] driver [Microsemi GE VSC8514 SyncE] (irq=POLL)
+[    6.325800] mscc_felix 0000:00:00.5 swp1 (uninitialized): PHY [0000:00:00.3:11] driver [Microsemi GE VSC8514 SyncE] (irq=POLL)
+[    6.449829] mscc_felix 0000:00:00.5 swp2 (uninitialized): PHY [0000:00:00.3:12] driver [Microsemi GE VSC8514 SyncE] (irq=POLL)
+[    6.573825] mscc_felix 0000:00:00.5 swp3 (uninitialized): PHY [0000:00:00.3:13] driver [Microsemi GE VSC8514 SyncE] (irq=POLL)
+[   6.574377] fsl_enetc 0000:00:00.2 eth1: entered promiscuous mode
+[    6.574457] fsl_enetc 0000:00:00.6 eth2: entered promiscuous mode
+[    6.574474] DSA: tree 0 setup
+[    6.574972] clk: Disabling unused clocks
+[    6.575005] ALSA device list:
+[    6.575009]   No soundcards found.
+[    7.577623] EXT4-fs (mmcblk0p3): recovery complete
+[    7.5786
+[    7.578628] EXT4-fs (mmcblk0p3): mounted filesystem e3c234b9-be32-4b85-8444-b9af2d3e4ff4 r/w with ordered data mode. Quota mode: none.
+[    7.578662] VFS: Mounted root (ext4 filesystem) on device 179:3.
+[    7.578722] devtmpfs: mounted
+[    7.582300] Freeing unused kernel memory: 9728K
+[    7.582381] Run /sbin/init as init process
+[    7.582383]   with arguments:
+[    7.582384]     /sbin/init
+[    7.582386]   with environment:
+[    7.582387]     HOME=/
+[    7.582389]     TERM=linux
+[    7.582848] Starting init: /sbin/init exists but couldn't execute it (error -8)
+[    7.582853] Run /etc/init as init process
+[    7.582855]   with arguments:
+[    7.582856]     /etc/init
+[    7.582858]   with environment:
+[    7.582859]     HOME=/
+[    7.582860]     TERM=linux
+[    7.582916] Run /bin/init as init process
+[    7.582919]   with arguments:
+[    7.582920]     /bin/init
+[    7.582921]   with environment:
+[    7.582923]     HOME=/
+[    7.582924]     TERM=linux
+[    7.582996] Run /bin/sh as init process
+[    7.582998]   with arguments:
+[    7.582999]     /bin/sh
+[    7.583001]   with environment:
+[    7.583002]     HOME=/
+[    7.583004]     TERM=linux
+[    7.583186] Starting init: /bin/sh exists but couldn't execute it (error -8)
+[    7.583191] Kernel panic - not syncing: No working init found.  Try passing init= option to kernel. See Linux Documentation/admin-guide/init.rst for guidance.
+[    7.708935] CPU: 0 PID: 1 Comm: swapper/0 Not tainted 6.6.52-rt43-ga4d83240b30f #2
+[    7.716530] Hardware name: LS1028A RDB Board (DT)
+[    7.721246] Call trace:
+[    7.723694]  dump_backtrace+0x94/0xec
+[    7.727374]  show_stack+0x18/0x24
+[    7.730699]  dump_stack_lvl+0x48/0x60
+[    7.734374]  dump_stack+0x18/0x24
+[    7.737697]  panic+0x32c/0x38c
+[    7.740758]  kernel_init+0x19c/0x1e0
+[    7.744342]  ret_from_fork+0x10/0x20
+[    7.747926] SMP: stopping secondary CPUs
+[    8.804355] SMP: failed to stop secondary CPUs 0-1
+[    8.809159] Kernel Offset: 0x3dc94a600000 from 0xffff800080000000
+[    8.815269] PHYS_OFFSET: 0xfffff83540000000
+[    8.819461] CPU features: 0x0,80000201,2c020000,1000421b
+[    8.824787] Memory Limit: none
+[    8.827846] ---[ end Kernel panic - not syncing: No working init found.  Try passing init= option to kernel. See Linux Documentation/admin-guide/init.rst for guidance. ]---
+NOTICE:  Fixed DDR on board
+
+NOTICE:  4 GB DDR4, 32-bit, CL=11, ECC on
+NOTICE:  BL2: v2.10.0   (release):lf-6.6.52-2.2.0
+NOTICE:  BL2: Built : 22:03:11, Jun 24 2025
+NOTICE:  BL2: Booting BL31
+NOTICE:  BL31: v2.10.0  (release):lf-6.6.52-2.2.0
+NOTICE:  BL31: Built : 22:03:23, Jun 24 2025
+NOTICE:  Welcome to ls1028ardb BL31 Phase
+
+
+U-Boot 2024.04-00010-g7a00b6ee1c4 (Jun 24 2025 - 22:02:09 +0900)
+
+SoC:  LS1028AE Rev1.0 (0x870b0010)
+Clock Configuration:
+       CPU0(A72):1500 MHz  CPU1(A72):1500 MHz  
+       Bus:      400  MHz  DDR:      1600 MT/s
+Reset Configuration Word (RCW):
+       00000000: 3c004010 00000030 00000000 00000000
+       00000010: 00000000 018f0000 0030c000 00000000
+       00000020: 020031a0 00002580 00000000 00003296
+       00000030: 00000000 00000010 00000000 00000000
+       00000040: 00000000 00000000 00000000 00000000
+       00000050: 00000000 00000000 00000000 00000000
+       00000060: 00000000 00000000 200e705a 00000000
+       00000070: bb580000 00000000
+Model: LS1028A RDB Board
+Board: LS1028AE Rev1.0-RDB, Version: C, boot from SD
+FPGA: v8 (RDB)
+SERDES1 Reference : Clock1 = 100.00MHz Clock2 = 100.00MHz
+DRAM:  3.9 GiB
+DDR    3.9 GiB (DDR4, 32-bit, CL=11, ECC on)
+Using SERDES1 Protocol: 47960 (0xbb58)
+PCIe1: pcie@3400000 Root Complex: no link
+PCIe2: pcie@3500000 Root Complex: no link
+Core:  57 devices, 26 uclasses, devicetree: separate
+WDT:   Started watchdog@c000000 with servicing every 1000ms (60s timeout)
+WDT:   Started watchdog@c010000 with servicing every 1000ms (60s timeout)
+MMC:   FSL_SDHC: 0, FSL_SDHC: 1
+Loading Environment from MMC... *** Warning - bad CRC, using default environment
+
+EEPROM: Invalid ID (ff ff ff ff)
+In:    serial
+Out:   serial
+Err:   serial
+SEC0:  RNG instantiated
+Net:   
+Warning: enetc-0 (eth0) using random MAC address - 6a:08:a4:cf:a7:a6
+eth0: enetc-0
+Warning: enetc-2 (eth1) using random MAC address - 66:38:2a:50:d3:8d
+, eth1: enetc-2, eth2: swp0, eth3: swp1, eth4: swp2, eth5: swp3
+Hit any key to stop autoboot:  0 
+Trying load HDP firmware from SD..
+switch to partitions #0, OK
+mmc0 is current device
+Device: FSL_SDHC
+Manufacturer ID: 0
+OEM: 3432
+Name: SD16G 
+Bus Speed: 50000000
+Mode: SD High Speed (50MHz)
+Rd Block Len: 512
+SD version 3.0
+High Capacity: Yes
+Capacity: 116.5 GiB
+Bus Width: 4-bit
+Erase Group Size: 512 Bytes
+
+MMC read: dev # 0, block # 18944, count 512 ... 512 blocks read: OK
+Loading hdp firmware from 0x00000000a0000000 offset 0x0000000000002000
+Loading hdp firmware Complete
+switch to partitions #0, OK
+mmc0 is current device
+Scanning mmc 0:1...
+Found U-Boot script /ls1028ardb_boot.scr
+1007 bytes read in 2 ms (491.2 KiB/s)
+## Executing script at 80000000
+49826304 bytes read in 2058 ms (23.1 MiB/s)
+28416 bytes read in 3 ms (9 MiB/s)
+## Flattened Device Tree blob at 90000000
+   Booting using the fdt blob at 0x90000000
+Working FDT set to 90000000
+   Loading Device Tree to 000000008fff6000, end 000000008ffffeff ... OK
+Working FDT set to 8fff6000
+WARNING could not find node vivante,gc: FDT_ERR_NOTFOUND.
+
+Starting kernel ...
+
+[    0.000000] Booting Linux on physical CPU 0x0000000000 [0x410fd083]
+[    0.000000] Linux version 6.6.52-rt43-ga4d83240b30f (root@fbdebian) (aarch64-linux-gnu-gcc (Debian 12.2.0-14) 12.2.0, GNU ld (GNU Binutils for Debian) 2.40) #2 SMP PREEMPT Tue Jun 24 22:18:02 KST 2025
+[    0.000000] KASLR enabled
+[    0.000000] Machine model: LS1028A RDB Board
+[    0.000000] earlycon: uart8250 at MMIO 0x00000000021c0500 (options '')
+[    0.000000] printk: legacy bootconsole [uart8250] enabled
+[    0.000000] efi: UEFI not found.
+[    0.000000] OF: reserved mem: 0x00000020fff00000..0x00000020ffffffff (1024 KiB) map non-reusable gic-rd-tables@20,fff00000
+[    0.000000] NUMA: No NUMA configuration found
+[    0.000000] NUMA: Faking a node at [mem 0x0000000080000000-0x00000020ffffffff]
+[    0.000000] NUMA: NODE_DATA [mem 0x20ff6f89c0-0x20ff6fafff]
+[    0.000000] Zone ranges:
+[    0.000000]   DMA      [mem 0x0000000080000000-0x00000000ffffffff]
+[    0.000000]   DMA32    empty
+[    0.000000]   Normal   [mem 0x0000000100000000-0x00000020ffffffff]
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000080000000-0x00000000fbdfffff]
+[    0.000000]   node   0: [mem 0x0000002080000000-0x00000020ffffffff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000080000000-0x00000020ffffffff]
+[    0.000000] On node 0, zone Normal: 16896 pages in unavailable ranges
+[    0.000000] cma: Reserved 640 MiB at 0x00000000d3e00000 on node -1
+[    0.000000] psci: probing for conduit method from DT.
+[    0.000000] psci: PSCIv1.1 detected in firmware.
+[    0.000000] psci: Using standard PSCI v0.2 function IDs
+[    0.000000] psci: MIGRATE_INFO_TYPE not supported.
+[    0.000000] psci: SMC Calling Convention v1.4
+[    0.000000] percpu: Embedded 23 pages/cpu s54248 r8192 d31768 u94208
+[    0.000000] Detected PIPT I-cache on CPU0
+[    0.000000] CPU features: detected: GIC system register CPU interface
+[    0.000000] CPU features: detected: Spectre-v2
+[    0.000000] CPU features: detected: Spectre-v3a
+[    0.000000] CPU features: detected: Spectre-BHB
+[    0.000000] CPU features: kernel page table isolation forced ON by KASLR
+[    0.000000] CPU features: detected: Kernel page table isolation (KPTI)
+[    0.000000] CPU features: detected: ARM erratum 1742098
+[    0.000000] CPU features: detected: ARM errata 1165522, 1319367, or 1530923
+[    0.000000] alternatives: applying boot alternatives
+[    0.000000] Kernel command line: console=ttyS0,115200 earlycon=uart8250,mmio,0x21c0500 root=PARTUUID=3488e098-03 rw rootwait iommu.passthrough=1 arm-smmu.disable_bypass=0 video=1920x1080-32@60 cma=640M
+[    0.000000] Dentry cache hash table entries: 524288 (order: 10, 4194304 bytes, linear)
+[    0.000000] Inode-cache hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+[    0.000000] Fallback order for Node 0: 0 
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 1015296
+[    0.000000] Policy zone: Normal
+[    0.000000] mem auto-init: stack:all(zero), heap alloc:off, heap free:off
+[    0.000000] software IO TLB: area num 2.
+[    0.000000] software IO TLB: mapped [mem 0x00000000cfe00000-0x00000000d3e00000] (64MB)
+[    0.000000] Memory: 3274052K/4126720K available (22144K kernel code, 4498K rwdata, 12132K rodata, 9728K init, 1146K bss, 197308K reserved, 655360K cma-reserved)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=2, Nodes=1
+[    0.000000] rcu: Preemptible hierarchical RCU implementation.
+[    0.000000] rcu:     RCU event tracing is enabled.
+[    0.000000] rcu:     RCU restricting CPUs from NR_CPUS=16 to nr_cpu_ids=2.
+[    0.000000]  Trampoline variant of Tasks RCU enabled.
+[    0.000000]  Tracing variant of Tasks RCU enabled.
+[    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 25 jiffies.
+[    0.000000] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=2
+[    0.000000] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+[    0.000000] GICv3: GIC: Using split EOI/Deactivate mode
+[    0.000000] GICv3: 256 SPIs implemented
+[    0.000000] GICv3: 0 Extended SPIs implemented
+[    0.000000] Root IRQ handler: gic_handle_irq
+[    0.000000] GICv3: GICv3 features: 16 PPIs
+[    0.000000] GICv3: CPU0: found redistributor 0 region 0:0x0000000006040000
+[    0.000000] ITS [mem 0x06020000-0x0603ffff]
+[    0.000000] ITS@0x0000000006020000: allocated 65536 Devices @2080080000 (flat, esz 8, psz 64K, shr 0)
+[    0.000000] ITS: using cache flushing for cmd queue
+[    0.000000] GICv3: Using preallocated redistributor tables
+[    0.000000] GICv3: using LPI property table @0x00000020fff00000
+[    0.000000] GICv3: CPU0: using reserved LPI pending table @0x00000020fff10000
+[    0.000000] rcu: srcu_init: Setting srcu_struct sizes based on contention.
+[    0.000000] arch_timer: cp15 timer(s) running at 25.00MHz (phys).
+[    0.000000] clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x5c409fb33, max_idle_ns: 440795203156 ns
+[    0.000000] sched_clock: 56 bits at 25MHz, resolution 39ns, wraps every 4398046511103ns
+[    0.008499] Console: colour dummy device 80x25
+[    0.013024] Calibrating delay loop (skipped), value calculated using timer frequency.. 50.00 BogoMIPS (lpj=100000)
+[    0.023479] pid_max: default: 32768 minimum: 301
+[    0.028172] LSM: initializing lsm=capability,integrity
+[    0.033416] Mount-cache hash table entries: 8192 (order: 4, 65536 bytes, linear)
+[    0.040901] Mountpoint-cache hash table entries: 8192 (order: 4, 65536 bytes, linear)
+[    0.049660] RCU Tasks: Setting shift to 1 and lim to 1 rcu_task_cb_adjust=1.
+[    0.056831] RCU Tasks Trace: Setting shift to 1 and lim to 1 rcu_task_cb_adjust=1.
+[    0.064590] rcu: Hierarchical SRCU implementation.
+[    0.069427] rcu:     Max phase no-delay instances is 1000.
+[    0.074827] Platform MSI: msi-controller@6020000 domain created
+[    0.080871] PCI/MSI: /interrupt-controller@6000000/msi-controller@6020000 domain created
+[    0.089083] fsl-mc MSI: msi-controller@6020000 domain created
+[    0.095475] EFI services will not be available.
+[    0.100132] smp: Bringing up secondary CPUs ...
+[    0.105005] Detected PIPT I-cache on CPU1
+[    0.105042] GICv3: CPU1: found redistributor 1 region 0:0x0000000006060000
+[    0.105054] GICv3: CPU1: using reserved LPI pending table @0x00000020fff20000
+[    0.105077] CPU1: Booted secondary processor 0x0000000001 [0x410fd083]
+[    0.105129] smp: Brought up 1 node, 2 CPUs
+[    0.134035] SMP: Total of 2 processors activated.
+[    0.138783] CPU features: detected: 32-bit EL0 Support
+[    0.143975] CPU features: detected: 32-bit EL1 Support
+[    0.149163] CPU features: detected: CRC32 instructions
+[    0.154393] CPU: All CPU(s) started at EL2
+[    0.158538] alternatives: applying system-wide alternatives
+[    0.165340] devtmpfs: initialized
+[    0.171806] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+[    0.181665] futex hash table entries: 512 (order: 3, 32768 bytes, linear)
+[    0.196072] pinctrl core: initialized pinctrl subsystem
+[    0.201802] Machine: LS1028A RDB Board
+[    0.205585] SoC family: QorIQ LS1028A
+[    0.209275] SoC ID: svr:0x870b0010, Revision: 1.0
+[    0.214253] DMI not present or invalid.
+[    0.218699] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+[    0.225170] DMA: preallocated 512 KiB GFP_KERNEL pool for atomic allocations
+[    0.232408] DMA: preallocated 512 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+[    0.240376] DMA: preallocated 512 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+[    0.248397] audit: initializing netlink subsys (disabled)
+[    0.253931] audit: type=2000 audit(0.160:1): state=initialized audit_enabled=0 res=1
+[    0.254494] thermal_sys: Registered thermal governor 'step_wise'
+[    0.261758] thermal_sys: Registered thermal governor 'power_allocator'
+[    0.267852] cpuidle: using governor menu
+[    0.278584] hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+[    0.285465] ASID allocator initialised with 32768 entries
+[    0.291913] Serial: AMBA PL011 UART driver
+[    0.296121] imx mu driver is registered.
+[    0.300109] imx rpmsg driver is registered.
+[    0.311893] platform f080000.display: Fixed dependency cycle(s) with /soc/display@f200000
+[    0.320827] platform f080000.display: Fixed dependency cycle(s) with /soc/display@f200000
+[    0.329118] platform f200000.display: Fixed dependency cycle(s) with /soc/display@f080000
+[    0.339085] Modules: 2G module region forced by RANDOMIZE_MODULE_REGION_FULL
+[    0.346222] Modules: 0 pages in range for non-PLT usage
+[    0.346224] Modules: 511824 pages in range for PLT usage
+[    0.351915] HugeTLB: registered 1.00 GiB page size, pre-allocated 0 pages
+[    0.364127] HugeTLB: 0 KiB vmemmap can be freed for a 1.00 GiB page
+[    0.370453] HugeTLB: registered 32.0 MiB page size, pre-allocated 0 pages
+[    0.377304] HugeTLB: 0 KiB vmemmap can be freed for a 32.0 MiB page
+[    0.383629] HugeTLB: registered 2.00 MiB page size, pre-allocated 0 pages
+[    0.390479] HugeTLB: 0 KiB vmemmap can be freed for a 2.00 MiB page
+[    0.396803] HugeTLB: registered 64.0 KiB page size, pre-allocated 0 pages
+[    0.403656] HugeTLB: 0 KiB vmemmap can be freed for a 64.0 KiB page
+[    0.475572] raid6: neonx8   gen()  4513 MB/s
+[    0.547924] raid6: neonx4   gen()  4402 MB/s
+[    0.620274] raid6: neonx2   gen()  3648 MB/s
+[    0.692621] raid6: neonx1   gen()  2634 MB/s
+[    0.764966] raid6: int64x8  gen()  2522 MB/s
+[    0.837319] raid6: int64x4  gen()  2466 MB/s
+[    0.909672] raid6: int64x2  gen()  2394 MB/s
+[    0.982029] raid6: int64x1  gen()  1831 MB/s
+[    0.986350] raid6: using algorithm neonx8 gen() 4513 MB/s
+[    1.058058] raid6: .... xor() 3220 MB/s, rmw enabled
+[    1.063067] raid6: using neon recovery algorithm
+[    1.068023] ACPI: Interpreter disabled.
+[    1.073252] iommu: Default domain type: Passthrough (set via kernel command line)
+[    1.080950] SCSI subsystem initialized
+[    1.084914] usbcore: registered new interface driver usbfs
+[    1.090471] usbcore: registered new interface driver hub
+[    1.095847] usbcore: registered new device driver usb
+[    1.101242] imx-i2c 2000000.i2c: can't get pinctrl, bus recovery not supported
+[    1.108707] i2c i2c-0: IMX I2C adapter registered
+[    1.113874] pps_core: LinuxPPS API ver. 1 registered
+[    1.118912] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    1.128161] PTP clock support registered
+[    1.132238] EDAC MC: Ver: 3.0.0
+[    1.135758] scmi_core: SCMI protocol bus registered
+[    1.140859] No BMan portals available!
+[    1.144836] QMan: Allocated lookup table at (____ptrval____), entry count 65537
+[    1.152298] No QMan portals available!
+[    1.156187] No USDPAA memory, no 'fsl,usdpaa-mem' in device-tree
+[    1.162613] FPGA manager framework
+[    1.166107] Advanced Linux Sound Architecture Driver Initialized.
+[    1.172742] vgaarb: loaded
+[    1.175734] clocksource: Switched to clocksource arch_sys_counter
+[    1.182010] VFS: Disk quotas dquot_6.6.0
+[    1.185990] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    1.193025] pnp: PnP ACPI: disabled
+[    1.200137] NET: Registered PF_INET protocol family
+[    1.205247] IP idents hash table entries: 65536 (order: 7, 524288 bytes, linear)
+[    1.214520] tcp_listen_portaddr_hash hash table entries: 2048 (order: 3, 32768 bytes, linear)
+[    1.223176] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[    1.231004] TCP established hash table entries: 32768 (order: 6, 262144 bytes, linear)
+[    1.239140] TCP bind hash table entries: 32768 (order: 8, 1048576 bytes, linear)
+[    1.247128] TCP: Hash tables configured (established 32768 bind 32768)
+[    1.253819] UDP hash table entries: 2048 (order: 4, 65536 bytes, linear)
+[    1.260667] UDP-Lite hash table entries: 2048 (order: 4, 65536 bytes, linear)
+[    1.268011] NET: Registered PF_UNIX/PF_LOCAL protocol family
+[    1.274004] RPC: Registered named UNIX socket transport module.
+[    1.279986] RPC: Registered udp transport module.
+[    1.284733] RPC: Registered tcp transport module.
+[    1.289479] RPC: Registered tcp-with-tls transport module.
+[    1.295014] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    1.301517] NET: Registered PF_XDP protocol family
+[    1.306362] PCI: CLS 0 bytes, default 64
+[    1.310502] kvm [1]: IPA Size Limit: 44 bits
+[    1.315961] kvm [1]: GICv3: no GICV resource entry
+[    1.320801] kvm [1]: disabling GICv2 emulation
+[    1.325298] kvm [1]: GIC system register CPU interface enabled
+[    1.331197] kvm [1]: vgic interrupt IRQ9
+[    1.335168] kvm [1]: Hyp mode initialized successfully
+[    1.340981] Initialise system trusted keyrings
+[    1.345583] workingset: timestamp_bits=42 max_order=20 bucket_order=0
+[    1.352272] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    1.358299] NFS: Registering the id_resolver key type
+[    1.363411] Key type id_resolver registered
+[    1.367632] Key type id_legacy registered
+[    1.371685] nfs4filelayout_init: NFSv4 File Layout Driver Registering...
+[    1.378456] nfs4flexfilelayout_init: NFSv4 Flexfile Layout Driver Registering...
+[    1.385933] jffs2: version 2.2. (NAND) © 2001-2006 Red Hat, Inc.
+[    1.392189] fuse: init (API version 7.39)
+[    1.396304] 9p: Installing v9fs 9p2000 file system support
+[    1.419626] xor: measuring software checksum speed
+[    1.425827]    8regs           :  7227 MB/sec
+[    1.431482]    32regs          :  7815 MB/sec
+[    1.437445]    arm64_neon      :  6288 MB/sec
+[    1.441841] xor: using function: 32regs (7815 MB/sec)
+[    1.446941] Key type asymmetric registered
+[    1.451077] Asymmetric key parser 'x509' registered
+[    1.456026] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 245)
+[    1.463566] io scheduler mq-deadline registered
+[    1.468145] io scheduler kyber registered
+[    1.472206] io scheduler bfq registered
+[    1.478564] lynx-10g 1ea0000.phy: PLLF: enabled, locked, reference clock 100MHz, clock net 5GHz
+[    1.487372] lynx-10g 1ea0000.phy:    Supported interfaces and link modes:
+[    1.494052] lynx-10g 1ea0000.phy:            sgmii
+[    1.498097] lynx-10g 1ea0000.phy:            1000base-x
+[    1.502581] lynx-10g 1ea0000.phy:            1000baseKX/Full
+[    1.507504] lynx-10g 1ea0000.phy:            qsgmii
+[    1.511636] lynx-10g 1ea0000.phy: PLLS: enabled, locked, reference clock 100MHz, clock net 5GHz
+[    1.520420] lynx-10g 1ea0000.phy:    Supported interfaces and link modes:
+[    1.527096] lynx-10g 1ea0000.phy:            sgmii
+[    1.531143] lynx-10g 1ea0000.phy:            1000base-x
+[    1.535626] lynx-10g 1ea0000.phy:            1000baseKX/Full
+[    1.540548] lynx-10g 1ea0000.phy:            qsgmii
+[    1.548736] pci-host-generic 1f0000000.pcie: host bridge /soc/pcie@1f0000000 ranges:
+[    1.556591] pci-host-generic 1f0000000.pcie:      MEM 0x01f8000000..0x01f815ffff -> 0x01f8000000
+[    1.565479] pci-host-generic 1f0000000.pcie:      MEM 0x01f8160000..0x01f81cffff -> 0x01f8160000
+[    1.574365] pci-host-generic 1f0000000.pcie:      MEM 0x01f81d0000..0x01f81effff -> 0x01f81d0000
+[    1.583246] pci-host-generic 1f0000000.pcie:      MEM 0x01f81f0000..0x01f820ffff -> 0x01f81f0000
+[    1.592131] pci-host-generic 1f0000000.pcie:      MEM 0x01f8210000..0x01f822ffff -> 0x01f8210000
+[    1.601012] pci-host-generic 1f0000000.pcie:      MEM 0x01f8230000..0x01f824ffff -> 0x01f8230000
+[    1.609889] pci-host-generic 1f0000000.pcie:      MEM 0x01fc000000..0x01fc3fffff -> 0x01fc000000
+[    1.618802] pci-host-generic 1f0000000.pcie: ECAM at [mem 0x1f0000000-0x1f00fffff] for [bus 00]
+[    1.627703] pci-host-generic 1f0000000.pcie: PCI host bridge to bus 0000:00
+[    1.634736] pci_bus 0000:00: root bus resource [bus 00]
+[    1.640011] pci_bus 0000:00: root bus resource [mem 0x1f8000000-0x1f815ffff]
+[    1.647128] pci_bus 0000:00: root bus resource [mem 0x1f8160000-0x1f81cffff pref]
+[    1.654686] pci_bus 0000:00: root bus resource [mem 0x1f81d0000-0x1f81effff]
+[    1.661804] pci_bus 0000:00: root bus resource [mem 0x1f81f0000-0x1f820ffff pref]
+[    1.669360] pci_bus 0000:00: root bus resource [mem 0x1f8210000-0x1f822ffff]
+[    1.676477] pci_bus 0000:00: root bus resource [mem 0x1f8230000-0x1f824ffff pref]
+[    1.684032] pci_bus 0000:00: root bus resource [mem 0x1fc000000-0x1fc3fffff]
+[    1.691162] pci 0000:00:00.0: [1957:e100] type 00 class 0x020001
+[    1.697252] pci 0000:00:00.0: BAR 0: [mem 0x1f8000000-0x1f803ffff 64bit] (from Enhanced Allocation, properties 0x0)
+[    1.707795] pci 0000:00:00.0: BAR 2: [mem 0x1f8160000-0x1f816ffff 64bit pref] (from Enhanced Allocation, properties 0x1)
+[    1.718777] pci 0000:00:00.0: VF BAR 0: [mem 0x1f81d0000-0x1f81dffff 64bit] (from Enhanced Allocation, properties 0x4)
+[    1.729582] pci 0000:00:00.0: VF BAR 2: [mem 0x1f81f0000-0x1f81fffff 64bit pref] (from Enhanced Allocation, properties 0x3)
+[    1.740837] pci 0000:00:00.0: PME# supported from D0 D3hot
+[    1.746380] pci 0000:00:00.0: VF(n) BAR0 space: [mem 0x1f81d0000-0x1f81effff 64bit] (contains BAR0 for 2 VFs)
+[    1.756394] pci 0000:00:00.0: VF(n) BAR2 space: [mem 0x1f81f0000-0x1f820ffff 64bit pref] (contains BAR2 for 2 VFs)
+[    1.767010] pci 0000:00:00.1: [1957:e100] type 00 class 0x020001
+[    1.773096] pci 0000:00:00.1: BAR 0: [mem 0x1f8040000-0x1f807ffff 64bit] (from Enhanced Allocation, properties 0x0)
+[    1.783640] pci 0000:00:00.1: BAR 2: [mem 0x1f8170000-0x1f817ffff 64bit pref] (from Enhanced Allocation, properties 0x1)
+[    1.794620] pci 0000:00:00.1: VF BAR 0: [mem 0x1f8210000-0x1f821ffff 64bit] (from Enhanced Allocation, properties 0x4)
+[    1.805424] pci 0000:00:00.1: VF BAR 2: [mem 0x1f8230000-0x1f823ffff 64bit pref] (from Enhanced Allocation, properties 0x3)
+[    1.816677] pci 0000:00:00.1: PME# supported from D0 D3hot
+[    1.822219] pci 0000:00:00.1: VF(n) BAR0 space: [mem 0x1f8210000-0x1f822ffff 64bit] (contains BAR0 for 2 VFs)
+[    1.832233] pci 0000:00:00.1: VF(n) BAR2 space: [mem 0x1f8230000-0x1f824ffff 64bit pref] (contains BAR2 for 2 VFs)
+[    1.842810] pci 0000:00:00.2: [1957:e100] type 00 class 0x020001
+[    1.848897] pci 0000:00:00.2: BAR 0: [mem 0x1f8080000-0x1f80bffff 64bit] (from Enhanced Allocation, properties 0x0)
+[    1.859439] pci 0000:00:00.2: BAR 2: [mem 0x1f8180000-0x1f818ffff 64bit pref] (from Enhanced Allocation, properties 0x1)
+[    1.870428] pci 0000:00:00.2: PME# supported from D0 D3hot
+[    1.876065] pci 0000:00:00.3: [1957:ee01] type 00 class 0x088001
+[    1.882153] pci 0000:00:00.3: BAR 0: [mem 0x1f8100000-0x1f811ffff 64bit] (from Enhanced Allocation, properties 0x0)
+[    1.892694] pci 0000:00:00.3: BAR 2: [mem 0x1f8190000-0x1f819ffff 64bit pref] (from Enhanced Allocation, properties 0x1)
+[    1.903685] pci 0000:00:00.3: PME# supported from D0 D3hot
+[    1.909327] pci 0000:00:00.4: [1957:ee02] type 00 class 0x088001
+[    1.915412] pci 0000:00:00.4: BAR 0: [mem 0x1f8120000-0x1f813ffff 64bit] (from Enhanced Allocation, properties 0x0)
+[    1.925959] pci 0000:00:00.4: BAR 2: [mem 0x1f81a0000-0x1f81affff 64bit pref] (from Enhanced Allocation, properties 0x1)
+[    1.936948] pci 0000:00:00.4: PME# supported from D0 D3hot
+[    1.942591] pci 0000:00:00.5: [1957:eef0] type 00 class 0x020801
+[    1.948679] pci 0000:00:00.5: BAR 0: [mem 0x1f8140000-0x1f815ffff 64bit] (from Enhanced Allocation, properties 0x0)
+[    1.959220] pci 0000:00:00.5: BAR 2: [mem 0x1f81b0000-0x1f81bffff 64bit pref] (from Enhanced Allocation, properties 0x1)
+[    1.970202] pci 0000:00:00.5: BAR 4: [mem 0x1fc000000-0x1fc3fffff 64bit] (from Enhanced Allocation, properties 0x0)
+[    1.980752] pci 0000:00:00.5: PME# supported from D0 D3hot
+[    1.986457] pci 0000:00:00.6: [1957:e100] type 00 class 0x020001
+[    1.992542] pci 0000:00:00.6: BAR 0: [mem 0x1f80c0000-0x1f80fffff 64bit] (from Enhanced Allocation, properties 0x0)
+[    2.003084] pci 0000:00:00.6: BAR 2: [mem 0x1f81c0000-0x1f81cffff 64bit pref] (from Enhanced Allocation, properties 0x1)
+[    2.014073] pci 0000:00:00.6: PME# supported from D0 D3hot
+[    2.020236] pci 0000:00:1f.0: [1957:e001] type 00 class 0x080700
+[    2.026334] OF: /soc/pcie@1f0000000: no msi-map translation for id 0xf8 on (null)
+[    2.139749] pci 0000:00:00.1: enabling device (0400 -> 0402)
+[    2.146241] pci 0000:00:00.1: enetc_fixup_clear_rss_rfs+0x0/0x58 took 109611 usecs
+[    2.153940] OF: /soc/pcie@1f0000000: no iommu-map translation for id 0xf8 on (null)
+[    2.161790] pcieport 0000:00:1f.0: PME: Signaling with IRQ 17
+[    2.167764] pcieport 0000:00:1f.0: AER: enabled with IRQ 17
+[    2.173990] layerscape-pcie 3400000.pcie: host bridge /soc/pcie@3400000 ranges:
+[    2.181418] layerscape-pcie 3400000.pcie:       IO 0x8000010000..0x800001ffff -> 0x0000000000
+[    2.190039] layerscape-pcie 3400000.pcie:      MEM 0x8040000000..0x807fffffff -> 0x0040000000
+[    2.198686] layerscape-pcie 3400000.pcie: iATU: unroll F, 8 ob, 6 ib, align 4K, limit 4G
+[    3.206951] layerscape-pcie 3400000.pcie: Phy link never came up
+[    3.213093] layerscape-pcie 3400000.pcie: PCI host bridge to bus 0001:00
+[    3.219862] pci_bus 0001:00: root bus resource [bus 00-ff]
+[    3.225401] pci_bus 0001:00: root bus resource [io  0x0000-0xffff]
+[    3.231642] pci_bus 0001:00: root bus resource [mem 0x8040000000-0x807fffffff] (bus address [0x40000000-0x7fffffff])
+[    3.242285] pci 0001:00:00.0: [1957:82c0] type 01 class 0x060400
+[    3.248402] pci 0001:00:00.0: supports D1 D2
+[    3.252711] pci 0001:00:00.0: PME# supported from D0 D1 D2 D3hot
+[    3.259493] pci_bus 0001:01: busn_res: [bus 01-ff] end is updated to 01
+[    3.266180] pci 0001:00:00.0: PCI bridge to [bus 01]
+[    3.271293] layerscape-pcie 3500000.pcie: host bridge /soc/pcie@3500000 ranges:
+[    3.278700] layerscape-pcie 3500000.pcie:       IO 0x8800010000..0x880001ffff -> 0x0000000000
+[    3.287318] layerscape-pcie 3500000.pcie:      MEM 0x8840000000..0x887fffffff -> 0x0040000000
+[    3.295962] layerscape-pcie 3500000.pcie: iATU: unroll F, 8 ob, 6 ib, align 4K, limit 4G
+[    4.304225] layerscape-pcie 3500000.pcie: Phy link never came up
+[    4.310355] layerscape-pcie 3500000.pcie: PCI host bridge to bus 0002:00
+[    4.317127] pci_bus 0002:00: root bus resource [bus 00-ff]
+[    4.322665] pci_bus 0002:00: root bus resource [io  0x10000-0x1ffff] (bus address [0x0000-0xffff])
+[    4.331714] pci_bus 0002:00: root bus resource [mem 0x8840000000-0x887fffffff] (bus address [0x40000000-0x7fffffff])
+[    4.342354] pci 0002:00:00.0: [1957:82c0] type 01 class 0x060400
+[    4.348468] pci 0002:00:00.0: supports D1 D2
+[    4.352777] pci 0002:00:00.0: PME# supported from D0 D1 D2 D3hot
+[    4.359521] pci_bus 0002:01: busn_res: [bus 01-ff] end is updated to 01
+[    4.366206] pci 0002:00:00.0: PCI bridge to [bus 01]
+[    4.371942] EINJ: ACPI disabled.
+[    4.384688] Bus freq driver module loaded
+[    4.393824] Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+[    4.401963] printk: console [ttyS0] disabled
+[    4.406452] 21c0500.serial: ttyS0 at MMIO 0x21c0500 (irq = 18, base_baud = 12500000) is a 16550A
+[    4.415355] printk: console [ttyS0] enabled
+[    4.415355] printk: console [ttyS0] enabled
+[    4.423789] printk: legacy bootconsole [uart8250] disabled
+[    4.423789] printk: legacy bootconsole [uart8250] disabled
+[    4.436270] 21c0600.serial: ttyS1 at MMIO 0x21c0600 (irq = 18, base_baud = 12500000) is a 16550A
+[    4.436620] SuperH (H)SCI(F) driver initialized
+[    4.436883] msm_serial: driver initialized
+[    4.437247] STM32 USART driver initialized
+[    4.439944] arm-smmu 5000000.iommu: probing hardware configuration...
+[    4.439950] arm-smmu 5000000.iommu: SMMUv2 with:
+[    4.439954] arm-smmu 5000000.iommu:  stage 1 translation
+[    4.439956] arm-smmu 5000000.iommu:  stage 2 translation
+[    4.439959] arm-smmu 5000000.iommu:  nested translation
+[    4.439961] arm-smmu 5000000.iommu:  coherent table walk
+[    4.439964] arm-smmu 5000000.iommu:  (IDR0.CTTW overridden by FW configuration)
+[    4.439967] arm-smmu 5000000.iommu:  stream matching with 128 register groups
+[    4.439971] arm-smmu 5000000.iommu:  64 context banks (0 stage-2 only)
+[    4.439977] arm-smmu 5000000.iommu:  Supported page sizes: 0x61311000
+[    4.439981] arm-smmu 5000000.iommu:  Stage-1: 48-bit VA -> 48-bit IPA
+[    4.439984] arm-smmu 5000000.iommu:  Stage-2: 48-bit IPA -> 48-bit PA
+[    4.440187] arm-smmu 5000000.iommu:  preserved 0 boot mappings
+[    4.440244] arm-smmu 5000000.iommu: Failed to disable prefetcher [errata #841119 and #826419], check ACR.CACHE_LOCK
+[    4.448839] brd: module loaded
+[    4.451207] loop: module loaded
+[    4.451916] megasas: 07.725.01.00-rc1
+[    4.452525] ahci-qoriq 3200000.sata: Adding to iommu group 0
+[    4.452572] ahci-qoriq 3200000.sata: supply ahci not found, using dummy regulator
+[    4.452624] ahci-qoriq 3200000.sata: supply phy not found, using dummy regulator
+[    4.452653] ahci-qoriq 3200000.sata: supply target not found, using dummy regulator
+[    4.452763] ahci-qoriq 3200000.sata: AHCI 0001.0301 32 slots 1 ports 6 Gbps 0x1 impl platform mode
+[    4.452771] ahci-qoriq 3200000.sata: flags: 64bit ncq sntf pm clo only pmp fbs pio slum part ccc sds apst 
+[    4.454276] scsi host0: ahci-qoriq
+[    4.454390] ata1: SATA max UDMA/133 mmio [mem 0x03200000-0x0320ffff] port 0x100 irq 91
+[    4.490310] spi-nor spi0.0: mt35xu02g (262144 Kbytes)
+[    4.491501] MACsec IEEE 802.1AE
+[    4.493449] tun: Universal TUN/TAP device driver, 1.6
+[    4.493687] mscc_felix 0000:00:00.5: Adding to iommu group 1
+[    4.498108] thunder_xcv, ver 1.0
+[    4.498127] thunder_bgx, ver 1.0
+[    4.498143] nicpf, ver 1.0
+[    4.498343] Freescale FM module, FMD API version 21.1.0
+[    4.498419] Freescale FM Ports module
+[    4.498422] fsl_mac: fsl_mac: FSL FMan MAC API based driver
+[    4.498479] fsl_dpa: FSL DPAA Ethernet driver
+[    4.498526] fsl_advanced: FSL DPAA Advanced drivers:
+[    4.498528] fsl_proxy: FSL DPAA Proxy initialization driver
+[    4.498575] fsl_oh: FSL FMan Offline Parsing port driver
+[    4.498769] fsl_enetc 0000:00:00.0: Adding to iommu group 2
+[    4.498904] fsl_enetc 0000:00:00.2: Adding to iommu group 3
+[    4.499008] fsl_enetc 0000:00:00.6: Adding to iommu group 4
+[    4.499268] fsl_enetc_mdio 0000:00:00.3: Adding to iommu group 5
+[    4.603740] fsl_enetc_mdio 0000:00:00.3: enabling device (0400 -> 0402)
+[    4.607301] fsl_enetc_mdio 0000:00:00.3: Enabled ERR050089 workaround
+[    4.618601] fsl_enetc_ptp 0000:00:00.4: Adding to iommu group 6
+[    4.618620] fsl_enetc_ptp 0000:00:00.4: enabling device (0404 -> 0406)
+[    4.618734] ptp_qoriq: device tree node missing required elements, try automatic configuration
+[    4.618834] pps pps0: new PPS source ptp0
+[    4.619245] hns3: Hisilicon Ethernet Network Driver for Hip08 Family - version
+[    4.619249] hns3: Copyright (c) 2017 Huawei Corporation.
+[    4.619276] hclge is initializing
+[    4.619292] e1000: Intel(R) PRO/1000 Network Driver
+[    4.619295] e1000: Copyright (c) 1999-2006 Intel Corporation.
+[    4.619313] e1000e: Intel(R) PRO/1000 Network Driver
+[    4.619315] e1000e: Copyright(c) 1999 - 2015 Intel Corporation.
+[    4.619338] igb: Intel(R) Gigabit Ethernet Network Driver
+[    4.619340] igb: Copyright (c) 2007-2014 Intel Corporation.
+[    4.619356] igbvf: Intel(R) Gigabit Virtual Function Network Driver
+[    4.619359] igbvf: Copyright (c) 2009 - 2012 Intel Corporation.
+[    4.619533] sky2: driver version 1.30
+[    4.620107] usbcore: registered new device driver r8152-cfgselector
+[    4.620121] usbcore: registered new interface driver r8152
+[    4.620136] usbcore: registered new interface driver asix
+[    4.620157] usbcore: registered new interface driver ax88179_178a
+[    4.620514] VFIO - User Level meta-driver version: 0.3
+[    4.620808] dwc3 3100000.usb: Adding to iommu group 7
+[    4.621418] dwc3 3110000.usb: Adding to iommu group 8
+[    4.623026] xhci-hcd xhci-hcd.0.auto: xHCI Host Controller
+[    4.623039] xhci-hcd xhci-hcd.0.auto: new USB bus registered, assigned bus number 1
+[    4.623116] xhci-hcd xhci-hcd.0.auto: hcc params 0x0220f66d hci version 0x100 quirks 0x0000008002000010
+[    4.623135] xhci-hcd xhci-hcd.0.auto: irq 95, io mem 0x03100000
+[    4.623218] xhci-hcd xhci-hcd.0.auto: xHCI Host Controller
+[    4.623224] xhci-hcd xhci-hcd.0.auto: new USB bus registered, assigned bus number 2
+[    4.623230] xhci-hcd xhci-hcd.0.auto: Host supports USB 3.0 SuperSpeed
+[    4.623937] hub 1-0:1.0: USB hub found
+[    4.623951] hub 1-0:1.0: 1 port detected
+[    4.624116] usb usb2: We don't know the algorithms for LPM for this host, disabling LPM.
+[    4.624343] hub 2-0:1.0: USB hub found
+[    4.624357] hub 2-0:1.0: 1 port detected
+[    4.624899] usbcore: registered new interface driver uas
+[    4.624926] usbcore: registered new interface driver usb-storage
+[    4.637866] i2c_dev: i2c /dev entries driver
+[    4.638962] pca954x 0-0077: supply vdd not found, using dummy regulator
+[    4.673027] i2c i2c-0: Added multiplexed i2c bus 1
+[    4.673251] i2c i2c-0: Added multiplexed i2c bus 2
+[    4.673428] i2c i2c-0: Added multiplexed i2c bus 3
+[    4.673689] i2c i2c-0: Added multiplexed i2c bus 4
+[    4.673790] i2c i2c-0: Added multiplexed i2c bus 5
+[    4.673900] i2c i2c-0: Added multiplexed i2c bus 6
+[    4.674003] i2c i2c-0: Added multiplexed i2c bus 7
+[    4.674102] i2c i2c-0: Added multiplexed i2c bus 8
+[    4.674107] pca954x 0-0077: registered 8 multiplexed busses for I2C mux pca9847
+[    4.676642] sp805-wdt c000000.watchdog: registration successful
+[    4.676770] sp805-wdt c010000.watchdog: registration successful
+[    4.688763] qoriq-cpufreq qoriq-cpufreq: Freescale QorIQ CPU frequency scaling driver
+[    4.689581] sdhci: Secure Digital Host Controller Interface driver
+[    4.689585] sdhci: Copyright(c) Pierre Ossman
+[    4.689979] Synopsys Designware Multimedia Card Interface Driver
+[    4.690492] sdhci-pltfm: SDHCI platform and OF driver helper
+[    4.691644] sdhci-esdhc 2150000.mmc: Adding to iommu group 9
+[    4.691825] sdhci-esdhc 2140000.mmc: Adding to iommu group 10
+[    4.695115] ledtrig-cpu: registered to indicate activity on CPUs
+[    4.707847] SMCCC: SOC_ID: ARCH_SOC_ID not implemented, skipping ....
+[    4.714598] usbcore: registered new interface driver usbhid
+[    4.714602] usbhid: USB HID core driver
+[    4.714890] No fsl,qman node
+[    4.714894] Freescale USDPAA process driver
+[    4.714895] fsl-usdpaa: no region found
+[    4.714897] Freescale USDPAA process IRQ driver
+[    4.720039] mmc0: SDHCI controller on 2140000.mmc [2140000.mmc] using ADMA
+[    4.720210] hw perfevents: enabled with armv8_cortex_a72 PMU driver, 7 counters available
+[    4.726688] mmc1: SDHCI controller on 2150000.mmc [2150000.mmc] using ADMA
+[    4.727395]  cs_system_cfg: CoreSight Configuration manager initialised
+[    4.728364] optee: probing for conduit method.
+[    4.728371] optee: api uid mismatch
+[    4.728373] optee: probe of firmware:optee failed with error -22
+[    4.729361] Galcore version 6.4.11.p2.745085
+[    4.759516] [drm] Initialized vivante 1.0.0 20170808 for f0c0000.gpu on minor 0
+[    4.760928] NET: Registered PF_LLC protocol family
+[    4.760951] u32 classifier
+[    4.760953]     input device check on
+[    4.760954]     Actions configured
+[    4.761611] Initializing XFRM netlink socket
+[    4.761646] NET: Registered PF_INET6 protocol family
+[    4.762026] Segment Routing with IPv6
+[    4.762045] In-situ OAM (IOAM) with IPv6
+[    4.762089] sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+[    4.762361] NET: Registered PF_PACKET protocol family
+[    4.762368] NET: Registered PF_KEY protocol family
+[    4.762389] Bridge firewalling registered
+[    4.762572] 8021q: 802.1Q VLAN Support v1.8
+[    4.762582] lib80211: common routines for IEEE802.11 drivers
+[    4.762610] 9pnet: Installing 9P2000 support
+[    4.762682] Key type dns_resolver registered
+[    4.770219] ata1: SATA link down (SStatus 0 SControl 300)
+[    4.773044] registered taskstats version 1
+[    4.773107] Loading compiled-in X.509 certificates
+[    4.778422] Btrfs loaded, zoned=no, fsverity=no
+[    4.781581] fsl-edma 22c0000.dma-controller: Adding to iommu group 11
+[    4.782566] pcieport 0001:00:00.0: Adding to iommu group 12
+[    4.782694] pcieport 0001:00:00.0: PME: Signaling with IRQ 103
+[    4.782885] pcieport 0001:00:00.0: AER: enabled with IRQ 102
+[    4.783059] pcieport 0002:00:00.0: Adding to iommu group 13
+[    4.783190] pcieport 0002:00:00.0: PME: Signaling with IRQ 105
+[    4.783327] pcieport 0002:00:00.0: AER: enabled with IRQ 104
+[    4.899746] fsl_enetc 0000:00:00.0: enabling device (0400 -> 0402)
+[    4.900381] fsl_enetc 0000:00:00.0: no MAC address specified for SI1, using 72:7f:53:e0:f3:8a
+[    4.900390] fsl_enetc 0000:00:00.0: no MAC address specified for SI2, using 0a:76:ff:95:41:0f
+[    4.901217] fsl_enetc 0000:00:00.0 eth0: TSN capabilities: 0x2f
+[    4.949134] mmc0: new ultra high speed SDR104 SDXC card at address 0001
+[    4.949507] mmcblk0: mmc0:0001 SD16G 116 GiB
+[    4.957839]  mmcblk0: p1 p2 p3
+[    5.011765] fsl_enetc 0000:00:00.2: enabling device (0400 -> 0402)
+[    5.012611] fsl_enetc 0000:00:00.2 eth1: TSN capabilities: 0x2f
+[    5.031153] mmc1: new HS400 MMC card at address 0001
+[    5.031531] mmcblk1: mmc1:0001 Q2J55L 7.13 GiB
+[    5.037209] mmcblk1boot0: mmc1:0001 Q2J55L 2.00 MiB
+[    5.038087] mmcblk1boot1: mmc1:0001 Q2J55L 2.00 MiB
+[    5.038811] mmcblk1rpmb: mmc1:0001 Q2J55L 4.00 MiB, chardev (510:0)
+[    5.119745] fsl_enetc 0000:00:00.6: enabling device (0400 -> 0402)
+[    5.120032] fsl_enetc 0000:00:00.6: no MAC address specified for SI0, using 5e:77:05:4b:0d:d6
+[    5.120659] fsl_enetc 0000:00:00.6 eth2: TSN capabilities: 0x2a
+[    5.463195] mscc_felix 0000:00:00.5: Found PCS at internal MDIO address 0
+[    5.463219] mscc_felix 0000:00:00.5: Found PCS at internal MDIO address 1
+[    5.463233] mscc_felix 0000:00:00.5: Found PCS at internal MDIO address 2
+[    5.463240] mscc_felix 0000:00:00.5: Found PCS at internal MDIO address 3
+[    5.487781] mscc_felix 0000:00:00.5: configuring for fixed/internal link mode
+[    5.487850] mscc_felix 0000:00:00.5: Link is Up - 2.5Gbps/Full - flow control rx/tx
+[    5.497854] mscc_felix 0000:00:00.5: configuring for fixed/internal link mode
+[    5.497945] mscc_felix 0000:00:00.5: Link is Up - 1Gbps/Full - flow control rx/tx
+[    6.201878] mscc_felix 0000:00:00.5 swp0 (uninitialized): PHY [0000:00:00.3:10] driver [Microsemi GE VSC8514 SyncE] (irq=POLL)
+[    6.325852] mscc_felix 0000:00:00.5 swp1 (uninitialized): PHY [0000:00:00.3:11] driver [Microsemi GE VSC8514 SyncE] (irq=POLL)
+[    6.449857] mscc_felix 0000:00:00.5 swp2 (uninitialized): PHY [0000:00:00.3:12] driver [Microsemi GE VSC8514 SyncE] (irq=POLL)
+[    6.541853] mscc_felix 0000:00:00.5 swp3 (uninitialized): PHY [0000:00:00.3:13] driver [Microsemi GE VSC8514 SyncE] (irq=POLL)
+[   6.542393] fsl_enetc 0000:00:00.2 eth1: entered promiscuous mode
+[    6.542472] fsl_enetc 0000:00:00.6 eth2: entered promiscuous mode
+[    6.542489] DSA: tree 0 setup
+[    6.542988] clk: Disabling unused clocks
+[    6.543021] ALSA device list:
+[    6.543026]   No soundcards found.
+[    6.585828] EXT4-fs (mmcblk0p3): recovery complete
+[    6.585919] EXT4-fs (mmcblk0p3): mounted filesystem e3c234b9-be32-4b85-8444-b9af2d3e4ff4 r/w with ordered data mode. Quota mode: none.
+[    6.585955] VFS: Mounted root (ext4 filesystem) on device 179:3.
+[    6.608914] devtmpfs: mounted
+[    6.612520] Freeing unused kernel memory: 9728K
+[    6.612608] Run /sbin/init as init process
+[    6.630775] Starting init: /sbin/init exists but couldn't execute it (error -8)
+[    6.630787] Run /etc/init as init process
+[    6.642650] Run /bin/init as init process
+[    6
+[    6.649393] Run /bin/sh as init process
+[    6.649402]   with arguments:
+[    6.649405]     /bin/sh
+[    6.649408]   with environment:
+[    6.649409]     HOME=/
+[    6.649411]     TERM=linux
+[    6.649675] Starting init: /bin/sh exists but couldn't execute it (error -8)
+[    6.649681] Kernel panic - not syncing: No working init found.  Try passing init= option to kernel. See Linux Documentation/admin-guide/init.rst for guidance.
+[    6.688856] CPU: 1 PID: 1 Comm: swapper/0 Not tainted 6.6.52-rt43-ga4d83240b30f #2
+[    6.696453] Hardware name: LS1028A RDB Board (DT)
+[    6.701167] Call trace:
+[    6.703615]  dump_backtrace+0x94/0xec
+[    6.707296]  show_stack+0x18/0x24
+[    6.710620]  dump_stack_lvl+0x48/0x60
+[    6.714295]  dump_stack+0x18/0x24
+[    6.717619]  panic+0x32c/0x38c
+[    6.720680]  kernel_init+0x19c/0x1e0
+[    6.724264]  ret_from_fork+0x10/0x20
+[    6.727848] SMP: stopping secondary CPUs
+[    7.784277] SMP: failed to stop secondary CPUs 0-1
+[    7.789081] Kernel Offset: 0x2bae2ca00000 from 0xffff800080000000
+[    7.795191] PHYS_OFFSET: 0xffffbff380000000
+[    7.799383] CPU features: 0x0,80000201,2c020000,1000421b
+[    7.804709] Memory Limit: none
+[    7.807769] ---[ end Kernel panic - not syncing: No working init found.  Try passing init= option to kernel. See Linux Documentation/admin-guide/init.rst for guidance. ]---
+[    4.623924] hub 1-0:1.0: USB hub found
+[    4.623939] hub 1-0:1.0: 1 port detected
+[    4.624107] usb usb2: We don't know the algorithms for LPM for this host, disabling LPM.
+[    4.624333] hub 2-0:1.0: USB hub found
+[    4.624346] hub 2-0:1.0: 1 port detected
+[    4.624889] usbcore: registered new interface driver uas
+[    4.624917] usbcore: registered new interface driver usb-storage
+[    4.637859] i2c_dev: i2c /dev entries driver
+[    4.638953] pca954x 0-0077: supply vdd not found, using dummy regulator
+[    4.673013] i2c i2c-0: Added multiplexed i2c bus 1
+[    4.673240] i2c i2c-0: Added multiplexed i2c bus 2
+[    4.673417] i2c i2c-0: Added multiplexed i2c bus 3
+[    4.673678] i2c i2c-0: Added multiplexed i2c bus 4
+[    4.673777] i2c i2c-0: Added multiplexed i2c bus 5
+[    4.673887] i2c i2c-0: Added multiplexed i2c bus 6
+[    4.673990] i2c i2c-0: Added multiplexed i2c bus 7
+[    4.674089] i2c i2c-0: Added multiplexed i2c bus 8
+[    4.674093] pca954x 0-0077: registered 8 multiplexed busses for I2C mux pca9847
+[    4.676619] sp805-wdt c000000.watchdog: registration successful
+[    4.676749] sp805-wdt c010000.watchdog: registration successful
+[    4.689142] qoriq-cpufreq qoriq-cpufreq: Freescale QorIQ CPU frequency scaling driver
+[    4.689919] sdhci: Secure Digital Host Controller Interface driver
+[    4.689923] sdhci: Copyright(c) Pierre Ossman
+[    4.690318] Synopsys Designware Multimedia Card Interface Driver
+[    4.690833] sdhci-pltfm: SDHCI platform and OF driver helper
+[    4.691843] sdhci-esdhc 2140000.mmc: Adding to iommu group 9
+[    4.692302] sdhci-esdhc 2150000.mmc: Adding to iommu group 10
+[    4.695102] ledtrig-cpu: registered to indicate activity on CPUs
+[    4.707831] SMCCC: SOC_ID: ARCH_SOC_ID not implemented, skipping ....
+[    4.714580] usbcore: registered new interface driver usbhid
+[    4.714584] usbhid: USB HID core driver
+[    4.714874] No fsl,qman node
+[    4.714878] Freescale USDPAA process driver
+[    4.714880] fsl-usdpaa: no region found
+[    4.714882] Freescale USDPAA process IRQ driver
+[    4.719764] mmc0: SDHCI controller on 2140000.mmc [2140000.mmc] using ADMA
+[    4.720237] hw perfevents: enabled with armv8_cortex_a72 PMU driver, 7 counters available
+[    4.726711] mmc1: SDHCI controller on 2150000.mmc [2150000.mmc] using ADMA
+[    4.727438]  cs_system_cfg: CoreSight Configuration manager initialised
+[    4.728424] optee: probing for conduit method.
+[    4.728431] optee: api uid mismatch
+[    4.728433] optee: probe of firmware:optee failed with error -22
+[    4.729429] Galcore version 6.4.11.p2.745085
+[    4.759519] [drm] Initialized vivante 1.0.0 20170808 for f0c0000.gpu on minor 0
+[    4.760916] NET: Registered PF_LLC protocol family
+[    4.760940] u32 classifier
+[    4.760942]     input device check on
+[    4.760943]     Actions configured
+[    4.761591] Initializing XFRM netlink socket
+[    4.761627] NET: Registered PF_INET6 protocol family
+[    4.762026] Segment Routing with IPv6
+[    4.762045] In-situ OAM (IOAM) with IPv6
+[    4.762090] sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+[    4.762357] NET: Registered PF_PACKET protocol family
+[    4.762365] NET: Registered PF_KEY protocol family
+[    4.762387] Bridge firewalling registered
+[    4.762572] 8021q: 802.1Q VLAN Support v1.8
+[    4.762583] lib80211: common routines for IEEE802.11 drivers
+[    4.762612] 9pnet: Installing 9P2000 support
+[    4.762683] Key type dns_resolver registered
+[    4.769867] ata1: SATA link down (SStatus 0 SControl 300)
+[    4.773043] registered taskstats version 1
+[    4.773104] Loading compiled-in X.509 certificates
+[    4.778427] Btrfs loaded, zoned=no, fsverity=no
+[    4.781247] fsl-edma 22c0000.dma-controller: Adding to iommu group 11
+[    4.782235] pcieport 0001:00:00.0: Adding to iommu group 12
+[    4.782363] pcieport 0001:00:00.0: PME: Signaling with IRQ 103
+[    4.782534] pcieport 0001:00:00.0: AER: enabled with IRQ 102
+[    4.782677] pcieport 0002:00:00.0: Adding to iommu group 13
+[    4.782805] pcieport 0002:00:00.0: PME: Signaling with IRQ 105
+[    4.782971] pcieport 0002:00:00.0: AER: enabled with IRQ 104
+[    4.899733] fsl_enetc 0000:00:00.0: enabling device (0400 -> 0402)
+[    4.900368] fsl_enetc 0000:00:00.0: no MAC address specified for SI1, using 6a:07:88:fc:73:1f
+[    4.900377] fsl_enetc 0000:00:00.0: no MAC address specified for SI2, using fe:af:63:24:da:65
+[    4.901205] fsl_enetc 0000:00:00.0 eth0: TSN capabilities: 0x2f
+[    4.949167] mmc0: new ultra high speed SDR104 SDXC card at address 0001
+[    4.949543] mmcblk0: mmc0:0001 SD16G 116 GiB
+[    4.957874]  mmcblk0: p1 p2 p3
+[    5.011752] fsl_enetc 0000:00:00.2: enabling device (0400 -> 0402)
+[    5.012606] fsl_enetc 0000:00:00.2 eth1: TSN capabilities: 0x2f
+[    5.042976] mmc1: new HS400 MMC card at address 0001
+[    5.043350] mmcblk1: mmc1:0001 Q2J55L 7.13 GiB
+[    5.049722] mmcblk1boot0: mmc1:0001 Q2J55L 2.00 MiB
+[    5.050585] mmcblk1boot1: mmc1:0001 Q2J55L 2.00 MiB
+[    5.051308] mmcblk1rpmb: mmc1:0001 Q2J55L 4.00 MiB, chardev (510:0)
+[    5.119733] fsl_enetc 0000:00:00.6: enabling device (0400 -> 0402)
+[    5.120018] fsl_enetc 0000:00:00.6: no MAC address specified for SI0, using 42:21:c9:2a:5e:e9
+[    5.120649] fsl_enetc 0000:00:00.6 eth2: TSN capabilities: 0x2a
+[    5.468452] mscc_felix 0000:00:00.5: Found PCS at internal MDIO address 0
+[    5.468466] mscc_felix 0000:00:00.5: Found PCS at internal MDIO address 1
+[    5.468476] mscc_felix 0000:00:00.5: Found PCS at internal MDIO address 2
+[    5.468483] mscc_felix 0000:00:00.5: Found PCS at internal MDIO address 3
+[    5.491769] mscc_felix 0000:00:00.5: configuring for fixed/internal link mode
+[    5.491812] mscc_felix 0000:00:00.5: Link is Up - 2.5Gbps/Full - flow control rx/tx
+[    5.501888] mscc_felix 0000:00:00.5: configuring for fixed/internal link mode
+[    5.501931] mscc_felix 0000:00:00.5: Link is Up - 1Gbps/Full - flow control rx/tx
+[    6.205887] mscc_felix 0000:00:00.5 swp0 (uninitialized): PHY [0000:00:00.3:10] driver [Microsemi GE VSC8514 SyncE] (irq=POLL)
+[    6.329807] mscc_felix 0000:00:00.5 swp1 (uninitialized): PHY [0000:00:00.3:11] driver [Microsemi GE VSC8514 SyncE] (irq=POLL)
+[    6.453779] mscc_felix 0000:00:00.5 swp2 (uninitialized): PHY [0000:00:00.3:12] driver [Microsemi GE VSC8514 SyncE] (irq=POLL)
+[    6.577801] mscc_felix 0000:00:00.5 swp3 (uninitialized): PHY [0000:00:00.3:13] driver [Microsemi GE VSC8514 SyncE] (irq=POLL)
+[   6.578365] fsl_enetc 0000:00:00.2 eth1: entered promiscuous mode
+[    6.578447] fsl_enetc 0000:00:00.6 eth2: entered promiscuous mode
+[    6.578463] DSA: tree 0 setup
+[    6.578960] clk: Disabling unused clocks
+[    6.578994] ALSA device list:
+[    6.578999]   No soundcards found.
+[    6.621776] EXT4-fs (mmcblk0p3): recovery complete
+[    6.621867] EXT4-fs (mmcblk0p3): mounted filesystem e3c234b9-be32-4b85-8444-b9af2d3e4ff4 r/w with ordered data mode. Quota mode: none.
+[    6.621902] VFS: Mounted root (ext4 filesystem) on device 179:3.
+[    6.644862] devtmpfs: mounted
+[    6.648457] Freeing unused kernel memory: 9728K
+[    6.648551] Run /sbin/init as init process
+[    6.666642] Starting init: /sbin/init exists but couldn't execute it (error -8)
+[    6.666654] Run /etc/init as init process
+[    6.678518] Run /bin/init as init process
+[    6
+[    6.685266] Run /bin/sh as init process
+[    6.685274]   with arguments:
+[    6.685276]     /bin/sh
+[    6.685279]   with environment:
+[    6.685280]     HOME=/
+[    6.685282]     TERM=linux
+[    6.685552] Starting init: /bin/sh exists but couldn't execute it (error -8)
+[    6.685557] Kernel panic - not syncing: No working init found.  Try passing init= option to kernel. See Linux Documentation/admin-guide/init.rst for guidance.
+[    6.724729] CPU: 1 PID: 1 Comm: swapper/0 Not tainted 6.6.52-rt43-ga4d83240b30f #2
+[    6.732325] Hardware name: LS1028A RDB Board (DT)
+[    6.737040] Call trace:
+[    6.739488]  dump_backtrace+0x94/0xec
+[    6.743169]  show_stack+0x18/0x24
+[    6.746493]  dump_stack_lvl+0x48/0x60
+[    6.750168]  dump_stack+0x18/0x24
+[    6.753493]  panic+0x32c/0x38c
+[    6.756554]  kernel_init+0x19c/0x1e0
+[    6.760139]  ret_from_fork+0x10/0x20
+[    6.763722] SMP: stopping secondary CPUs
+[    7.820149] SMP: failed to stop secondary CPUs 0-1
+[    7.824953] Kernel Offset: 0x56e2c8000000 from 0xffff800080000000
+[    7.831064] PHYS_OFFSET: 0xffffd26800000000
+[    7.835255] CPU features: 0x0,80000201,2c020000,1000421b
+[    7.840582] Memory Limit: none
+[    7.843642] ---[ end Kernel panic - not syncing: No working init found.  Try passing init= option to kernel. See Linux Documentation/admin-guide/init.rst for guidance. ]---
+NOTICE:  Fixed DDR on board
+
+NOTICE:  4 GB DDR4, 32-bit, CL=11, ECC on
+NOTICE:  BL2: v2.10.0   (release):lf-6.6.52-2.2.0
+NOTICE:  BL2: Built : 22:03:11, Jun 24 2025
+NOTICE:  BL2: Booting BL31
+NOTICE:  BL31: v2.10.0  (release):lf-6.6.52-2.2.0
+NOTICE:  BL31: Built : 22:03:23, Jun 24 2025
+NOTICE:  Welcome to ls1028ardb BL31 Phase
+
+
+U-Boot 2024.04-00010-g7a00b6ee1c4 (Jun 24 2025 - 22:02:09 +0900)
+
+SoC:  LS1028AE Rev1.0 (0x870b0010)
+Clock Configuration:
+       CPU0(A72):1500 MHz  CPU1(A72):1500 MHz  
+       Bus:      400  MHz  DDR:      1600 MT/s
+Reset Configuration Word (RCW):
+       00000000: 3c004010 00000030 00000000 00000000
+       00000010: 00000000 018f0000 0030c000 00000000
+       00000020: 020031a0 00002580 00000000 00003296
+       00000030: 00000000 00000010 00000000 00000000
+       00000040: 00000000 00000000 00000000 00000000
+       00000050: 00000000 00000000 00000000 00000000
+       00000060: 00000000 00000000 200e705a 00000000
+       00000070: bb580000 00000000
+Model: LS1028A RDB Board
+Board: LS1028AE Rev1.0-RDB, Version: C, boot from SD
+FPGA: v8 (RDB)
+SERDES1 Reference : Clock1 = 100.00MHz Clock2 = 100.00MHz
+DRAM:  3.9 GiB
+DDR    3.9 GiB (DDR4, 32-bit, CL=11, ECC on)
+Using SERDES1 Protocol: 47960 (0xbb58)
+PCIe1: pcie@3400000 Root Complex: no link
+PCIe2: pcie@3500000 Root Complex: no link
+Core:  57 devices, 26 uclasses, devicetree: separate
+WDT:   Started watchdog@c000000 with servicing every 1000ms (60s timeout)
+WDT:   Started watchdog@c010000 with servicing every 1000ms (60s timeout)
+MMC:   FSL_SDHC: 0, FSL_SDHC: 1
+Loading Environment from MMC... *** Warning - bad CRC, using default environment
+
+EEPROM: Invalid ID (ff ff ff ff)
+In:    serial
+Out:   serial
+Err:   serial
+SEC0:  RNG instantiated
+Net:   
+Warning: enetc-0 (eth0) using random MAC address - c2:65:a1:fb:d0:c7
+eth0: enetc-0
+Warning: enetc-2 (eth1) using random MAC address - 16:8d:50:10:fd:c3
+, eth1: enetc-2, eth2: swp0, eth3: swp1, eth4: swp2, eth5: swp3
+Hit any key to stop autoboot:  0 
+Trying load HDP firmware from SD..
+switch to partitions #0, OK
+mmc0 is current device
+Device: FSL_SDHC
+Manufacturer ID: 0
+OEM: 3432
+Name: SD16G 
+Bus Speed: 50000000
+Mode: SD High Speed (50MHz)
+Rd Block Len: 512
+SD version 3.0
+High Capacity: Yes
+Capacity: 116.5 GiB
+Bus Width: 4-bit
+Erase Group Size: 512 Bytes
+
+MMC read: dev # 0, block # 18944, count 512 ... 512 blocks read: OK
+Loading hdp firmware from 0x00000000a0000000 offset 0x0000000000002000
+Loading hdp firmware Complete
+switch to partitions #0, OK
+mmc0 is current device
+Scanning mmc 0:1...
+Found U-Boot script /ls1028ardb_boot.scr
+1007 bytes read in 2 ms (491.2 KiB/s)
+## Executing script at 80000000
+49826304 bytes read in 2058 ms (23.1 MiB/s)
+28416 bytes read in 3 ms (9 MiB/s)
+## Flattened Device Tree blob at 90000000
+   Booting using the fdt blob at 0x90000000
+Working FDT set to 90000000
+   Loading Device Tree to 000000008fff6000, end 000000008ffffeff ... OK
+Working FDT set to 8fff6000
+WARNING could not find node vivante,gc: FDT_ERR_NOTFOUND.
+
+Starting kernel ...
+
+[    0.000000] Booting Linux on physical CPU 0x0000000000 [0x410fd083]
+[    0.000000] Linux version 6.6.52-rt43-ga4d83240b30f (root@fbdebian) (aarch64-linux-gnu-gcc (Debian 12.2.0-14) 12.2.0, GNU ld (GNU Binutils for Debian) 2.40) #2 SMP PREEMPT Tue Jun 24 22:18:02 KST 2025
+[    0.000000] KASLR enabled
+[    0.000000] Machine model: LS1028A RDB Board
+[    0.000000] earlycon: uart8250 at MMIO 0x00000000021c0500 (options '')
+[    0.000000] printk: legacy bootconsole [uart8250] enabled
+[    0.000000] efi: UEFI not found.
+[    0.000000] OF: reserved mem: 0x00000020fff00000..0x00000020ffffffff (1024 KiB) map non-reusable gic-rd-tables@20,fff00000
+[    0.000000] NUMA: No NUMA configuration found
+[    0.000000] NUMA: Faking a node at [mem 0x0000000080000000-0x00000020ffffffff]
+[    0.000000] NUMA: NODE_DATA [mem 0x20ff6f89c0-0x20ff6fafff]
+[    0.000000] Zone ranges:
+[    0.000000]   DMA      [mem 0x0000000080000000-0x00000000ffffffff]
+[    0.000000]   DMA32    empty
+[    0.000000]   Normal   [mem 0x0000000100000000-0x00000020ffffffff]
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000080000000-0x00000000fbdfffff]
+[    0.000000]   node   0: [mem 0x0000002080000000-0x00000020ffffffff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000080000000-0x00000020ffffffff]
+[    0.000000] On node 0, zone Normal: 16896 pages in unavailable ranges
+[    0.000000] cma: Reserved 640 MiB at 0x00000000d3e00000 on node -1
+[    0.000000] psci: probing for conduit method from DT.
+[    0.000000] psci: PSCIv1.1 detected in firmware.
+[    0.000000] psci: Using standard PSCI v0.2 function IDs
+[    0.000000] psci: MIGRATE_INFO_TYPE not supported.
+[    0.000000] psci: SMC Calling Convention v1.4
+[    0.000000] percpu: Embedded 23 pages/cpu s54248 r8192 d31768 u94208
+[    0.000000] Detected PIPT I-cache on CPU0
+[    0.000000] CPU features: detected: GIC system register CPU interface
+[    0.000000] CPU features: detected: Spectre-v2
+[    0.000000] CPU features: detected: Spectre-v3a
+[    0.000000] CPU features: detected: Spectre-BHB
+[    0.000000] CPU features: kernel page table isolation forced ON by KASLR
+[    0.000000] CPU features: detected: Kernel page table isolation (KPTI)
+[    0.000000] CPU features: detected: ARM erratum 1742098
+[    0.000000] CPU features: detected: ARM errata 1165522, 1319367, or 1530923
+[    0.000000] alternatives: applying boot alternatives
+[    0.000000] Kernel command line: console=ttyS0,115200 earlycon=uart8250,mmio,0x21c0500 root=PARTUUID=3488e098-03 rw rootwait iommu.passthrough=1 arm-smmu.disable_bypass=0 video=1920x1080-32@60 cma=640M
+[    0.000000] Dentry cache hash table entries: 524288 (order: 10, 4194304 bytes, linear)
+[    0.000000] Inode-cache hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+[    0.000000] Fallback order for Node 0: 0 
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 1015296
+[    0.000000] Policy zone: Normal
+[    0.000000] mem auto-init: stack:all(zero), heap alloc:off, heap free:off
+[    0.000000] software IO TLB: area num 2.
+[    0.000000] software IO TLB: mapped [mem 0x00000000cfe00000-0x00000000d3e00000] (64MB)
+[    0.000000] Memory: 3274052K/4126720K available (22144K kernel code, 4498K rwdata, 12132K rodata, 9728K init, 1146K bss, 197308K reserved, 655360K cma-reserved)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=2, Nodes=1
+[    0.000000] rcu: Preemptible hierarchical RCU implementation.
+[    0.000000] rcu:     RCU event tracing is enabled.
+[    0.000000] rcu:     RCU restricting CPUs from NR_CPUS=16 to nr_cpu_ids=2.
+[    0.000000]  Trampoline variant of Tasks RCU enabled.
+[    0.000000]  Tracing variant of Tasks RCU enabled.
+[    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 25 jiffies.
+[    0.000000] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=2
+[    0.000000] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+[    0.000000] GICv3: GIC: Using split EOI/Deactivate mode
+[    0.000000] GICv3: 256 SPIs implemented
+[    0.000000] GICv3: 0 Extended SPIs implemented
+[    0.000000] Root IRQ handler: gic_handle_irq
+[    0.000000] GICv3: GICv3 features: 16 PPIs
+[    0.000000] GICv3: CPU0: found redistributor 0 region 0:0x0000000006040000
+[    0.000000] ITS [mem 0x06020000-0x0603ffff]
+[    0.000000] ITS@0x0000000006020000: allocated 65536 Devices @2080080000 (flat, esz 8, psz 64K, shr 0)
+[    0.000000] ITS: using cache flushing for cmd queue
+[    0.000000] GICv3: Using preallocated redistributor tables
+[    0.000000] GICv3: using LPI property table @0x00000020fff00000
+[    0.000000] GICv3: CPU0: using reserved LPI pending table @0x00000020fff10000
+[    0.000000] rcu: srcu_init: Setting srcu_struct sizes based on contention.
+[    0.000000] arch_timer: cp15 timer(s) running at 25.00MHz (phys).
+[    0.000000] clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x5c409fb33, max_idle_ns: 440795203156 ns
+[    0.000000] sched_clock: 56 bits at 25MHz, resolution 39ns, wraps every 4398046511103ns
+[    0.008499] Console: colour dummy device 80x25
+[    0.013024] Calibrating delay loop (skipped), value calculated using timer frequency.. 50.00 BogoMIPS (lpj=100000)
+[    0.023479] pid_max: default: 32768 minimum: 301
+[    0.028173] LSM: initializing lsm=capability,integrity
+[    0.033418] Mount-cache hash table entries: 8192 (order: 4, 65536 bytes, linear)
+[    0.040902] Mountpoint-cache hash table entries: 8192 (order: 4, 65536 bytes, linear)
+[    0.049671] RCU Tasks: Setting shift to 1 and lim to 1 rcu_task_cb_adjust=1.
+[    0.056842] RCU Tasks Trace: Setting shift to 1 and lim to 1 rcu_task_cb_adjust=1.
+[    0.064600] rcu: Hierarchical SRCU implementation.
+[    0.069438] rcu:     Max phase no-delay instances is 1000.
+[    0.074839] Platform MSI: msi-controller@6020000 domain created
+[    0.080879] PCI/MSI: /interrupt-controller@6000000/msi-controller@6020000 domain created
+[    0.089090] fsl-mc MSI: msi-controller@6020000 domain created
+[    0.095476] EFI services will not be available.
+[    0.100133] smp: Bringing up secondary CPUs ...
+[    0.105006] Detected PIPT I-cache on CPU1
+[    0.105043] GICv3: CPU1: found redistributor 1 region 0:0x0000000006060000
+[    0.105054] GICv3: CPU1: using reserved LPI pending table @0x00000020fff20000
+[    0.105077] CPU1: Booted secondary processor 0x0000000001 [0x410fd083]
+[    0.105130] smp: Brought up 1 node, 2 CPUs
+[    0.134035] SMP: Total of 2 processors activated.
+[    0.138782] CPU features: detected: 32-bit EL0 Support
+[    0.143974] CPU features: detected: 32-bit EL1 Support
+[    0.149162] CPU features: detected: CRC32 instructions
+[    0.154392] CPU: All CPU(s) started at EL2
+[    0.158537] alternatives: applying system-wide alternatives
+[    0.165344] devtmpfs: initialized
+[    0.171805] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+[    0.181665] futex hash table entries: 512 (order: 3, 32768 bytes, linear)
+[    0.196081] pinctrl core: initialized pinctrl subsystem
+[    0.201808] Machine: LS1028A RDB Board
+[    0.205592] SoC family: QorIQ LS1028A
+[    0.209281] SoC ID: svr:0x870b0010, Revision: 1.0
+[    0.214259] DMI not present or invalid.
+[    0.218704] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+[    0.225176] DMA: preallocated 512 KiB GFP_KERNEL pool for atomic allocations
+[    0.232415] DMA: preallocated 512 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+[    0.240383] DMA: preallocated 512 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+[    0.248406] audit: initializing netlink subsys (disabled)
+[    0.253938] audit: type=2000 audit(0.160:1): state=initialized audit_enabled=0 res=1
+[    0.254505] thermal_sys: Registered thermal governor 'step_wise'
+[    0.261764] thermal_sys: Registered thermal governor 'power_allocator'
+[    0.267858] cpuidle: using governor menu
+[    0.278588] hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+[    0.285469] ASID allocator initialised with 32768 entries
+[    0.291912] Serial: AMBA PL011 UART driver
+[    0.296121] imx mu driver is registered.
+[    0.300110] imx rpmsg driver is registered.
+[    0.311914] platform f080000.display: Fixed dependency cycle(s) with /soc/display@f200000
+[    0.320852] platform f080000.display: Fixed dependency cycle(s) with /soc/display@f200000
+[    0.329144] platform f200000.display: Fixed dependency cycle(s) with /soc/display@f080000
+[    0.339110] Modules: 2G module region forced by RANDOMIZE_MODULE_REGION_FULL
+[    0.346247] Modules: 0 pages in range for non-PLT usage
+[    0.346250] Modules: 511824 pages in range for PLT usage
+[    0.351945] HugeTLB: registered 1.00 GiB page size, pre-allocated 0 pages
+[    0.364158] HugeTLB: 0 KiB vmemmap can be freed for a 1.00 GiB page
+[    0.370484] HugeTLB: registered 32.0 MiB page size, pre-allocated 0 pages
+[    0.377334] HugeTLB: 0 KiB vmemmap can be freed for a 32.0 MiB page
+[    0.383659] HugeTLB: registered 2.00 MiB page size, pre-allocated 0 pages
+[    0.390509] HugeTLB: 0 KiB vmemmap can be freed for a 2.00 MiB page
+[    0.396834] HugeTLB: registered 64.0 KiB page size, pre-allocated 0 pages
+[    0.403687] HugeTLB: 0 KiB vmemmap can be freed for a 64.0 KiB page
+[    0.475598] raid6: neonx8   gen()  4514 MB/s
+[    0.547951] raid6: neonx4   gen()  4401 MB/s
+[    0.620295] raid6: neonx2   gen()  3651 MB/s
+[    0.692641] raid6: neonx1   gen()  2633 MB/s
+[    0.764988] raid6: int64x8  gen()  2522 MB/s
+[    0.837341] raid6: int64x4  gen()  2466 MB/s
+[    0.909690] raid6: int64x2  gen()  2393 MB/s
+[    0.982046] raid6: int64x1  gen()  1831 MB/s
+[    0.986367] raid6: using algorithm neonx8 gen() 4514 MB/s
+[    1.058076] raid6: .... xor() 3220 MB/s, rmw enabled
+[    1.063085] raid6: using neon recovery algorithm
+[    1.068043] ACPI: Interpreter disabled.
+[    1.073279] iommu: Default domain type: Passthrough (set via kernel command line)
+[    1.080975] SCSI subsystem initialized
+[    1.084940] usbcore: registered new interface driver usbfs
+[    1.090497] usbcore: registered new interface driver hub
+[    1.095873] usbcore: registered new device driver usb
+[    1.101260] imx-i2c 2000000.i2c: can't get pinctrl, bus recovery not supported
+[    1.108726] i2c i2c-0: IMX I2C adapter registered
+[    1.113890] pps_core: LinuxPPS API ver. 1 registered
+[    1.118930] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    1.128179] PTP clock support registered
+[    1.132257] EDAC MC: Ver: 3.0.0
+[    1.135778] scmi_core: SCMI protocol bus registered
+[    1.140880] No BMan portals available!
+[    1.144856] QMan: Allocated lookup table at (____ptrval____), entry count 65537
+[    1.152319] No QMan portals available!
+[    1.156209] No USDPAA memory, no 'fsl,usdpaa-mem' in device-tree
+[    1.162633] FPGA manager framework
+[    1.166127] Advanced Linux Sound Architecture Driver Initialized.
+[    1.172763] vgaarb: loaded
+[    1.175750] clocksource: Switched to clocksource arch_sys_counter
+[    1.182026] VFS: Disk quotas dquot_6.6.0
+[    1.186006] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    1.193040] pnp: PnP ACPI: disabled
+[    1.200167] NET: Registered PF_INET protocol family
+[    1.205278] IP idents hash table entries: 65536 (order: 7, 524288 bytes, linear)
+[    1.214548] tcp_listen_portaddr_hash hash table entries: 2048 (order: 3, 32768 bytes, linear)
+[    1.223207] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[    1.231035] TCP established hash table entries: 32768 (order: 6, 262144 bytes, linear)
+[    1.239175] TCP bind hash table entries: 32768 (order: 8, 1048576 bytes, linear)
+[    1.247162] TCP: Hash tables configured (established 32768 bind 32768)
+[    1.253854] UDP hash table entries: 2048 (order: 4, 65536 bytes, linear)
+[    1.260693] UDP-Lite hash table entries: 2048 (order: 4, 65536 bytes, linear)
+[    1.268036] NET: Registered PF_UNIX/PF_LOCAL protocol family
+[    1.274033] RPC: Registered named UNIX socket transport module.
+[    1.280017] RPC: Registered udp transport module.
+[    1.284763] RPC: Registered tcp transport module.
+[    1.289508] RPC: Registered tcp-with-tls transport module.
+[    1.295044] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    1.301553] NET: Registered PF_XDP protocol family
+[    1.306397] PCI: CLS 0 bytes, default 64
+[    1.310540] kvm [1]: IPA Size Limit: 44 bits
+[    1.315992] kvm [1]: GICv3: no GICV resource entry
+[    1.320834] kvm [1]: disabling GICv2 emulation
+[    1.325330] kvm [1]: GIC system register CPU interface enabled
+[    1.331232] kvm [1]: vgic interrupt IRQ9
+[    1.335204] kvm [1]: Hyp mode initialized successfully
+[    1.341018] Initialise system trusted keyrings
+[    1.345622] workingset: timestamp_bits=42 max_order=20 bucket_order=0
+[    1.352313] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    1.358342] NFS: Registering the id_resolver key type
+[    1.363454] Key type id_resolver registered
+[    1.367675] Key type id_legacy registered
+[    1.371727] nfs4filelayout_init: NFSv4 File Layout Driver Registering...
+[    1.378494] nfs4flexfilelayout_init: NFSv4 Flexfile Layout Driver Registering...
+[    1.385970] jffs2: version 2.2. (NAND) © 2001-2006 Red Hat, Inc.
+[    1.392232] fuse: init (API version 7.39)
+[    1.396348] 9p: Installing v9fs 9p2000 file system support
+[    1.419720] xor: measuring software checksum speed
+[    1.425921]    8regs           :  7227 MB/sec
+[    1.431576]    32regs          :  7816 MB/sec
+[    1.437536]    arm64_neon      :  6288 MB/sec
+[    1.441930] xor: using function: 32regs (7816 MB/sec)
+[    1.447031] Key type asymmetric registered
+[    1.451167] Asymmetric key parser 'x509' registered
+[    1.456120] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 245)
+[    1.463662] io scheduler mq-deadline registered
+[    1.468240] io scheduler kyber registered
+[    1.472301] io scheduler bfq registered
+[    1.478657] lynx-10g 1ea0000.phy: PLLF: enabled, locked, reference clock 100MHz, clock net 5GHz
+[    1.487464] lynx-10g 1ea0000.phy:    Supported interfaces and link modes:
+[    1.494144] lynx-10g 1ea0000.phy:            sgmii
+[    1.498189] lynx-10g 1ea0000.phy:            1000base-x
+[    1.502673] lynx-10g 1ea0000.phy:            1000baseKX/Full
+[    1.507596] lynx-10g 1ea0000.phy:            qsgmii
+[    1.511728] lynx-10g 1ea0000.phy: PLLS: enabled, locked, reference clock 100MHz, clock net 5GHz
+[    1.520512] lynx-10g 1ea0000.phy:    Supported interfaces and link modes:
+[    1.527188] lynx-10g 1ea0000.phy:            sgmii
+[    1.531235] lynx-10g 1ea0000.phy:            1000base-x
+[    1.535719] lynx-10g 1ea0000.phy:            1000baseKX/Full
+[    1.540641] lynx-10g 1ea0000.phy:            qsgmii
+[    1.548824] pci-host-generic 1f0000000.pcie: host bridge /soc/pcie@1f0000000 ranges:
+[    1.556680] pci-host-generic 1f0000000.pcie:      MEM 0x01f8000000..0x01f815ffff -> 0x01f8000000
+[    1.565569] pci-host-generic 1f0000000.pcie:      MEM 0x01f8160000..0x01f81cffff -> 0x01f8160000
+[    1.574454] pci-host-generic 1f0000000.pcie:      MEM 0x01f81d0000..0x01f81effff -> 0x01f81d0000
+[    1.583335] pci-host-generic 1f0000000.pcie:      MEM 0x01f81f0000..0x01f820ffff -> 0x01f81f0000
+[    1.592220] pci-host-generic 1f0000000.pcie:      MEM 0x01f8210000..0x01f822ffff -> 0x01f8210000
+[    1.601102] pci-host-generic 1f0000000.pcie:      MEM 0x01f8230000..0x01f824ffff -> 0x01f8230000
+[    1.609978] pci-host-generic 1f0000000.pcie:      MEM 0x01fc000000..0x01fc3fffff -> 0x01fc000000
+[    1.618891] pci-host-generic 1f0000000.pcie: ECAM at [mem 0x1f0000000-0x1f00fffff] for [bus 00]
+[    1.627795] pci-host-generic 1f0000000.pcie: PCI host bridge to bus 0000:00
+[    1.634827] pci_bus 0000:00: root bus resource [bus 00]
+[    1.640101] pci_bus 0000:00: root bus resource [mem 0x1f8000000-0x1f815ffff]
+[    1.647218] pci_bus 0000:00: root bus resource [mem 0x1f8160000-0x1f81cffff pref]
+[    1.654777] pci_bus 0000:00: root bus resource [mem 0x1f81d0000-0x1f81effff]
+[    1.661894] pci_bus 0000:00: root bus resource [mem 0x1f81f0000-0x1f820ffff pref]
+[    1.669450] pci_bus 0000:00: root bus resource [mem 0x1f8210000-0x1f822ffff]
+[    1.676567] pci_bus 0000:00: root bus resource [mem 0x1f8230000-0x1f824ffff pref]
+[    1.684122] pci_bus 0000:00: root bus resource [mem 0x1fc000000-0x1fc3fffff]
+[    1.691252] pci 0000:00:00.0: [1957:e100] type 00 class 0x020001
+[    1.697342] pci 0000:00:00.0: BAR 0: [mem 0x1f8000000-0x1f803ffff 64bit] (from Enhanced Allocation, properties 0x0)
+[    1.707884] pci 0000:00:00.0: BAR 2: [mem 0x1f8160000-0x1f816ffff 64bit pref] (from Enhanced Allocation, properties 0x1)
+[    1.718867] pci 0000:00:00.0: VF BAR 0: [mem 0x1f81d0000-0x1f81dffff 64bit] (from Enhanced Allocation, properties 0x4)
+[    1.729671] pci 0000:00:00.0: VF BAR 2: [mem 0x1f81f0000-0x1f81fffff 64bit pref] (from Enhanced Allocation, properties 0x3)
+[    1.740925] pci 0000:00:00.0: PME# supported from D0 D3hot
+[    1.746469] pci 0000:00:00.0: VF(n) BAR0 space: [mem 0x1f81d0000-0x1f81effff 64bit] (contains BAR0 for 2 VFs)
+[    1.756483] pci 0000:00:00.0: VF(n) BAR2 space: [mem 0x1f81f0000-0x1f820ffff 64bit pref] (contains BAR2 for 2 VFs)
+[    1.767101] pci 0000:00:00.1: [1957:e100] type 00 class 0x020001
+[    1.773186] pci 0000:00:00.1: BAR 0: [mem 0x1f8040000-0x1f807ffff 64bit] (from Enhanced Allocation, properties 0x0)
+[    1.783731] pci 0000:00:00.1: BAR 2: [mem 0x1f8170000-0x1f817ffff 64bit pref] (from Enhanced Allocation, properties 0x1)
+[    1.794711] pci 0000:00:00.1: VF BAR 0: [mem 0x1f8210000-0x1f821ffff 64bit] (from Enhanced Allocation, properties 0x4)
+[    1.805514] pci 0000:00:00.1: VF BAR 2: [mem 0x1f8230000-0x1f823ffff 64bit pref] (from Enhanced Allocation, properties 0x3)
+[    1.816767] pci 0000:00:00.1: PME# supported from D0 D3hot
+[    1.822310] pci 0000:00:00.1: VF(n) BAR0 space: [mem 0x1f8210000-0x1f822ffff 64bit] (contains BAR0 for 2 VFs)
+[    1.832323] pci 0000:00:00.1: VF(n) BAR2 space: [mem 0x1f8230000-0x1f824ffff 64bit pref] (contains BAR2 for 2 VFs)
+[    1.842900] pci 0000:00:00.2: [1957:e100] type 00 class 0x020001
+[    1.848987] pci 0000:00:00.2: BAR 0: [mem 0x1f8080000-0x1f80bffff 64bit] (from Enhanced Allocation, properties 0x0)
+[    1.859529] pci 0000:00:00.2: BAR 2: [mem 0x1f8180000-0x1f818ffff 64bit pref] (from Enhanced Allocation, properties 0x1)
+[    1.870518] pci 0000:00:00.2: PME# supported from D0 D3hot
+[    1.876155] pci 0000:00:00.3: [1957:ee01] type 00 class 0x088001
+[    1.882243] pci 0000:00:00.3: BAR 0: [mem 0x1f8100000-0x1f811ffff 64bit] (from Enhanced Allocation, properties 0x0)
+[    1.892785] pci 0000:00:00.3: BAR 2: [mem 0x1f8190000-0x1f819ffff 64bit pref] (from Enhanced Allocation, properties 0x1)
+[    1.903776] pci 0000:00:00.3: PME# supported from D0 D3hot
+[    1.909418] pci 0000:00:00.4: [1957:ee02] type 00 class 0x088001
+[    1.915501] pci 0000:00:00.4: BAR 0: [mem 0x1f8120000-0x1f813ffff 64bit] (from Enhanced Allocation, properties 0x0)
+[    1.926048] pci 0000:00:00.4: BAR 2: [mem 0x1f81a0000-0x1f81affff 64bit pref] (from Enhanced Allocation, properties 0x1)
+[    1.937038] pci 0000:00:00.4: PME# supported from D0 D3hot
+[    1.942682] pci 0000:00:00.5: [1957:eef0] type 00 class 0x020801
+[    1.948769] pci 0000:00:00.5: BAR 0: [mem 0x1f8140000-0x1f815ffff 64bit] (from Enhanced Allocation, properties 0x0)
+[    1.959310] pci 0000:00:00.5: BAR 2: [mem 0x1f81b0000-0x1f81bffff 64bit pref] (from Enhanced Allocation, properties 0x1)
+[    1.970292] pci 0000:00:00.5: BAR 4: [mem 0x1fc000000-0x1fc3fffff 64bit] (from Enhanced Allocation, properties 0x0)
+[    1.980842] pci 0000:00:00.5: PME# supported from D0 D3hot
+[    1.986549] pci 0000:00:00.6: [1957:e100] type 00 class 0x020001
+[    1.992634] pci 0000:00:00.6: BAR 0: [mem 0x1f80c0000-0x1f80fffff 64bit] (from Enhanced Allocation, properties 0x0)
+[    2.003175] pci 0000:00:00.6: BAR 2: [mem 0x1f81c0000-0x1f81cffff 64bit pref] (from Enhanced Allocation, properties 0x1)
+[    2.014164] pci 0000:00:00.6: PME# supported from D0 D3hot
+[    2.020326] pci 0000:00:1f.0: [1957:e001] type 00 class 0x080700
+[    2.026425] OF: /soc/pcie@1f0000000: no msi-map translation for id 0xf8 on (null)
+[    2.139764] pci 0000:00:00.1: enabling device (0400 -> 0402)
+[    2.146257] pci 0000:00:00.1: enetc_fixup_clear_rss_rfs+0x0/0x58 took 109538 usecs
+[    2.153957] OF: /soc/pcie@1f0000000: no iommu-map translation for id 0xf8 on (null)
+[    2.161806] pcieport 0000:00:1f.0: PME: Signaling with IRQ 17
+[    2.167782] pcieport 0000:00:1f.0: AER: enabled with IRQ 17
+[    2.174006] layerscape-pcie 3400000.pcie: host bridge /soc/pcie@3400000 ranges:
+[    2.181434] layerscape-pcie 3400000.pcie:       IO 0x8000010000..0x800001ffff -> 0x0000000000
+[    2.190054] layerscape-pcie 3400000.pcie:      MEM 0x8040000000..0x807fffffff -> 0x0040000000
+[    2.198701] layerscape-pcie 3400000.pcie: iATU: unroll F, 8 ob, 6 ib, align 4K, limit 4G
+[    3.206966] layerscape-pcie 3400000.pcie: Phy link never came up
+[    3.213109] layerscape-pcie 3400000.pcie: PCI host bridge to bus 0001:00
+[    3.219879] pci_bus 0001:00: root bus resource [bus 00-ff]
+[    3.225417] pci_bus 0001:00: root bus resource [io  0x0000-0xffff]
+[    3.231658] pci_bus 0001:00: root bus resource [mem 0x8040000000-0x807fffffff] (bus address [0x40000000-0x7fffffff])
+[    3.242301] pci 0001:00:00.0: [1957:82c0] type 01 class 0x060400
+[    3.248417] pci 0001:00:00.0: supports D1 D2
+[    3.252727] pci 0001:00:00.0: PME# supported from D0 D1 D2 D3hot
+[    3.259500] pci_bus 0001:01: busn_res: [bus 01-ff] end is updated to 01
+[    3.266187] pci 0001:00:00.0: PCI bridge to [bus 01]
+[    3.271299] layerscape-pcie 3500000.pcie: host bridge /soc/pcie@3500000 ranges:
+[    3.278707] layerscape-pcie 3500000.pcie:       IO 0x8800010000..0x880001ffff -> 0x0000000000
+[    3.287324] layerscape-pcie 3500000.pcie:      MEM 0x8840000000..0x887fffffff -> 0x0040000000
+[    3.295969] layerscape-pcie 3500000.pcie: iATU: unroll F, 8 ob, 6 ib, align 4K, limit 4G
+[    4.304231] layerscape-pcie 3500000.pcie: Phy link never came up
+[    4.310361] layerscape-pcie 3500000.pcie: PCI host bridge to bus 0002:00
+[    4.317132] pci_bus 0002:00: root bus resource [bus 00-ff]
+[    4.322671] pci_bus 0002:00: root bus resource [io  0x10000-0x1ffff] (bus address [0x0000-0xffff])
+[    4.331720] pci_bus 0002:00: root bus resource [mem 0x8840000000-0x887fffffff] (bus address [0x40000000-0x7fffffff])
+[    4.342360] pci 0002:00:00.0: [1957:82c0] type 01 class 0x060400
+[    4.348475] pci 0002:00:00.0: supports D1 D2
+[    4.352784] pci 0002:00:00.0: PME# supported from D0 D1 D2 D3hot
+[    4.359536] pci_bus 0002:01: busn_res: [bus 01-ff] end is updated to 01
+[    4.366222] pci 0002:00:00.0: PCI bridge to [bus 01]
+[    4.371953] EINJ: ACPI disabled.
+[    4.384696] Bus freq driver module loaded
+[    4.393839] Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+[    4.401979] printk: console [ttyS0] disabled
+[    4.406469] 21c0500.serial: ttyS0 at MMIO 0x21c0500 (irq = 18, base_baud = 12500000) is a 16550A
+[    4.415372] printk: console [ttyS0] enabled
+[    4.415372] printk: console [ttyS0] enabled
+[    4.423804] printk: legacy bootconsole [uart8250] disabled
+[    4.423804] printk: legacy bootconsole [uart8250] disabled
+[    4.436291] 21c0600.serial: ttyS1 at MMIO 0x21c0600 (irq = 18, base_baud = 12500000) is a 16550A
+[    4.436642] SuperH (H)SCI(F) driver initialized
+[    4.436905] msm_serial: driver initialized
+[    4.437269] STM32 USART driver initialized
+[    4.439971] arm-smmu 5000000.iommu: probing hardware configuration...
+[    4.439977] arm-smmu 5000000.iommu: SMMUv2 with:
+[    4.439981] arm-smmu 5000000.iommu:  stage 1 translation
+[    4.439983] arm-smmu 5000000.iommu:  stage 2 translation
+[    4.439986] arm-smmu 5000000.iommu:  nested translation
+[    4.439988] arm-smmu 5000000.iommu:  coherent table walk
+[    4.439991] arm-smmu 5000000.iommu:  (IDR0.CTTW overridden by FW configuration)
+[    4.439994] arm-smmu 5000000.iommu:  stream matching with 128 register groups
+[    4.439998] arm-smmu 5000000.iommu:  64 context banks (0 stage-2 only)
+[    4.440004] arm-smmu 5000000.iommu:  Supported page sizes: 0x61311000
+[    4.440008] arm-smmu 5000000.iommu:  Stage-1: 48-bit VA -> 48-bit IPA
+[    4.440011] arm-smmu 5000000.iommu:  Stage-2: 48-bit IPA -> 48-bit PA
+[    4.440215] arm-smmu 5000000.iommu:  preserved 0 boot mappings
+[    4.440272] arm-smmu 5000000.iommu: Failed to disable prefetcher [errata #841119 and #826419], check ACR.CACHE_LOCK
+[    4.448868] brd: module loaded
+[    4.451224] loop: module loaded
+[    4.451937] megasas: 07.725.01.00-rc1
+[    4.452545] ahci-qoriq 3200000.sata: Adding to iommu group 0
+[    4.452591] ahci-qoriq 3200000.sata: supply ahci not found, using dummy regulator
+[    4.452642] ahci-qoriq 3200000.sata: supply phy not found, using dummy regulator
+[    4.452673] ahci-qoriq 3200000.sata: supply target not found, using dummy regulator
+[    4.452783] ahci-qoriq 3200000.sata: AHCI 0001.0301 32 slots 1 ports 6 Gbps 0x1 impl platform mode
+[    4.452790] ahci-qoriq 3200000.sata: flags: 64bit ncq sntf pm clo only pmp fbs pio slum part ccc sds apst 
+[    4.454298] scsi host0: ahci-qoriq
+[    4.454412] ata1: SATA max UDMA/133 mmio [mem 0x03200000-0x0320ffff] port 0x100 irq 91
+[    4.490330] spi-nor spi0.0: mt35xu02g (262144 Kbytes)
+[    4.491518] MACsec IEEE 802.1AE
+[    4.493470] tun: Universal TUN/TAP device driver, 1.6
+[    4.493707] mscc_felix 0000:00:00.5: Adding to iommu group 1
+[    4.498126] thunder_xcv, ver 1.0
+[    4.498145] thunder_bgx, ver 1.0
+[    4.498160] nicpf, ver 1.0
+[    4.498359] Freescale FM module, FMD API version 21.1.0
+[    4.498435] Freescale FM Ports module
+[    4.498438] fsl_mac: fsl_mac: FSL FMan MAC API based driver
+[    4.498495] fsl_dpa: FSL DPAA Ethernet driver
+[    4.498543] fsl_advanced: FSL DPAA Advanced drivers:
+[    4.498545] fsl_proxy: FSL DPAA Proxy initialization driver
+[    4.498592] fsl_oh: FSL FMan Offline Parsing port driver
+[    4.498782] fsl_enetc 0000:00:00.0: Adding to iommu group 2
+[    4.498919] fsl_enetc 0000:00:00.2: Adding to iommu group 3
+[    4.499021] fsl_enetc 0000:00:00.6: Adding to iommu group 4
+[    4.499280] fsl_enetc_mdio 0000:00:00.3: Adding to iommu group 5
+[    4.603756] fsl_enetc_mdio 0000:00:00.3: enabling device (0400 -> 0402)
+[    4.607321] fsl_enetc_mdio 0000:00:00.3: Enabled ERR050089 workaround
+[    4.618620] fsl_enetc_ptp 0000:00:00.4: Adding to iommu group 6
+[    4.618640] fsl_enetc_ptp 0000:00:00.4: enabling device (0404 -> 0406)
+[    4.618752] ptp_qoriq: device tree node missing required elements, try automatic configuration
+[    4.618851] pps pps0: new PPS source ptp0
+[    4.619264] hns3: Hisilicon Ethernet Network Driver for Hip08 Family - version
+[    4.619268] hns3: Copyright (c) 2017 Huawei Corporation.
+[    4.619294] hclge is initializing
+[    4.619310] e1000: Intel(R) PRO/1000 Network Driver
+[    4.619312] e1000: Copyright (c) 1999-2006 Intel Corporation.
+[    4.619330] e1000e: Intel(R) PRO/1000 Network Driver
+[    4.619332] e1000e: Copyright(c) 1999 - 2015 Intel Corporation.
+[    4.619354] igb: Intel(R) Gigabit Ethernet Network Driver
+[    4.619356] igb: Copyright (c) 2007-2014 Intel Corporation.
+[    4.619372] igbvf: Intel(R) Gigabit Virtual Function Network Driver
+[    4.619374] igbvf: Copyright (c) 2009 - 2012 Intel Corporation.
+[    4.619547] sky2: driver version 1.30
+[    4.620119] usbcore: registered new device driver r8152-cfgselector
+[    4.620133] usbcore: registered new interface driver r8152
+[    4.620148] usbcore: registered new interface driver asix
+[    4.620170] usbcore: registered new interface driver ax88179_178a
+[    4.620531] VFIO - User Level meta-driver version: 0.3
+[    4.620824] dwc3 3100000.usb: Adding to iommu group 7
+[    4.621442] dwc3 3110000.usb: Adding to iommu group 8
+[    4.623053] xhci-hcd xhci-hcd.0.auto: xHCI Host Controller
+[    4.623066] xhci-hcd xhci-hcd.0.auto: new USB bus registered, assigned bus number 1
+[    4.623144] xhci-hcd xhci-hcd.0.auto: hcc params 0x0220f66d hci version 0x100 quirks 0x0000008002000010
+[    4.623164] xhci-hcd xhci-hcd.0.auto: irq 95, io mem 0x03100000
+[    4.623249] xhci-hcd xhci-hcd.0.auto: xHCI Host Controller
+[    4.623254] xhci-hcd xhci-hcd.0.auto: new USB bus registered, assigned bus number 2
+[    4.623260] xhci-hcd xhci-hcd.0.auto: Host supports USB 3.0 SuperSpeed
+[    4.623967] hub 1-0:1.0: USB hub found
+[    4.623982] hub 1-0:1.0: 1 port detected
+[    4.624148] usb usb2: We don't know the algorithms for LPM for this host, disabling LPM.
+[    4.624373] hub 2-0:1.0: USB hub found
+[    4.624386] hub 2-0:1.0: 1 port detected
+[    4.624928] usbcore: registered new interface driver uas
+[    4.624957] usbcore: registered new interface driver usb-storage
+[    4.637886] i2c_dev: i2c /dev entries driver
+[    4.638981] pca954x 0-0077: supply vdd not found, using dummy regulator
+[    4.673059] i2c i2c-0: Added multiplexed i2c bus 1
+[    4.673284] i2c i2c-0: Added multiplexed i2c bus 2
+[    4.673460] i2c i2c-0: Added multiplexed i2c bus 3
+[    4.673722] i2c i2c-0: Added multiplexed i2c bus 4
+[    4.673823] i2c i2c-0: Added multiplexed i2c bus 5
+[    4.673924] i2c i2c-0: Added multiplexed i2c bus 6
+[    4.674025] i2c i2c-0: Added multiplexed i2c bus 7
+[    4.674123] i2c i2c-0: Added multiplexed i2c bus 8
+[    4.674127] pca954x 0-0077: registered 8 multiplexed busses for I2C mux pca9847
+[    4.676675] sp805-wdt c000000.watchdog: registration successful
+[    4.676802] sp805-wdt c010000.watchdog: registration successful
+[    4.688799] qoriq-cpufreq qoriq-cpufreq: Freescale QorIQ CPU frequency scaling driver
+[    4.689626] sdhci: Secure Digital Host Controller Interface driver
+[    4.689631] sdhci: Copyright(c) Pierre Ossman
+[    4.690024] Synopsys Designware Multimedia Card Interface Driver
+[    4.690537] sdhci-pltfm: SDHCI platform and OF driver helper
+[    4.691688] sdhci-esdhc 2150000.mmc: Adding to iommu group 9
+[    4.691905] sdhci-esdhc 2140000.mmc: Adding to iommu group 10
+[    4.695165] ledtrig-cpu: registered to indicate activity on CPUs
+[    4.707899] SMCCC: SOC_ID: ARCH_SOC_ID not implemented, skipping ....
+[    4.714647] usbcore: registered new interface driver usbhid
+[    4.714653] usbhid: USB HID core driver
+[    4.714946] No fsl,qman node
+[    4.714950] Freescale USDPAA process driver
+[    4.714952] fsl-usdpaa: no region found
+[    4.714953] Freescale USDPAA process IRQ driver
+[    4.719788] mmc1: SDHCI controller on 2150000.mmc [2150000.mmc] using ADMA
+[    4.720310] hw perfevents: enabled with armv8_cortex_a72 PMU driver, 7 counters available
+[    4.726812] mmc0: SDHCI controller on 2140000.mmc [2140000.mmc] using ADMA
+[    4.727594]  cs_system_cfg: CoreSight Configuration manager initialised
+[    4.728517] optee: probing for conduit method.
+[    4.728523] optee: api uid mismatch
+[    4.728525] optee: probe of firmware:optee failed with error -22
+[    4.729519] Galcore version 6.4.11.p2.745085
+[    4.759616] [drm] Initialized vivante 1.0.0 20170808 for f0c0000.gpu on minor 0
+[    4.761023] NET: Registered PF_LLC protocol family
+[    4.761047] u32 classifier
+[    4.761049]     input device check on
+[    4.761050]     Actions configured
+[    4.761712] Initializing XFRM netlink socket
+[    4.761747] NET: Registered PF_INET6 protocol family
+[    4.762168] Segment Routing with IPv6
+[    4.762187] In-situ OAM (IOAM) with IPv6
+[    4.762232] sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+[    4.762501] NET: Registered PF_PACKET protocol family
+[    4.762509] NET: Registered PF_KEY protocol family
+[    4.762531] Bridge firewalling registered
+[    4.762722] 8021q: 802.1Q VLAN Support v1.8
+[    4.762734] lib80211: common routines for IEEE802.11 drivers
+[    4.762763] 9pnet: Installing 9P2000 support
+[    4.762830] Key type dns_resolver registered
+[    4.773162] registered taskstats version 1
+[    4.773225] Loading compiled-in X.509 certificates
+[    4.775042] ata1: SATA link down (SStatus 0 SControl 300)
+[    4.778625] Btrfs loaded, zoned=no, fsverity=no
+[    4.781333] fsl-edma 22c0000.dma-controller: Adding to iommu group 11
+[    4.782354] pcieport 0001:00:00.0: Adding to iommu group 12
+[    4.782481] pcieport 0001:00:00.0: PME: Signaling with IRQ 103
+[    4.782660] pcieport 0001:00:00.0: AER: enabled with IRQ 102
+[    4.782806] pcieport 0002:00:00.0: Adding to iommu group 13
+[    4.782932] pcieport 0002:00:00.0: PME: Signaling with IRQ 105
+[    4.783102] pcieport 0002:00:00.0: AER: enabled with IRQ 104
+[    4.899760] fsl_enetc 0000:00:00.0: enabling device (0400 -> 0402)
+[    4.900397] fsl_enetc 0000:00:00.0: no MAC address specified for SI1, using 12:41:a8:d9:3e:b0
+[    4.900406] fsl_enetc 0000:00:00.0: no MAC address specified for SI2, using 72:3e:1e:63:05:8a
+[    4.901232] fsl_enetc 0000:00:00.0 eth0: TSN capabilities: 0x2f
+[    4.949192] mmc0: new ultra high speed SDR104 SDXC card at address 0001
+[    4.949568] mmcblk0: mmc0:0001 SD16G 116 GiB
+[    4.957907]  mmcblk0: p1 p2 p3
+[    5.011772] fsl_enetc 0000:00:00.2: enabling device (0400 -> 0402)
+[    5.012622] fsl_enetc 0000:00:00.2 eth1: TSN capabilities: 0x2f
+[    5.025538] mmc1: new HS400 MMC card at address 0001
+[    5.025905] mmcblk1: mmc1:0001 Q2J55L 7.13 GiB
+[    5.031502] mmcblk1boot0: mmc1:0001 Q2J55L 2.00 MiB
+[    5.032400] mmcblk1boot1: mmc1:0001 Q2J55L 2.00 MiB
+[    5.033134] mmcblk1rpmb: mmc1:0001 Q2J55L 4.00 MiB, chardev (510:0)
+[    5.119760] fsl_enetc 0000:00:00.6: enabling device (0400 -> 0402)
+[    5.120048] fsl_enetc 0000:00:00.6: no MAC address specified for SI0, using da:80:f0:db:23:05
+[    5.120676] fsl_enetc 0000:00:00.6 eth2: TSN capabilities: 0x2a
+[    5.462916] mscc_felix 0000:00:00.5: Found PCS at internal MDIO address 0
+[    5.462941] mscc_felix 0000:00:00.5: Found PCS at internal MDIO address 1
+[    5.462955] mscc_felix 0000:00:00.5: Found PCS at internal MDIO address 2
+[    5.462963] mscc_felix 0000:00:00.5: Found PCS at internal MDIO address 3
+[    5.487619] mscc_felix 0000:00:00.5: configuring for fixed/internal link mode
+[    5.487687] mscc_felix 0000:00:00.5: Link is Up - 2.5Gbps/Full - flow control rx/tx
+[    5.497695] mscc_felix 0000:00:00.5: configuring for fixed/internal link mode
+[    5.497786] mscc_felix 0000:00:00.5: Link is Up - 1Gbps/Full - flow control rx/tx
+[    6.201900] mscc_felix 0000:00:00.5 swp0 (uninitialized): PHY [0000:00:00.3:10] driver [Microsemi GE VSC8514 SyncE] (irq=POLL)
+[    6.325848] mscc_felix 0000:00:00.5 swp1 (uninitialized): PHY [0000:00:00.3:11] driver [Microsemi GE VSC8514 SyncE] (irq=POLL)
+[    6.449847] mscc_felix 0000:00:00.5 swp2 (uninitialized): PHY [0000:00:00.3:12] driver [Microsemi GE VSC8514 SyncE] (irq=POLL)
+[    6.573842] mscc_felix 0000:00:00.5 swp3 (uninitialized): PHY [0000:00:00.3:13] driver [Microsemi GE VSC8514 SyncE] (irq=POLL)
+[   6.574385] fsl_enetc 0000:00:00.2 eth1: entered promiscuous mode
+[    6.574465] fsl_enetc 0000:00:00.6 eth2: entered promiscuous mode
+[    6.574482] DSA: tree 0 setup
+[    6.574981] clk: Disabling unused clocks
+[    6.575015] ALSA device list:
+[    6.575020]   No soundcards found.
+[    6.617953] EXT4-fs (mmcblk0p3): recovery complete
+[    6.618045] EXT4-fs (mmcblk0p3): mounted filesystem e3c234b9-be32-4b85-8444-b9af2d3e4ff4 r/w with ordered data mode. Quota mode: none.
+[    6.618079] VFS: Mounted root (ext4 filesystem) on device 179:3.
+[    6.641040] devtmpfs: mounted
+[    6.644648] Freeing unused kernel memory: 9728K
+[    6.644737] Run /sbin/init as init process
+[    6.662833] Starting init: /sbin/init exists but couldn't execute it (error -8)
+[    6.662844] Run /etc/init as init process
+[    6.674708] Run /bin/init as init process
+[    6
+[    6.681452] Run /bin/sh as init process
+[    6.681461]   with arguments:
+[    6.681464]     /bin/sh
+[    6.681466]   with environment:
+[    6.681468]     HOME=/
+[    6.681469]     TERM=linux
+[    6.681733] Starting init: /bin/sh exists but couldn't execute it (error -8)
+[    6.681738] Kernel panic - not syncing: No working init found.  Try passing init= option to kernel. See Linux Documentation/admin-guide/init.rst for guidance.
+[    6.720915] CPU: 1 PID: 1 Comm: swapper/0 Not tainted 6.6.52-rt43-ga4d83240b30f #2
+[    6.728511] Hardware name: LS1028A RDB Board (DT)
+[    6.733227] Call trace:
+[    6.735675]  dump_backtrace+0x94/0xec
+[    6.739356]  show_stack+0x18/0x24
+[    6.742680]  dump_stack_lvl+0x48/0x60
+[    6.746355]  dump_stack+0x18/0x24
+[    6.749678]  panic+0x32c/0x38c
+[    6.752741]  kernel_init+0x19c/0x1e0
+[    6.756325]  ret_from_fork+0x10/0x20
+[    6.759910] SMP: stopping secondary CPUs
+[    7.816337] SMP: failed to stop secondary CPUs 0-1
+[    7.821142] Kernel Offset: 0x3e0534000000 from 0xffff800080000000
+[    7.827253] PHYS_OFFSET: 0xfffff95480000000
+[    7.831444] CPU features: 0x0,80000201,2c020000,1000421b
+[    7.836771] Memory Limit: none
+[    7.839831] ---[ end Kernel panic - not syncing: No working init found.  Try passing init= option to kernel. See Linux Documentation/admin-guide/init.rst for guidance. ]---

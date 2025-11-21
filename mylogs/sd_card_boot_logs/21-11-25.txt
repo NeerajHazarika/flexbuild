@@ -1,0 +1,411 @@
+dummy regulator
+[    4.452833] ahci-qoriq 3200000.sata: supply target not found, using dummy regulator
+[    4.452945] ahci-qoriq 3200000.sata: AHCI 0001.0301 32 slots 1 ports 6 Gbps 0x1 impl platform mode
+[    4.452952] ahci-qoriq 3200000.sata: flags: 64bit ncq sntf pm clo only pmp fbs pio slum part ccc sds apst 
+[    4.454401] scsi host0: ahci-qoriq
+[    4.454516] ata1: SATA max UDMA/133 mmio [mem 0x03200000-0x0320ffff] port 0x100 irq 91
+[    4.490427] spi-nor spi0.0: mt35xu02g (262144 Kbytes)
+[    4.491625] MACsec IEEE 802.1AE
+[    4.493572] tun: Universal TUN/TAP device driver, 1.6
+[    4.493804] mscc_felix 0000:00:00.5: Adding to iommu group 1
+[    4.498227] thunder_xcv, ver 1.0
+[    4.498247] thunder_bgx, ver 1.0
+[    4.498262] nicpf, ver 1.0
+[    4.498461] Freescale FM module, FMD API version 21.1.0
+[    4.498536] Freescale FM Ports module
+[    4.498539] fsl_mac: fsl_mac: FSL FMan MAC API based driver
+[    4.498595] fsl_dpa: FSL DPAA Ethernet driver
+[    4.498643] fsl_advanced: FSL DPAA Advanced drivers:
+[    4.498645] fsl_proxy: FSL DPAA Proxy initialization driver
+[    4.498692] fsl_oh: FSL FMan Offline Parsing port driver
+[    4.498886] fsl_enetc 0000:00:00.0: Adding to iommu group 2
+[    4.499022] fsl_enetc 0000:00:00.2: Adding to iommu group 3
+[    4.499126] fsl_enetc 0000:00:00.6: Adding to iommu group 4
+[    4.499382] fsl_enetc_mdio 0000:00:00.3: Adding to iommu group 5
+[    4.603853] fsl_enetc_mdio 0000:00:00.3: enabling device (0400 -> 0402)
+[    4.607423] fsl_enetc_mdio 0000:00:00.3: Enabled ERR050089 workaround
+[    4.618742] fsl_enetc_ptp 0000:00:00.4: Adding to iommu group 6
+[    4.618762] fsl_enetc_ptp 0000:00:00.4: enabling device (0404 -> 0406)
+[    4.618875] ptp_qoriq: device tree node missing required elements, try automatic configuration
+[    4.618975] pps pps0: new PPS source ptp0
+[    4.619388] hns3: Hisilicon Ethernet Network Driver for Hip08 Family - version
+[    4.619392] hns3: Copyright (c) 2017 Huawei Corporation.
+[    4.619416] hclge is initializing
+[    4.619432] e1000: Intel(R) PRO/1000 Network Driver
+[    4.619434] e1000: Copyright (c) 1999-2006 Intel Corporation.
+[    4.619455] e1000e: Intel(R) PRO/1000 Network Driver
+[    4.619457] e1000e: Copyright(c) 1999 - 2015 Intel Corporation.
+[    4.619479] igb: Intel(R) Gigabit Ethernet Network Driver
+[    4.619481] igb: Copyright (c) 2007-2014 Intel Corporation.
+[    4.619497] igbvf: Intel(R) Gigabit Virtual Function Network Driver
+[    4.619499] igbvf: Copyright (c) 2009 - 2012 Intel Corporation.
+[    4.619671] sky2: driver version 1.30
+[    4.620246] usbcore: registered new device driver r8152-cfgselector
+[    4.620261] usbcore: registered new interface driver r8152
+[    4.620275] usbcore: registered new interface driver asix
+[    4.620288] usbcore: registered new interface driver ax88179_178a
+[    4.620646] VFIO - User Level meta-driver version: 0.3
+[    4.620949] dwc3 3100000.usb: Adding to iommu group 7
+[    4.621567] dwc3 3110000.usb: Adding to iommu group 8
+[    4.623214] xhci-hcd xhci-hcd.0.auto: xHCI Host Controller
+[    4.623227] xhci-hcd xhci-hcd.0.auto: new USB bus registered, assigned bus number 1
+[    4.623303] xhci-hcd xhci-hcd.0.auto: hcc params 0x0220f66d hci version 0x100 quirks 0x0000008002000010
+[    4.623324] xhci-hcd xhci-hcd.0.auto: irq 95, io mem 0x03100000
+[    4.623408] xhci-hcd xhci-hcd.0.auto: xHCI Host Controller
+[    4.623414] xhci-hcd xhci-hcd.0.auto: new USB bus registered, assigned bus number 2
+[    4.623420] xhci-hcd xhci-hcd.0.auto: Host supports USB 3.0 SuperSpeed
+[    4.624113] hub 1-0:1.0: USB hub found
+[    4.624127] hub 1-0:1.0: 1 port detected
+[    4.624291] usb usb2: We don't know the algorithms for LPM for this host, disabling LPM.
+[    4.624521] hub 2-0:1.0: USB hub found
+[    4.624535] hub 2-0:1.0: 1 port detected
+[    4.625076] usbcore: registered new interface driver uas
+[    4.625103] usbcore: registered new interface driver usb-storage
+[    4.638005] i2c_dev: i2c /dev entries driver
+[    4.639104] pca954x 0-0077: supply vdd not found, using dummy regulator
+[    4.673159] i2c i2c-0: Added multiplexed i2c bus 1
+[    4.673388] i2c i2c-0: Added multiplexed i2c bus 2
+[    4.673566] i2c i2c-0: Added multiplexed i2c bus 3
+[    4.673829] i2c i2c-0: Added multiplexed i2c bus 4
+[    4.673931] i2c i2c-0: Added multiplexed i2c bus 5
+[    4.674046] i2c i2c-0: Added multiplexed i2c bus 6
+[    4.674145] i2c i2c-0: Added multiplexed i2c bus 7
+[    4.674243] i2c i2c-0: Added multiplexed i2c bus 8
+[    4.674249] pca954x 0-0077: registered 8 multiplexed busses for I2C mux pca9847
+[    4.676788] sp805-wdt c000000.watchdog: registration successful
+[    4.676917] sp805-wdt c010000.watchdog: registration successful
+[    4.688875] qoriq-cpufreq qoriq-cpufreq: Freescale QorIQ CPU frequency scaling driver
+[    4.689680] sdhci: Secure Digital Host Controller Interface driver
+[    4.689685] sdhci: Copyright(c) Pierre Ossman
+[    4.690078] Synopsys Designware Multimedia Card Interface Driver
+[    4.690595] sdhci-pltfm: SDHCI platform and OF driver helper
+[    4.691832] sdhci-esdhc 2150000.mmc: Adding to iommu group 9
+[    4.692056] sdhci-esdhc 2140000.mmc: Adding to iommu group 10
+[    4.695247] ledtrig-cpu: registered to indicate activity on CPUs
+[    4.707977] SMCCC: SOC_ID: ARCH_SOC_ID not implemented, skipping ....
+[    4.714727] usbcore: registered new interface driver usbhid
+[    4.714730] usbhid: USB HID core driver
+[    4.715012] No fsl,qman node
+[    4.715016] Freescale USDPAA process driver
+[    4.715017] fsl-usdpaa: no region found
+[    4.715019] Freescale USDPAA process IRQ driver
+[    4.719882] mmc1: SDHCI controller on 2150000.mmc [2150000.mmc] using ADMA
+[    4.720384] hw perfevents: enabled with armv8_cortex_a72 PMU driver, 7 counters available
+[    4.726866] mmc0: SDHCI controller on 2140000.mmc [2140000.mmc] using ADMA
+[    4.727593]  cs_system_cfg: CoreSight Configuration manager initialised
+[    4.728584] optee: probing for conduit method.
+[    4.728590] optee: api uid mismatch
+[    4.728592] optee: probe of firmware:optee failed with error -22
+[    4.729588] Galcore version 6.4.11.p2.745085
+[    4.759629] [drm] Initialized vivante 1.0.0 20170808 for f0c0000.gpu on minor 0
+[    4.761035] NET: Registered PF_LLC protocol family
+[    4.761060] u32 classifier
+[    4.761061]     input device check on
+[    4.761063]     Actions configured
+[    4.761722] Initializing XFRM netlink socket
+[    4.761758] NET: Registered PF_INET6 protocol family
+[    4.762143] Segment Routing with IPv6
+[    4.762162] In-situ OAM (IOAM) with IPv6
+[    4.762208] sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+[    4.762481] NET: Registered PF_PACKET protocol family
+[    4.762488] NET: Registered PF_KEY protocol family
+[    4.762509] Bridge firewalling registered
+[    4.762696] 8021q: 802.1Q VLAN Support v1.8
+[    4.762707] lib80211: common routines for IEEE802.11 drivers
+[    4.762736] 9pnet: Installing 9P2000 support
+[    4.762812] Key type dns_resolver registered
+[    4.769996] ata1: SATA link down (SStatus 0 SControl 300)
+[    4.773233] registered taskstats version 1
+[    4.773294] Loading compiled-in X.509 certificates
+[    4.778642] Btrfs loaded, zoned=no, fsverity=no
+[    4.781804] fsl-edma 22c0000.dma-controller: Adding to iommu group 11
+[    4.782807] pcieport 0001:00:00.0: Adding to iommu group 12
+[    4.782935] pcieport 0001:00:00.0: PME: Signaling with IRQ 103
+[    4.783164] pcieport 0001:00:00.0: AER: enabled with IRQ 102
+[    4.783316] pcieport 0002:00:00.0: Adding to iommu group 13
+[    4.783448] pcieport 0002:00:00.0: PME: Signaling with IRQ 105
+[    4.783585] pcieport 0002:00:00.0: AER: enabled with IRQ 104
+[    4.895859] fsl_enetc 0000:00:00.0: enabling device (0400 -> 0402)
+[    4.896497] fsl_enetc 0000:00:00.0: no MAC address specified for SI1, using 72:bd:cf:ae:3d:6b
+[    4.896506] fsl_enetc 0000:00:00.0: no MAC address specified for SI2, using ae:96:68:f9:c1:18
+[    4.897342] fsl_enetc 0000:00:00.0 eth0: TSN capabilities: 0x2f
+[    4.958937] mmc0: new ultra high speed SDR104 SDXC card at address 0001
+[    4.959312] mmcblk0: mmc0:0001 SD16G 116 GiB
+[    4.967653]  mmcblk0: p1 p2 p3
+[    5.011860] fsl_enetc 0000:00:00.2: enabling device (0400 -> 0402)
+[    5.012714] fsl_enetc 0000:00:00.2 eth1: TSN capabilities: 0x2f
+[    5.019990] mmc1: new HS400 MMC card at address 0001
+[    5.020369] mmcblk1: mmc1:0001 Q2J55L 7.13 GiB
+[    5.025953] mmcblk1boot0: mmc1:0001 Q2J55L 2.00 MiB
+[    5.026831] mmcblk1boot1: mmc1:0001 Q2J55L 2.00 MiB
+[    5.027559] mmcblk1rpmb: mmc1:0001 Q2J55L 4.00 MiB, chardev (510:0)
+[    5.119859] fsl_enetc 0000:00:00.6: enabling device (0400 -> 0402)
+[    5.120147] fsl_enetc 0000:00:00.6: no MAC address specified for SI0, using b2:98:c2:78:de:86
+[    5.120778] fsl_enetc 0000:00:00.6 eth2: TSN capabilities: 0x2a
+[    5.464415] mscc_felix 0000:00:00.5: Found PCS at internal MDIO address 0
+[    5.464439] mscc_felix 0000:00:00.5: Found PCS at internal MDIO address 1
+[    5.464453] mscc_felix 0000:00:00.5: Found PCS at internal MDIO address 2
+[    5.464461] mscc_felix 0000:00:00.5: Found PCS at internal MDIO address 3
+[    5.487895] mscc_felix 0000:00:00.5: configuring for fixed/internal link mode
+[    5.487965] mscc_felix 0000:00:00.5: Link is Up - 2.5Gbps/Full - flow control rx/tx
+[    5.497968] mscc_felix 0000:00:00.5: configuring for fixed/internal link mode
+[    5.498058] mscc_felix 0000:00:00.5: Link is Up - 1Gbps/Full - flow control rx/tx
+[    6.205992] mscc_felix 0000:00:00.5 swp0 (uninitialized): PHY [0000:00:00.3:10] driver [Microsemi GE VSC8514 SyncE] (irq=POLL)
+[    6.329965] mscc_felix 0000:00:00.5 swp1 (uninitialized): PHY [0000:00:00.3:11] driver [Microsemi GE VSC8514 SyncE] (irq=POLL)
+[    6.453960] mscc_felix 0000:00:00.5 swp2 (uninitialized): PHY [0000:00:00.3:12] driver [Microsemi GE VSC8514 SyncE] (irq=POLL)
+[    6.578048] mscc_felix 0000:00:00.5 swp3 (uninitialized): PHY [0000:00:00.3:13] driver [Microsemi GE VSC8514 SyncE] (irq=POLL)
+[   6.578601] fsl_enetc 0000:00:00.2 eth1: entered promiscuous mode
+[    6.578681] fsl_enetc 0000:00:00.6 eth2: entered promiscuous mode
+[    6.578698] DSA: tree 0 setup
+[    6.579196] clk: Disabling unused clocks
+[    6.579229] ALSA device list:
+[    6.579234]   No soundcards found.
+[    6.622145] EXT4-fs (mmcblk0p3): recovery complete
+[    6.622237] EXT4-fs (mmcblk0p3): mounted filesystem e3c234b9-be32-4b85-8444-b9af2d3e4ff4 r/w with ordered data mode. Quota mode: none.
+[    6.622272] VFS: Mounted root (ext4 filesystem) on device 179:3.
+[    6.645231] devtmpfs: mounted
+[    6.648832] Freeing unused kernel memory: 9728K
+[    6.648921] Run /sbin/init as init process
+[    6.968328] systemd[1]: System time before build time, advancing clock.
+[    7.028622] systemd[1]: systemd 252.39-1~deb12u1 running in system mode (+PAM +AUDIT +SELINUX +APPARMOR +IMA +SMACK +SECCOMP +GCRYPT -GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP +LIBFDISK +PCRE2 -PWQUALITY +P11KIT +QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD -BPF_FRAMEWORK -XKBCOMMON +UTMP +SYSVINIT default-hierarchy=unified)
+[    7.028787] systemd[1]: Detected architecture arm64.
+
+Welcome to Debian GNU/Linux 12 (bookworm)!
+
+[    7.082502] systemd[1]: Hostname set to <localhost>.
+[    7.091753] systemd[1]: Initializing machine ID from random generator.
+[    7.154259] systemd[1]: memfd_create() called without MFD_EXEC or MFD_NOEXEC_SEAL set
+[    7.584499] systemd[1]: Queued start job for default target graphical.target.
+[    7.619338] systemd[1]: Created slice system-getty.slice - Slice /system/getty.
+[  OK  ] Created slice system-getty.slice - Slice /system/getty.
+[    7.645392] systemd[1]: Created slice system-modprobe.slice - Slice /system/modprobe.
+[  OK  ] Created slice system-modpr…lice - Slice /system/modprobe.
+[    7.673674] systemd[1]: Created slice system-serial\x2dgetty.slice - Slice /system/serial-getty.
+[  OK  ] Created slice system-seria… - Slice /system/serial-getty.
+[    7.701343] systemd[1]: Created slice user.slice - User and Session Slice.
+[  OK  ] Created slice user.slice - User and Session Slice.
+[    7.724544] systemd[1]: Started systemd-ask-password-console.path - Dispatch Password Requests to Console Directory Watch.
+[  OK  ] Started systemd-ask-passwo…quests to Console Directory Watch.
+[    7.752548] systemd[1]: Started systemd-ask-password-wall.path - Forward Password Requests to Wall Directory Watch.
+[  OK  ] Started systemd-ask-passwo… Requests to Wall Directory Watch.
+[    7.780496] systemd[1]: proc-sys-fs-binfmt_misc.automount - Arbitrary Executable File Formats File System Automount Point was skipped because of an unmet condition check (ConditionPathExists=/proc/sys/fs/binfmt_misc).
+[    7.780759] systemd[1]: Expecting device dev-ttyS0.device - /dev/ttyS0...
+         Expecting device dev-ttyS0.device - /dev/ttyS0...
+[    7.824186] systemd[1]: Reached target cryptsetup.target - Local Encrypted Volumes.
+[  OK  ] Reached target cryptsetup.…get - Local Encrypted Volumes.
+[    7.848272] systemd[1]: Reached target integritysetup.target - Local Integrity Protected Volumes.
+[  OK  ] Reached target integrityse…Local Integrity Protected Volumes.
+[    7.876300] systemd[1]: Reached target paths.target - Path Units.
+[  OK  ] Reached target paths.target - Path Units.
+[    7.900228] systemd[1]: Reached target remote-fs.target - Remote File Systems.
+[  OK  ] Reached target remote-fs.target - Remote File Systems.
+[    7.924168] systemd[1]: Reached target slices.target - Slice Units.
+[  OK  ] Reached target slices.target - Slice Units.
+[    7.948278] systemd[1]: Reached target swap.target - Swaps.
+[  OK  ] Reached target swap.target - Swaps.
+[    7.968324] systemd[1]: Reached target veritysetup.target - Local Verity Protected Volumes.
+[  OK  ] Reached target veritysetup… - Local Verity Protected Volumes.
+[    7.993170] systemd[1]: Listening on systemd-fsckd.socket - fsck to fsckd communication Socket.
+[  OK  ] Listening on systemd-fsckd…sck to fsckd communication Socket.
+[    8.020685] systemd[1]: Listening on systemd-initctl.socket - initctl Compatibility Named Pipe.
+[  OK  ] Listening on systemd-initc… initctl Compatibility Named Pipe.
+[    8.049434] systemd[1]: Listening on systemd-journald-audit.socket - Journal Audit Socket.
+[  OK  ] Listening on systemd-journ…socket - Journal Audit Socket.
+[    8.081097] systemd[1]: Listening on systemd-journald-dev-log.socket - Journal Socket (/dev/log).
+[  OK  ] Listening on systemd-journ…t - Journal Socket (/dev/log).
+[    8.109445] systemd[1]: Listening on systemd-journald.socket - Journal Socket.
+[  OK  ] Listening on systemd-journald.socket - Journal Socket.
+[    8.138706] systemd[1]: Listening on systemd-udevd-control.socket - udev Control Socket.
+[  OK  ] Listening on systemd-udevd….socket - udev Control Socket.
+[    8.165139] systemd[1]: Listening on systemd-udevd-kernel.socket - udev Kernel Socket.
+[  OK  ] Listening on systemd-udevd…l.socket - udev Kernel Socket.
+         Mountin[    8.216095] systemd[1]: Mounting dev-hugepages.mount - Huge Pages File System...
+g dev-hugepages.mount - Huge Pages File System...
+         Mountin[    8.244640] systemd[1]: Mounting dev-mqueue.mount - POSIX Message Queue File System...
+g dev-mqueue.mountPOSIX Message Queue File System...
+         Mountin[    8.292094] systemd[1]: Mounting sys-kernel-debug.mount - Kernel Debug File System...
+g sys-kernel-debug.… - Kernel Debug File System...
+[    8.316820] systemd[1]: sys-kernel-tracing.mount - Kernel Trace File System was skipped because of an unmet condition check (ConditionPathExists=/sys/kernel/tracing).
+[    8.317303] systemd[1]: kmod-static-nodes.service - Create List of Static Device Nodes was skipped because of an unmet condition check (ConditionFileNotEmpty=/lib/modules/6.6.52-rt43-gfa9d239dbfb9/modules.devname).
+[    8.323056] systemd[1]: Starting modprobe@configfs.service - Load Kernel Module configfs...
+         Starting modprobe@configfs…m - Load Kernel Module configfs...
+         Startin[    8.400256] systemd[1]: Starting modprobe@dm_mod.service - Load Kernel Module dm_mod...
+g modprobe@dm_mod.s…[0m - Load Kernel Module dm_mod...
+         Startin[    8.428860] systemd[1]: Starting modprobe@drm.service - Load Kernel Module drm...
+g modprobe@drm.service - Load Kernel Module drm...
+         Startin[    8.456844] systemd[1]: Starting modprobe@efi_pstore.service - Load Kernel Module efi_pstore...
+g modprobe@efi_psto…- Load Kernel Module efi_pstore...
+[    8.508339] systemd[1]: Starting modprobe@fuse.service - Load Kernel Module fuse...
+         Starting modprobe@fuse.ser…e - Load Kernel Module fuse...
+[    8.534874] systemd[1]: Starting modprobe@loop.service - Load Kernel Module loop...
+         Starting modprobe@loop.ser…e - Load Kernel Module loop...
+[    8.560394] systemd[1]: systemd-fsck-root.service - File System Check on Root Device was skipped because of an unmet condition check (ConditionPathIsReadWrite=!/).
+[    8.578132] systemd[1]: Starting systemd-journald.service - Journal Service...
+         Starting systemd-journald.service - Journal Service...
+[    8.620256] systemd[1]: Starting systemd-remount-fs.service - Remount Root and Kernel File Systems...
+         Starting systemd-remount-f…nt Root and Kernel File Systems...
+[    8.650462] systemd[1]: Starting systemd-udev-trigger.service - Coldplug All udev Devices...
+         Starting systemd-udev-trig…[0m - Coldplug All udev Devices...
+[    8.671929] systemd[1]: Mounted dev-hugepages.mount - Huge Pages File System.
+[  OK  ] Mounted dev-hugepages.mount - Huge Pages File S[    8.685531] EXT4-fs (mmcblk0p3): re-mounted e3c234b9-be32-4b85-8444-b9af2d3e4ff4 r/w. Quota mode: none.
+ystem.
+[    8.709583] systemd[1]: Mounted dev-mqueue.mount - POSIX Message Queue File System.
+[  OK  ] Mounted dev-mqueue.mount- POSIX Message Queue File System.
+[  OK      8.736245] systemd[1]: Started systemd-journald.service - Journal Service.
+0m] Started systemd-journald.service - Journal Service.
+[  OK  ] Mounted sys-kernel-debug.m…nt - Kernel Debug File System.
+[  OK  ] Finished modprobe@configfs…[0m - Load Kernel Module configfs.
+[  OK  ] Finished modprobe@dm_mod.s…e - Load Kernel Module dm_mod.
+[  OK  ] Finished modprobe@drm.service - Load Kernel Module drm.
+[  OK  ] Finished modprobe@efi_psto…m - Load Kernel Module efi_pstore.
+[  OK  ] Finished modprobe@fuse.service - Load Kernel Module fuse.
+[  OK  ] Finished modprobe@loop.service - Load Kernel Module loop.
+[  OK  ] Finished systemd-remount-f…ount Root and Kernel File Systems.
+         Mounting sys-fs-fuse-conne… - FUSE Control File System...
+         Mounting sys-kernel-config…ernel Configuration File System...
+         Starting systemd-journal-f…h Journal to Persistent Storage...
+[    9.007698] systemd-journald[127]: Received client request to flush runtime journal.
+         Starting systemd-random-se…ice - Load/Save Random Seed...
+         Starting systemd-sysusers.…rvice - Create System Users...
+[  OK  ] Mounted sys-fs-fuse-connec…nt - FUSE Control File System.
+[  OK  ] Mounted sys-kernel-config.… Kernel Configuration File System.
+[  OK  ] Finished systemd-journal-f…ush Journal to Persistent Storage.
+[  OK  ] Finished systemd-sysusers.service - Create System Users.
+         Starting systemd-tmpfiles-…ate Static Device Nodes in /dev...
+[  OK  ] Finished systemd-udev-trig…e - Coldplug All udev Devices.
+         Starting ifupdown-pre.serv…ynchronize boot up for ifupdown...
+[  OK  ] Finished systemd-tmpfiles-…reate Static Device Nodes in /dev.
+[  OK  ] Finished ifupdown-pre.serv… synchronize boot up for ifupdown.
+[  OK  ] Reached target local-fs-pr…reparation for Local File Systems.
+         Mounting boot.mount - Boot Partition...
+         Starting systemd-udevd.ser…ger for Device Events and Files...
+[  OK  ] Started systemd-udevd.serv…nager for Device Events and Files.
+[    9.570839] EXT4-fs (mmcblk0p1): recovery complete
+[    9.570929] EXT4-fs (mmcblk0p1): mounted filesystem 94df99cf-b5f8-4bfc-a930-416adf20b557 r/w with ordered data mode. Quota mode: none.
+[  OK  ] Mounted boot.mount - Boot Partition.
+[  OK  ] Reached target local-fs.target - Local File Systems.
+         Starting systemd-modules-l…rvice - Load Kernel Modules...
+         Starting systemd-tmpfiles-…te System Files and Directories...
+[  OK  ] Finished systemd-modules-l…service - Load Kernel Modules.
+[  OK  ] Finished systemd-tmpfiles-…eate System Files and Directories.
+         Starting systemd-sysctl.se…ce - Apply Kernel Variables...
+         Starting systemd-timesyncd… - Network Time Synchronization...
+         Starting systemd-update-ut…rd System Boot/Shutdown in UTMP...
+[  OK  ] Finished systemd-sysctl.service - Apply Kernel Variables.
+[  OK  ] Finished systemd-update-ut…cord System Boot/Shutdown in UTMP.
+         Starting networking.service - Raise network interfaces...
+[  OK  ] Found device dev-ttyS0.device - /dev/ttyS0.
+[  OK  ] Started systemd-timesyncd.…0m - Network Time Synchronization.
+[  OK  ] Reached target sysinit.target - System Initialization.
+[  OK  ] Started systemd-tmp[   10.303494] fsl_enetc 0000:00:00.2 eno2: renamed from eth1
+files-c… Cleanup of Temporary Directories.
+[  OK  ] Reached target time-set.target - System Time Set.
+[  OK  ] Started apt-daily.timer - Daily apt download activities.
+[  OK  ] Started apt-daily-upgrade.… apt upgrade and clean activities.
+[  OK  ] Started dpkg-db-backup.tim… Daily[   10.377175] fsl_enetc 0000:00:00.0 eno0: renamed from eth0
+ dpkg database backup timer.
+[  OK  ] Started e2scrub_all.timeretadata Check for All Filesystems.
+[   10.406577] fsl_enetc 0000:00:00.6 eno3: renamed from eth2
+[  OK  ] Started fstrim.timer - Discard unused blocks once a week.
+[  OK  ] Started logrotate.timer - Daily rotation of log files.
+[  OK  ] Started man-db.timer - Daily man-db regeneration.
+[  OK  ] Started sysstat-collect.ti… accounting tool every 10 minutes.
+[  OK  ] Started sysstat-summary.ti…of yesterday's process accounting.
+[  OK  ] Reached target timers.target - Timer Units.
+[  OK  ] Listening on dbus.socket- D-Bus System Message Bus Socket.
+[  OK  ] Reached target sockets.target - Socket Units.
+[  OK  ] Reached target basic.target - Basic System.
+[  OK  ] Started cron.service -…kground program processing daemon.
+         Starting dbus.service - D-Bus System Message Bus...
+         Starting e2scrub_reap.serv…e ext4 Metadata Check Snapshots...
+         Starting kexec-load.servic…B: Load kernel image with kexec...
+         Starting lm-sensors.servic…ize hardware monitoring sensors...
+         Starting platcfg.servicer various NXP i.MX/LS platforms...
+[   10.743872] random: crng init done
+[  OK  ] Started seatd.service - Seat management daemon.
+[  OK  ] Started strongswan-starter…Ev1/IKEv2 daemon using ipsec.conf.
+         Starting sysstat.service - Resets System Activity Logs...
+         Starting systemd-logind.se…ice - User Login Management...
+[  OK  ] Started dbus.service - D-Bus System Message Bus.
+[  OK  ] Finished systemd-random-se…rvice - Load/Save Random Seed.
+[  OK  ] Finished sysstat.service - Resets System Activity Logs.
+[  OK  ] Finished e2scrub_reap.serv…ine ext4 Metadata Check Snapshots.
+[  OK  ] Finished lm-sensors.servic…alize hardware monitoring sensors.
+[  OK  ] Started kexec-load.service…LSB: Load kernel image with kexec.
+[  OK  ] Finished networking.service - Raise network interfaces.
+[  OK  ] Started systemd-logind.service - User Login Management.
+         Starting systemd-hostnamed.service - Hostname Service...
+         Starting wpa_supplicant.service - WPA supplicant...
+[   11.420265] CAN device driver interface
+[  OK  ] Started wpa_supplicant.service - WPA supplicant.
+[  OK  ] Reached target network.target - Network.
+         Starting mosquitto.service - Mosquitto MQTT Broker...
+         Starting ssh.service - OpenBSD Secure Shell server...
+[   11.548706] EDAC MC0: Giving out device to module fsl_ddr_edac controller fsl_mc_err: DEV fsl_mc_err (INTERRUPT)
+         Startin[   11.562850] fsl_ddr_edac acquired irq 117 for MC
+g syste[   11.562859] fsl_ddr_edac MC err registered
+md-user-sess…vice - Permit User Sessions...
+[  OK  ] Finished systemd-user-sess…ervice - Permit User Sessions.
+[  OK  ] Started systemd-hostnamed.service - Hostname Service.
+[  OK  ] Started getty@tty1.service - Getty on tty1.
+[  OK  ] Started serial-getty@ttyS0…rvice - Serial Getty on ttyS0.
+[  OK  ] Reached target getty.target - Login Prompts.
+[   11.800835] ina2xx 3-0040: supply vs not found, using dummy regulator
+[   11.826721] ina2xx 3-0040: power monitor ina220 (Rshunt = 500 uOhm)
+[   11.854333] ftm-alarm 2810000.timer: registered as rtc1
+[   11.882960] sgtl5000 2-000a: sgtl5000 revision 0x11
+[  OK  ] Reached target usb-gadget.…m - Hardware activated USB gadget.
+[   11.935052] caam 8000000.crypto: device ID = 0x0a12070000000000 (Era 10)
+[   11.935078] caam 8000000.crypto: job rings = 3, qi = 0
+[   11.959948] sgtl5000 2-000a: Using internal LDO instead of VDDD: check ER1 erratum
+[  OK  ] Started ssh.service[   11.972809] mali-dp f080000.display: Adding to iommu group 14
+ - OpenBSD Secure Shell server.
+[   11.983820] hwmon hwmon3: temp1_input not attached to any thermal zone
+[   11.983899] hwmon hwmon3: temp2_input not attached to any thermal zone
+[  OK  ] Started mosquitto.service - Mosquitto MQTT Broker.
+[   12.053292] fsl-qdma 8380000.dma-controller: Adding to iommu group 15
+[   12.073131] rtc-pcf2127-i2c 4-0051: registered as rtc0
+[   12.099745] rtc-pcf2127-i2c 4-0051: setting system clock to 2025-11-21T13:40:28 UTC (1763732428)
+         Starting dpkg-db-backup.se…ly dpkg database backup service...
+         Starting sysstat-collect.s…system activity accounting tool...
+         Starting sysstat-summary.s…y summary of process accounting...
+[   12.255765] [drm] found ARM Mali-DP500 version r1p2
+[   12.261977] cdns-mhdp-imx f200000.display: error -ENXIO: IRQ plug_in not found
+[   12.270272] cdns-mhdp-imx f200000.display: No plug_in irq number
+[   12.276935] cdns-mhdp-imx f200000.display: error -ENXIO: IRQ plug_out not found
+         Starting logrotate.service - Rotate log files...
+[   12.286850] cdns-mhdp-imx f200000.display: No plug_out irq number
+[   12.286880] cdns-mhdp-imx f200000.display: lane-mapping 0x4e
+[   12.286889] cdns-mhdp-imx f200000.display: Failed to get i2c-over-aux-retries - using default 5
+[   12.286895] cdns-mhdp-imx f200000.display: i2c-over-aux-retries 0x05
+[  OK  ] Finished sysstat-collect.s…- system activity accounting tool.
+[   12.351800] caam_jr 8010000.jr: Adding to iommu group 16
+[  OK  ] Finished    12.382205] caam algorithms registered in /proc/crypto
+;1;39msysstat-su[   12.382352] caam 8000000.crypto: caam pkc algorithms registered in /proc/crypto
+mmary.s…ily su[   12.382364] caam 8000000.crypto: rng crypto API alg registered prng-caam
+mmary of process[   12.382370] caam 8000000.crypto: registering rng-caam
+ accounting.
+[   12.408209] Device caam-keygen registered
+[   12.408522] caam_jr 8020000.jr: Adding to iommu group 17
+[   12.432260] caam_jr 8030000.jr: Adding to iommu group 18
+[  OK  ] Reached target sound.target - Sound Card.
+[  OK  ] Finished logrotate.service - Rotate log files.
+[  OK  ] Finished dpkg-db-backup.se…aily dpkg database backup service.
+[   12.802752] [drm] Started firmware!
+[   12.812905] [drm] set maximum defer retry to 5
+[   12.812921] [drm] HDP FW Version - ver 34767 verlib 20560
+[   12.823868] [drm] Failed to get HDCP config - using HDCP 2.2 only
+[   12.833094] cdns-mhdp-imx f200000.display: wrong link rate index
+[   12.834419] mali-dp f080000.display: bound f200000.display (ops cdns_mhdp_imx_ops [cdns_mhdp_imx])
+[   12.835226] [drm] Initialized mali-dp 1.0.0 20160106 for f080000.display on minor 1
+[   12.838168] mali-dp f080000.display: [drm] Cannot find any crtc or sizes
+[   12.839313] mali-dp f080000.display: [drm] Cannot find any crtc or sizes
+[  OK  ] Reached target multi-user.target - Multi-User System.
+[  OK  ] Reached target graphical.target - Graphical Interface.
+         Starting systemd-update-ut… Record Runlevel Change in UTMP...
+
+Debian GNU/Linux 12 ls1028ardb ttyS0
+
+NXP Linux SDK 2506 Debian Server (optimized with NXP-specific hardware acceleration)
+ls1028ardb login: [  OK  ] Finished platcfg.servicefor various NXP i.MX/LS platforms.
+[  OK  ] Finished systemd-update-ut… - Record Runlevel Change in UTMP.
