@@ -1,0 +1,638 @@
+ONESTEP_P2P -DHAVE_VCLOCKS -DHAVE_PTP_CAPS_ADJUST_PHASE -DHAVE_IF_TEAM     -c -o util.o util.c
+gcc -Wall -DVER=4.4-00039-gddeec0f-dirty -D_GNU_SOURCE -DHAVE_CLOCK_ADJTIME -DHAVE_POSIX_SPAWN -DHAVE_ONESTEP_SYNC -DHAVE_ONESTEP_P2P -DHAVE_VCLOCKS -DHAVE_PTP_CAPS_ADJUST_PHASE -DHAVE_IF_TEAM     -c -o version.o version.c
+gcc   ptp4l.o bmc.o clock.o clockadj.o clockcheck.o config.o designated_fsm.o e2e_tc.o fault.o filter.o mave.o mmedian.o fsm.o hash.o interface.o monitor.o msg.o phc.o pmc_common.o port.o port_signaling.o pqueue.o print.o p2p_tc.o rtnl.o sad.o linreg.o ntpshm.o nullf.o pi.o refclock_sock.o servo.o sk.o stats.o tc.o raw.o transport.o udp.o udp6.o uds.o telecom.o tlv.o tsproc.o unicast_client.o unicast_fsm.o unicast_service.o util.o version.o  -lm -lrt -pthread  -o ptp4l
+gcc -Wall -DVER=4.4-00039-gddeec0f-dirty -D_GNU_SOURCE -DHAVE_CLOCK_ADJTIME -DHAVE_POSIX_SPAWN -DHAVE_ONESTEP_SYNC -DHAVE_ONESTEP_P2P -DHAVE_VCLOCKS -DHAVE_PTP_CAPS_ADJUST_PHASE -DHAVE_IF_TEAM     -c -o hwstamp_ctl.o hwstamp_ctl.c
+gcc   hwstamp_ctl.o version.o  -lm -lrt -pthread  -o hwstamp_ctl
+gcc -Wall -DVER=4.4-00039-gddeec0f-dirty -D_GNU_SOURCE -DHAVE_CLOCK_ADJTIME -DHAVE_POSIX_SPAWN -DHAVE_ONESTEP_SYNC -DHAVE_ONESTEP_P2P -DHAVE_VCLOCKS -DHAVE_PTP_CAPS_ADJUST_PHASE -DHAVE_IF_TEAM     -c -o nsm.o nsm.c
+gcc   nsm.o config.o filter.o mave.o mmedian.o hash.o interface.o msg.o phc.o print.o rtnl.o sad.o sk.o raw.o transport.o udp.o udp6.o uds.o tlv.o tsproc.o util.o version.o  -lm -lrt -pthread  -o nsm
+gcc -Wall -DVER=4.4-00039-gddeec0f-dirty -D_GNU_SOURCE -DHAVE_CLOCK_ADJTIME -DHAVE_POSIX_SPAWN -DHAVE_ONESTEP_SYNC -DHAVE_ONESTEP_P2P -DHAVE_VCLOCKS -DHAVE_PTP_CAPS_ADJUST_PHASE -DHAVE_IF_TEAM     -c -o phc2sys.o phc2sys.c
+gcc -Wall -DVER=4.4-00039-gddeec0f-dirty -D_GNU_SOURCE -DHAVE_CLOCK_ADJTIME -DHAVE_POSIX_SPAWN -DHAVE_ONESTEP_SYNC -DHAVE_ONESTEP_P2P -DHAVE_VCLOCKS -DHAVE_PTP_CAPS_ADJUST_PHASE -DHAVE_IF_TEAM     -c -o pmc_agent.o pmc_agent.c
+gcc -Wall -DVER=4.4-00039-gddeec0f-dirty -D_GNU_SOURCE -DHAVE_CLOCK_ADJTIME -DHAVE_POSIX_SPAWN -DHAVE_ONESTEP_SYNC -DHAVE_ONESTEP_P2P -DHAVE_VCLOCKS -DHAVE_PTP_CAPS_ADJUST_PHASE -DHAVE_IF_TEAM     -c -o sysoff.o sysoff.c
+gcc   phc2sys.o clockadj.o clockcheck.o config.o hash.o interface.o msg.o phc.o pmc_agent.o pmc_common.o print.o sad.o linreg.o ntpshm.o nullf.o pi.o refclock_sock.o servo.o sk.o stats.o sysoff.o tlv.o raw.o transport.o udp.o udp6.o uds.o util.o version.o  -lm -lrt -pthread  -o phc2sys
+gcc -Wall -DVER=4.4-00039-gddeec0f-dirty -D_GNU_SOURCE -DHAVE_CLOCK_ADJTIME -DHAVE_POSIX_SPAWN -DHAVE_ONESTEP_SYNC -DHAVE_ONESTEP_P2P -DHAVE_VCLOCKS -DHAVE_PTP_CAPS_ADJUST_PHASE -DHAVE_IF_TEAM     -c -o phc_ctl.o phc_ctl.c
+gcc   phc_ctl.o phc.o sk.o util.o clockadj.o sysoff.o print.o version.o  -lm -lrt -pthread  -o phc_ctl
+gcc -Wall -DVER=4.4-00039-gddeec0f-dirty -D_GNU_SOURCE -DHAVE_CLOCK_ADJTIME -DHAVE_POSIX_SPAWN -DHAVE_ONESTEP_SYNC -DHAVE_ONESTEP_P2P -DHAVE_VCLOCKS -DHAVE_PTP_CAPS_ADJUST_PHASE -DHAVE_IF_TEAM     -c -o pmc.o pmc.c
+gcc   pmc.o config.o hash.o interface.o msg.o phc.o pmc_common.o print.o sad.o sk.o tlv.o raw.o transport.o udp.o udp6.o uds.o util.o version.o  -lm -lrt -pthread  -o pmc
+gcc -Wall -DVER=4.4-00039-gddeec0f-dirty -D_GNU_SOURCE -DHAVE_CLOCK_ADJTIME -DHAVE_POSIX_SPAWN -DHAVE_ONESTEP_SYNC -DHAVE_ONESTEP_P2P -DHAVE_VCLOCKS -DHAVE_PTP_CAPS_ADJUST_PHASE -DHAVE_IF_TEAM     -c -o timemaster.o timemaster.c
+gcc   timemaster.o phc.o print.o rtnl.o sk.o util.o version.o  -lm -lrt -pthread  -o timemaster
+gcc -Wall -DVER=4.4-00039-gddeec0f-dirty -D_GNU_SOURCE -DHAVE_CLOCK_ADJTIME -DHAVE_POSIX_SPAWN -DHAVE_ONESTEP_SYNC -DHAVE_ONESTEP_P2P -DHAVE_VCLOCKS -DHAVE_PTP_CAPS_ADJUST_PHASE -DHAVE_IF_TEAM     -c -o ts2phc.o ts2phc.c
+gcc -Wall -DVER=4.4-00039-gddeec0f-dirty -D_GNU_SOURCE -DHAVE_CLOCK_ADJTIME -DHAVE_POSIX_SPAWN -DHAVE_ONESTEP_SYNC -DHAVE_ONESTEP_P2P -DHAVE_VCLOCKS -DHAVE_PTP_CAPS_ADJUST_PHASE -DHAVE_IF_TEAM     -c -o lstab.o lstab.c
+gcc -Wall -DVER=4.4-00039-gddeec0f-dirty -D_GNU_SOURCE -DHAVE_CLOCK_ADJTIME -DHAVE_POSIX_SPAWN -DHAVE_ONESTEP_SYNC -DHAVE_ONESTEP_P2P -DHAVE_VCLOCKS -DHAVE_PTP_CAPS_ADJUST_PHASE -DHAVE_IF_TEAM     -c -o nmea.o nmea.c
+gcc -Wall -DVER=4.4-00039-gddeec0f-dirty -D_GNU_SOURCE -DHAVE_CLOCK_ADJTIME -DHAVE_POSIX_SPAWN -DHAVE_ONESTEP_SYNC -DHAVE_ONESTEP_P2P -DHAVE_VCLOCKS -DHAVE_PTP_CAPS_ADJUST_PHASE -DHAVE_IF_TEAM     -c -o serial.o serial.c
+gcc -Wall -DVER=4.4-00039-gddeec0f-dirty -D_GNU_SOURCE -DHAVE_CLOCK_ADJTIME -DHAVE_POSIX_SPAWN -DHAVE_ONESTEP_SYNC -DHAVE_ONESTEP_P2P -DHAVE_VCLOCKS -DHAVE_PTP_CAPS_ADJUST_PHASE -DHAVE_IF_TEAM     -c -o sock.o sock.c
+gcc -Wall -DVER=4.4-00039-gddeec0f-dirty -D_GNU_SOURCE -DHAVE_CLOCK_ADJTIME -DHAVE_POSIX_SPAWN -DHAVE_ONESTEP_SYNC -DHAVE_ONESTEP_P2P -DHAVE_VCLOCKS -DHAVE_PTP_CAPS_ADJUST_PHASE -DHAVE_IF_TEAM     -c -o ts2phc_generic_pps_source.o ts2phc_generic_pps_source.c
+gcc -Wall -DVER=4.4-00039-gddeec0f-dirty -D_GNU_SOURCE -DHAVE_CLOCK_ADJTIME -DHAVE_POSIX_SPAWN -DHAVE_ONESTEP_SYNC -DHAVE_ONESTEP_P2P -DHAVE_VCLOCKS -DHAVE_PTP_CAPS_ADJUST_PHASE -DHAVE_IF_TEAM     -c -o ts2phc_nmea_pps_source.o ts2phc_nmea_pps_source.c
+gcc -Wall -DVER=4.4-00039-gddeec0f-dirty -D_GNU_SOURCE -DHAVE_CLOCK_ADJTIME -DHAVE_POSIX_SPAWN -DHAVE_ONESTEP_SYNC -DHAVE_ONESTEP_P2P -DHAVE_VCLOCKS -DHAVE_PTP_CAPS_ADJUST_PHASE -DHAVE_IF_TEAM     -c -o ts2phc_phc_pps_source.o ts2phc_phc_pps_source.c
+gcc -Wall -DVER=4.4-00039-gddeec0f-dirty -D_GNU_SOURCE -DHAVE_CLOCK_ADJTIME -DHAVE_POSIX_SPAWN -DHAVE_ONESTEP_SYNC -DHAVE_ONESTEP_P2P -DHAVE_VCLOCKS -DHAVE_PTP_CAPS_ADJUST_PHASE -DHAVE_IF_TEAM     -c -o ts2phc_pps_sink.o ts2phc_pps_sink.c
+gcc -Wall -DVER=4.4-00039-gddeec0f-dirty -D_GNU_SOURCE -DHAVE_CLOCK_ADJTIME -DHAVE_POSIX_SPAWN -DHAVE_ONESTEP_SYNC -DHAVE_ONESTEP_P2P -DHAVE_VCLOCKS -DHAVE_PTP_CAPS_ADJUST_PHASE -DHAVE_IF_TEAM     -c -o ts2phc_pps_source.o ts2phc_pps_source.c
+gcc   ts2phc.o config.o clockadj.o hash.o interface.o msg.o phc.o pmc_agent.o pmc_common.o print.o sad.o linreg.o ntpshm.o nullf.o pi.o refclock_sock.o servo.o sk.o lstab.o nmea.o serial.o sock.o ts2phc_generic_pps_source.o ts2phc_nmea_pps_source.o ts2phc_phc_pps_source.o ts2phc_pps_sink.o ts2phc_pps_source.o tlv.o transport.o raw.o udp.o udp6.o uds.o util.o version.o  -lm -lrt -pthread  -o ts2phc
+gcc -Wall -DVER=4.4-00039-gddeec0f-dirty -D_GNU_SOURCE -DHAVE_CLOCK_ADJTIME -DHAVE_POSIX_SPAWN -DHAVE_ONESTEP_SYNC -DHAVE_ONESTEP_P2P -DHAVE_VCLOCKS -DHAVE_PTP_CAPS_ADJUST_PHASE -DHAVE_IF_TEAM     -c -o tz2alt.o tz2alt.c
+gcc   tz2alt.o config.o hash.o interface.o lstab.o msg.o phc.o pmc_common.o print.o sad.o sk.o tlv.o raw.o transport.o udp.o udp6.o uds.o util.o version.o  -lm -lrt -pthread  -o tz2alt
+root@ls1028ardb:/home/debian/linuxptp# ls
+address.h         power_profile.h
+as_capable.h      pqueue.c
+bmc.c             pqueue.d
+bmc.d             pqueue.h
+bmc.h             pqueue.o
+bmc.o             print.c
+clockadj.c        print.d
+clockadj.d        print.h
+clockadj.h        print.o
+clockadj.o        ptp4l
+clock.c           ptp4l.8
+clockcheck.c      ptp4l.c
+clockcheck.d      ptp4l.d
+clockcheck.h      ptp4l.o
+clockcheck.o      raw.c
+clock.d           raw.d
+clock.h           raw.h
+clock.o           raw.o
+CODING_STYLE.org  README.org
+config.c          refclock_sock.c
+config.d          refclock_sock.d
+config.h          refclock_sock.h
+config.o          refclock_sock.o
+configs           rtnl.c
+contain.h         rtnl.d
+COPYING           rtnl.h
+ddt.h             rtnl.o
+designated_fsm.c  sad.c
+designated_fsm.d  sad.d
+designated_fsm.h  sad_gnupg.c
+designated_fsm.o  sad_gnutls.c
+dm.h              sad.h
+ds.h              sad_nettle.c
+e2e_tc.c          sad.o
+e2e_tc.d          sad_openssl.c
+e2e_tc.o          sad_private.h
+ether.h           serial.c
+fault.c           serial.d
+fault.d           serial.h
+fault.h           serial.o
+fault.o           servo.c
+fd.h              servo.d
+filter.c          servo.h
+filter.d          servo.o
+filter.h          servo_private.h
+filter.o          sk.c
+filter_private.h  sk.d
+foreign.h         sk.h
+fsm.c             sk.o
+fsm.d             sock.c
+fsm.h             sock.d
+fsm.o             sock.h
+hash.c            sock.o
+hash.d            stats.c
+hash.h            stats.d
+hash.o            stats.h
+hwstamp_ctl       stats.o
+hwstamp_ctl.8     sysoff.c
+hwstamp_ctl.c     sysoff.d
+hwstamp_ctl.d     sysoff.h
+hwstamp_ctl.o     sysoff.o
+incdefs.sh        tc.c
+interface.c       tc.d
+interface.d       tc.h
+interface.h       tc.o
+interface.o       telecom.c
+linreg.c          telecom.d
+linreg.d          telecom.o
+linreg.h          timemaster
+linreg.o          timemaster.8
+lstab.c           timemaster.c
+lstab.d           timemaster.d
+lstab.h           timemaster.o
+lstab.o           tlv.c
+makefile          tlv.d
+mave.c            tlv.h
+mave.d            tlv.o
+mave.h            tmv.h
+mave.o            transport.c
+missing.h         transport.d
+mmedian.c         transport.h
+mmedian.d         transport.o
+mmedian.h         transport_private.h
+mmedian.o         ts2phc
+monitor.c         ts2phc.8
+monitor.d         ts2phc.c
+monitor.h         ts2phc.d
+monitor.o         ts2phc_generic_pps_source.c
+msg.c             ts2phc_generic_pps_source.d
+msg.d             ts2phc_generic_pps_source.h
+msg.h             ts2phc_generic_pps_source.o
+msg.o             ts2phc.h
+mtab.h            ts2phc_nmea_pps_source.c
+nmea.c            ts2phc_nmea_pps_source.d
+nmea.d            ts2phc_nmea_pps_source.h
+nmea.h            ts2phc_nmea_pps_source.o
+nmea.o            ts2phc.o
+notification.h    ts2phc_phc_pps_source.c
+nsm               ts2phc_phc_pps_source.d
+nsm.8             ts2phc_phc_pps_source.h
+nsm.c             ts2phc_phc_pps_source.o
+nsm.d             ts2phc_pps_sink.c
+nsm.o             ts2phc_pps_sink.d
+ntpshm.c          ts2phc_pps_sink.h
+ntpshm.d          ts2phc_pps_sink.o
+ntpshm.h          ts2phc_pps_source.c
+ntpshm.o          ts2phc_pps_source.d
+nullf.c           ts2phc_pps_source.h
+nullf.d           ts2phc_pps_source.o
+nullf.h           ts2phc_pps_source_private.h
+nullf.o           tsproc.c
+p2p_tc.c          tsproc.d
+p2p_tc.d          tsproc.h
+p2p_tc.o          tsproc.o
+pdt.h             tz2alt
+phc2sys           tz2alt.8
+phc2sys.8         tz2alt.c
+phc2sys.c         tz2alt.d
+phc2sys.d         tz2alt.o
+phc2sys.o         tz.h
+phc.c             udp6.c
+phc_ctl           udp6.d
+phc_ctl.8         udp6.h
+phc_ctl.c         udp6.o
+phc_ctl.d         udp.c
+phc_ctl.o         udp.d
+phc.d             udp.h
+phc.h             udp.o
+phc.o             uds.c
+pi.c              uds.d
+pi.d              uds.h
+pi.h              uds.o
+pi.o              unicast_client.c
+pmc               unicast_client.d
+pmc.8             unicast_client.h
+pmc_agent.c       unicast_client.o
+pmc_agent.d       unicast_fsm.c
+pmc_agent.h       unicast_fsm.d
+pmc_agent.o       unicast_fsm.h
+pmc.c             unicast_fsm.o
+pmc_common.c      unicast_service.c
+pmc_common.d      unicast_service.d
+pmc_common.h      unicast_service.h
+pmc_common.o      unicast_service.o
+pmc.d             util.c
+pmc.o             util.d
+port.c            util.h
+port.d            util.o
+port.h            version.c
+port.o            version.d
+port_private.h    version.h
+port_signaling.c  version.o
+port_signaling.d  version.sh
+port_signaling.o
+root@ls1028ardb:/home/debian/linuxptp# cd ..
+root@ls1028ardb:/home/debian# ls
+linuxptp  ts2phc.conf
+root@ls1028ardb:/home/debian# cd linuxptp/
+root@ls1028ardb:/home/debian/linuxptp# ./ts2phc -m -s nmea --
+ts2phc.serial_port /dev/ttyS3 -c /dev/ptp0
+./ts2phc: unrecognized option '--ts2phc.serial_port'
+
+usage: ts2phc [options]
+
+ -a             turn on autoconfiguration
+ -c [dev|name]  PHC time sink (like /dev/ptp0 or eth0)
+                (may be specified multiple times)
+ -f [file]      read configuration from 'file'
+ -h             prints this message and exits
+ -l [num]       set the logging level to 'num'
+ -m             print messages to stdout
+ -q             do not print messages to the syslog
+ -s [dev|name]  source of the PPS signal
+                may take any of the following forms:
+                    generic   - an external 1-PPS without ToD information
+                    /dev/ptp0 - a local PTP Hardware Clock (PHC)
+                    eth0      - a local PTP Hardware Clock (PHC)
+                    nmea      - a gps device connected by serial port or network
+ -v             prints the software version and exits
+
+root@ls1028ardb:/home/debian/linuxptp# ./ts2phc -m -s nmea --ts2phc.serialport /dev/ttyS3 -c /dev/ptp0
+./ts2phc: unrecognized option '--ts2phc.serialport'
+
+usage: ts2phc [options]
+
+ -a             turn on autoconfiguration
+ -c [dev|name]  PHC time sink (like /dev/ptp0 or eth0)
+                (may be specified multiple times)
+ -f [file]      read configuration from 'file'
+ -h             prints this message and exits
+ -l [num]       set the logging level to 'num'
+ -m             print messages to stdout
+ -q             do not print messages to the syslog
+ -s [dev|name]  source of the PPS signal
+                may take any of the following forms:
+                    generic   - an external 1-PPS without ToD information
+                    /dev/ptp0 - a local PTP Hardware Clock (PHC)
+                    eth0      - a local PTP Hardware Clock (PHC)
+                    nmea      - a gps device connected by serial port or network
+ -v             prints the software version and exits
+
+root@ls1028ardb:/home/debian/linuxptp# ./ts2phc -m -s nmea --ts2phc.nmea_serialport /dev/ttyS3 -c /dev/ptp0
+ts2phc[3807.776]: source ts not valid
+ts2phc[3808.313]: source ts not valid
+ts2phc[3809.313]: source ts not valid
+ts2phc[3809.766]: nmea source timed out
+ts2phc[3810.313]: source ts not valid
+ts2phc[3811.313]: source ts not valid
+ts2phc[3811.768]: nmea source timed out
+ts2phc[3811.776]: source ts not valid
+ts2phc[3812.212]: source ts not valid
+ts2phc[3812.232]: source ts not valid
+ts2phc[3812.262]: source ts not valid
+ts2phc[3812.313]: source ts not valid
+ts2phc[3812.776]: source ts not valid
+ts2phc[3813.313]: source ts not valid
+ts2phc[3813.771]: nmea source timed out
+ts2phc[3814.313]: source ts not valid
+ts2phc[3815.313]: source ts not valid
+ts2phc[3815.773]: nmea source timed out
+ts2phc[3816.313]: source ts not valid
+^C
+ts2phc[3817.776]: nmea source timed out
+root@ls1028ardb:/home/debian/linuxptp# 
+root@ls1028ardb:/home/debian/linuxptp# ./ts2phc -m -s nmea --ts2phc.nmea_serialport /dev/ttyS3 -c /dev/ptp0 -l 7
+ts2phc[3821.731]: config item (null).ts2phc.pulserate is 1
+ts2phc[3821.731]: config item (null).sa_file is '(null)'
+ts2phc[3821.731]: config item /dev/ptp0.ts2phc.master is 0
+ts2phc[3821.731]: config item /dev/ptp0.ts2phc.extts_polarity is 2
+ts2phc[3821.731]: config item /dev/ptp0.ts2phc.extts_correction is 0
+ts2phc[3821.731]: config item /dev/ptp0.ts2phc.pulsewidth is -1
+ts2phc[3821.731]: config item (null).clock_servo is 0
+ts2phc[3821.731]: config item (null).pi_proportional_const is 0.000000
+ts2phc[3821.731]: config item (null).pi_integral_const is 0.000000
+ts2phc[3821.731]: config item (null).pi_proportional_scale is 0.000000
+ts2phc[3821.731]: config item (null).pi_proportional_exponent is -0.300000
+ts2phc[3821.731]: config item (null).pi_proportional_norm_max is 0.700000
+ts2phc[3821.731]: config item (null).pi_integral_scale is 0.000000
+ts2phc[3821.731]: config item (null).pi_integral_exponent is 0.400000
+ts2phc[3821.731]: config item (null).pi_integral_norm_max is 0.300000
+ts2phc[3821.731]: config item (null).step_threshold is 0.000000
+ts2phc[3821.731]: config item (null).first_step_threshold is 0.000020
+ts2phc[3821.731]: config item (null).max_frequency is 900000000
+ts2phc[3821.731]: config item (null).servo_offset_threshold is 0
+ts2phc[3821.731]: config item (null).servo_num_offset_values is 10
+ts2phc[3821.732]: PI servo: sync interval 1.000 kp 0.700 ki 0.300000
+ts2phc[3821.732]: config item (null).free_running is 0
+ts2phc[3821.732]: PPS sink /dev/ptp0 has ptp index 0
+ts2phc[3821.732]: config item /dev/ptp0.ts2phc.pin_name is ''
+ts2phc[3821.732]: config item /dev/ptp0.ts2phc.pin_index is 0
+ts2phc[3821.732]: config item /dev/ptp0.ts2phc.channel is 0
+ts2phc[3821.732]: PTP_MASK_CLEAR_ALL_FAILED request failed
+ts2phc[3821.732]: config item (null).leapfile is '(null)'
+ts2phc[3821.732]: config item (null).ts2phc.nmea_delay is 0
+ts2phc[3821.732]: config item (null).ts2phc.external_pps is 0
+ts2phc[3821.732]: config item (null).ts2phc.holdover is 0
+ts2phc[3821.732]: config item (null).ts2phc.nmea_remote_host is ''
+ts2phc[3821.732]: config item (null).ts2phc.nmea_remote_port is ''
+ts2phc[3821.732]: config item (null).ts2phc.nmea_serialport is '/dev/ttyS3'
+ts2phc[3821.732]: config item (null).ts2phc.nmea_baudrate is 38400
+ts2phc[3821.776]: adding tstamp 3821.775645119 to clock /dev/ptp0
+ts2phc[3821.776]: nmea: no valid rmc fix
+ts2phc[3821.776]: source ts not valid
+ts2phc[3822.313]: adding tstamp 3822.312517369 to clock /dev/ptp0
+ts2phc[3822.313]: nmea: no valid rmc fix
+ts2phc[3822.313]: source ts not valid
+ts2phc[3822.776]: adding tstamp 3822.775647639 to clock /dev/ptp0
+ts2phc[3822.777]: nmea: no valid rmc fix
+ts2phc[3822.777]: source ts not valid
+ts2phc[3823.313]: adding tstamp 3823.312519984 to clock /dev/ptp0
+ts2phc[3823.313]: nmea: no valid rmc fix
+ts2phc[3823.313]: source ts not valid
+ts2phc[3823.734]: nmea source timed out
+ts2phc[3823.776]: adding tstamp 3823.775650329 to clock /dev/ptp0
+ts2phc[3823.777]: nmea: no valid rmc fix
+ts2phc[3823.777]: source ts not valid
+ts2phc[3824.313]: adding tstamp 3824.312522674 to clock /dev/ptp0
+ts2phc[3824.313]: nmea: no valid rmc fix
+ts2phc[3824.314]: source ts not valid
+ts2phc[3825.313]: adding tstamp 3825.312525364 to clock /dev/ptp0
+ts2phc[3825.313]: nmea: no valid rmc fix
+ts2phc[3825.314]: source ts not valid
+ts2phc[3825.736]: nmea source timed out
+ts2phc[3825.776]: adding tstamp 3825.775655689 to clock /dev/ptp0
+ts2phc[3825.777]: nmea: no valid rmc fix
+ts2phc[3825.777]: source ts not valid
+ts2phc[3826.313]: adding tstamp 3826.312527934 to clock /dev/ptp0
+ts2phc[3826.313]: nmea: no valid rmc fix
+ts2phc[3826.314]: source ts not valid
+ts2phc[3826.776]: adding tstamp 3826.775658184 to clock /dev/ptp0
+ts2phc[3826.777]: nmea: no valid rmc fix
+ts2phc[3826.777]: source ts not valid
+ts2phc[3827.313]: adding tstamp 3827.312530419 to clock /dev/ptp0
+ts2phc[3827.313]: nmea: no valid rmc fix
+ts2phc[3827.314]: source ts not valid
+ts2phc[3827.738]: nmea source timed out
+ts2phc[3827.776]: adding tstamp 3827.775660674 to clock /dev/ptp0
+ts2phc[3827.777]: nmea: no valid rmc fix
+ts2phc[3827.777]: source ts not valid
+ts2phc[3828.313]: adding tstamp 3828.312533029 to clock /dev/ptp0
+ts2phc[3828.313]: nmea: no valid rmc fix
+ts2phc[3828.314]: source ts not valid
+ts2phc[3828.776]: adding tstamp 3828.775663374 to clock /dev/ptp0
+ts2phc[3828.777]: nmea: no valid rmc fix
+ts2phc[3828.777]: source ts not valid
+ts2phc[3829.313]: adding tstamp 3829.312535759 to clock /dev/ptp0
+ts2phc[3829.313]: nmea: no valid rmc fix
+ts2phc[3829.314]: source ts not valid
+ts2phc[3829.742]: nmea source timed out
+ts2phc[3829.776]: adding tstamp 3829.775666124 to clock /dev/ptp0
+ts2phc[3829.777]: nmea: no valid rmc fix
+ts2phc[3829.777]: source ts not valid
+ts2phc[3830.313]: adding tstamp 3830.312538464 to clock /dev/ptp0
+ts2phc[3830.313]: nmea: no valid rmc fix
+ts2phc[3830.314]: source ts not valid
+ts2phc[3831.313]: adding tstamp 3831.312541179 to clock /dev/ptp0
+ts2phc[3831.313]: nmea: no valid rmc fix
+ts2phc[3831.314]: source ts not valid
+ts2phc[3831.744]: nmea source timed out
+ts2phc[3831.776]: adding tstamp 3831.775671544 to clock /dev/ptp0
+ts2phc[3831.777]: nmea: no valid rmc fix
+ts2phc[3831.777]: source ts not valid
+^C
+ts2phc[3833.746]: nmea source timed out
+root@ls1028ardb:/home/debian/linuxptp# 
+root@ls1028ardb:/home/debian/linuxptp# ./ts2phc -m -s nmea --ts2phc.nmea_serialport /dev/ttyS1 -c /dev/ptp0 -l 7
+ts2phc[3884.021]: config item (null).ts2phc.pulserate is 1
+ts2phc[3884.023]: config item (null).sa_file is '(null)'
+ts2phc[3884.023]: config item /dev/ptp0.ts2phc.master is 0
+ts2phc[3884.023]: config item /dev/ptp0.ts2phc.extts_polarity is 2
+ts2phc[3884.023]: config item /dev/ptp0.ts2phc.extts_correction is 0
+ts2phc[3884.023]: config item /dev/ptp0.ts2phc.pulsewidth is -1
+ts2phc[3884.023]: config item (null).clock_servo is 0
+ts2phc[3884.023]: config item (null).pi_proportional_const is 0.000000
+ts2phc[3884.023]: config item (null).pi_integral_const is 0.000000
+ts2phc[3884.023]: config item (null).pi_proportional_scale is 0.000000
+ts2phc[3884.023]: config item (null).pi_proportional_exponent is -0.300000
+ts2phc[3884.023]: config item (null).pi_proportional_norm_max is 0.700000
+ts2phc[3884.023]: config item (null).pi_integral_scale is 0.000000
+ts2phc[3884.023]: config item (null).pi_integral_exponent is 0.400000
+ts2phc[3884.023]: config item (null).pi_integral_norm_max is 0.300000
+ts2phc[3884.023]: config item (null).step_threshold is 0.000000
+ts2phc[3884.023]: config item (null).first_step_threshold is 0.000020
+ts2phc[3884.023]: config item (null).max_frequency is 900000000
+ts2phc[3884.023]: config item (null).servo_offset_threshold is 0
+ts2phc[3884.023]: config item (null).servo_num_offset_values is 10
+ts2phc[3884.023]: PI servo: sync interval 1.000 kp 0.700 ki 0.300000
+ts2phc[3884.023]: config item (null).free_running is 0
+ts2phc[3884.023]: PPS sink /dev/ptp0 has ptp index 0
+ts2phc[3884.023]: config item /dev/ptp0.ts2phc.pin_name is ''
+ts2phc[3884.023]: config item /dev/ptp0.ts2phc.pin_index is 0
+ts2phc[3884.023]: config item /dev/ptp0.ts2phc.channel is 0
+ts2phc[3884.024]: PTP_MASK_CLEAR_ALL_FAILED request failed
+ts2phc[3884.024]: config item (null).leapfile is '(null)'
+ts2phc[3884.024]: config item (null).ts2phc.nmea_delay is 0
+ts2phc[3884.024]: config item (null).ts2phc.nmea_remote_host is ''
+ts2phc[3884.024]: config item (null).ts2phc.nmea_remote_port is ''
+ts2phc[3884.024]: config item (null).ts2phc.nmea_serialport is '/dev/ttyS1'
+ts2phc[3884.024]: config item (null).ts2phc.nmea_baudrate is 38400
+ts2phc[3884.024]: config item (null).ts2phc.external_pps is 0
+ts2phc[3884.024]: config item (null).ts2phc.holdover is 0
+ts2phc[3884.313]: adding tstamp 3884.312682139 to clock /dev/ptp0
+ts2phc[3884.314]: nmea: no valid rmc fix
+ts2phc[3884.314]: source ts not valid
+ts2phc[3884.383]: nmea sentence: GPRMC,090539.00,A,5230.5900,N,01322.3900,E,0.069,,250924,,,D,V
+ts2phc[3884.777]: adding tstamp 3884.775812484 to clock /dev/ptp0
+ts2phc[3884.777]: nmea delay: 36837725025102578 ns
+ts2phc[3884.777]: /dev/ptp0 offset -1727251292224187516 s0 freq      -0
+ts2phc[3885.313]: adding tstamp 3885.312684839 to clock /dev/ptp0
+ts2phc[3885.314]: nmea delay: 36837725025102578 ns
+ts2phc[3885.314]: /dev/ptp0 offset -1727251291687315161 s1 freq +900000000
+ts2phc[3885.383]: nmea sentence: GPRMC,090540.00,A,5230.5900,N,01322.3900,E,0.069,,250924,,,D,V
+ts2phc[3885.777]: adding tstamp 1727255177.046635590 to clock /dev/ptp0
+ts2phc[3885.777]: nmea delay: 36837725025147355 ns
+ts2phc[3885.777]: /dev/ptp0 offset -953364410 s2 freq -53364410
+ts2phc[3886.314]: adding tstamp 1727255177.611797185 to clock /dev/ptp0
+ts2phc[3886.314]: nmea delay: 36837725025147355 ns
+ts2phc[3886.314]: /dev/ptp0 offset -388202815 s2 freq +225787862
+ts2phc[3886.383]: nmea sentence: GPRMC,090541.00,A,5230.5900,N,01322.3900,E,0.069,,250924,,,D,V
+ts2phc[3886.777]: adding tstamp 1727255177.970499260 to clock /dev/ptp0
+ts2phc[3886.777]: nmea delay: 36837725025101053 ns
+ts2phc[3886.777]: /dev/ptp0 offset -1029500740 s2 freq -531970908
+ts2phc[3887.313]: adding tstamp 1727255178.792575750 to clock /dev/ptp0
+ts2phc[3887.314]: nmea delay: 36837725025101053 ns
+ts2phc[3887.314]: /dev/ptp0 offset -207424250 s2 freq -18744640
+ts2phc[3887.383]: nmea sentence: GPRMC,090542.00,A,5230.5900,N,01322.3900,E,0.069,,250924,,,D,V
+ts2phc[3887.777]: adding tstamp 1727255179.264647675 to clock /dev/ptp0
+ts2phc[3887.777]: nmea delay: 36837725025113232 ns
+ts2phc[3887.777]: /dev/ptp0 offset -735352325 s2 freq -608899990
+ts2phc[3888.313]: adding tstamp 1727255180.128127010 to clock /dev/ptp0
+ts2phc[3888.314]: nmea delay: 36837725025113232 ns
+ts2phc[3888.314]: /dev/ptp0 offset  128127010 s2 freq +33973648
+ts2phc[3888.383]: nmea sentence: GPRMC,090543.00,A,5230.5900,N,01322.3900,E,0.069,,250924,,,D,V
+ts2phc[3889.313]: adding tstamp 1727255181.094511110 to clock /dev/ptp0
+ts2phc[3889.314]: nmea delay: 36837725025121970 ns
+ts2phc[3889.314]: /dev/ptp0 offset   94511110 s2 freq +38795851
+ts2phc[3889.383]: nmea sentence: GPRMC,090544.00,A,5230.5900,N,01322.3900,E,0.069,,250924,,,D,V
+^Cts2phc[3890.383]: nmea sentence: GPRMC,090545.00,A,5230.5900,N,01322.3900,E,0.069,,250924,,,D,V
+root@ls1028ardb:/home/debian/linuxptp# ./ts2phc -m -s nmea --ts2phc.nmea_serialport /dev/ttyS1 -c /dev/ptp0
+ts2phc[3893.777]: source ts not valid
+ts2phc[3894.313]: source ts not valid
+ts2phc[3895.313]: /dev/ptp0 offset -138246055 s0 freq +38795851
+ts2phc[3895.777]: /dev/ptp0 offset -693083265 s1 freq -900000000
+ts2phc[3895.777]: /dev/ptp0 offset -693083235 s2 freq -900000000
+ts2phc[3896.314]: /dev/ptp0 offset 1019847980 s2 freq +119847980
+ts2phc[3896.777]: /dev/ptp0 offset  427790555 s2 freq -166255051
+ts2phc[3897.314]: /dev/ptp0 offset 1053825055 s2 freq +588116616
+ts2phc[3897.777]: /dev/ptp0 offset  244836265 s2 freq +95275342
+ts2phc[3898.313]: /dev/ptp0 offset  730395425 s2 freq +654285382
+ts2phc[3898.777]: /dev/ptp0 offset -109305165 s2 freq +33703419
+ts2phc[3899.314]: /dev/ptp0 offset  409264235 s2 freq +519481270
+ts2phc[3899.777]: /dev/ptp0 offset -368034295 s2 freq -135037990
+ts2phc[3899.777]: /dev/ptp0 offset -368034280 s2 freq -245448263
+ts2phc[3900.314]: /dev/ptp0 offset  300340415 s2 freq +312516148
+ts2phc[3900.777]: /dev/ptp0 offset -381072415 s2 freq -278794558
+ts2phc[3900.777]: /dev/ptp0 offset -381072395 s2 freq -393116262
+ts2phc[3901.314]: /dev/ptp0 offset  366543075 s2 freq +240177489
+ts2phc[3901.777]: /dev/ptp0 offset -281374935 s2 freq -297777598
+ts2phc[3902.314]: /dev/ptp0 offset  415188030 s2 freq +314372886
+ts2phc[3902.777]: /dev/ptp0 offset -267082525 s2 freq -243341260
+ts2phc[3903.314]: /dev/ptp0 offset  400242465 s2 freq +343858972
+ts2phc[3903.777]: /dev/ptp0 offset -295680700 s2 freq -231991453
+ts2phc[3904.314]: /dev/ptp0 offset  365561480 s2 freq +340546517
+ts2phc[3905.314]: /dev/ptp0 offset   25216570 s2 freq +109870051
+ts2phc[3906.314]: /dev/ptp0 offset  -84728515 s2 freq +7489937
+ts2phc[3906.777]: /dev/ptp0 offset -625103110 s2 freq -558303212
+ts2phc[3907.314]: /dev/ptp0 offset  211313305 s2 freq +90582270
+ts2phc[3908.314]: /dev/ptp0 offset  120941780 s2 freq +63604736
+ts2phc[3908.777]: /dev/ptp0 offset -445394645 s2 freq -466449155
+ts2phc[3909.314]: /dev/ptp0 offset  341717510 s2 freq +187044606
+ts2phc[3910.314]: /dev/ptp0 offset  154884490 s2 freq +102726840
+ts2phc[3911.314]: /dev/ptp0 offset   52129930 s2 freq +46437626
+ts2phc[3911.777]: /dev/ptp0 offset -506266070 s2 freq -496319394
+ts2phc[3912.314]: /dev/ptp0 offset  296888700 s2 freq +154955554
+ts2phc[3912.777]: /dev/ptp0 offset -311523320 s2 freq -364389856
+ts2phc[3913.314]: /dev/ptp0 offset  420804725 s2 freq +274481194
+root@ls1028ardb:/home/debian/linuxptp# systemctl status systemd-timesyncd
+● systemd-timesyncd.service - Network Time Synchronization
+     Loaded: loaded (/lib/systemd/system/systemd-timesyncd.s>
+     Active: active (running) since Tue 2025-11-25 16:46:40 >
+       Docs: man:systemd-timesyncd.service(8)
+   Main PID: 446 (systemd-timesyn)
+     Status: "Contacted time server 141.79.19.1:123 (141.79.>
+      Tasks: 2 (limit: 3836)
+lines 1-7
+q
+bash: q: command not found
+root@ls1028ardb:/home/debian/linuxptp# systemctl stop systemd
+-timesyncd
+root@ls1028ardb:/home/debian/linuxptp# ./ts2phc -m -s nmea --ts2phc.nmea_serialport /dev/ttyS1 -c /dev/ptp0
+ts2phc[4187.314]: source ts not valid
+ts2phc[4187.777]: /dev/ptp0 offset -75450296240 s0 freq +274481193
+ts2phc[4188.314]: /dev/ptp0 offset -75060785250 s1 freq +900000000
+ts2phc[4188.777]: /dev/ptp0 offset -953512325 s2 freq -53512325
+ts2phc[4189.314]: /dev/ptp0 offset -388154255 s2 freq +225792048
+ts2phc[4189.777]: /dev/ptp0 offset -1029493470 s2 freq -531993444
+ts2phc[4190.314]: /dev/ptp0 offset -207276875 s2 freq -18624890
+ts2phc[4190.777]: /dev/ptp0 offset -735342890 s2 freq -608873968
+ts2phc[4191.314]: /dev/ptp0 offset  128213995 s2 freq +34080050
+ts2phc[4191.777]: /dev/ptp0 offset -424219750 s2 freq -479889496
+ts2phc[4192.314]: /dev/ptp0 offset  370111795 s2 freq +187176124
+ts2phc[4192.777]: /dev/ptp0 offset -253213000 s2 freq -325115132
+ts2phc[4193.314]: /dev/ptp0 offset  458023000 s2 freq +310156968
+ts2phc[4194.314]: /dev/ptp0 offset  148098770 s2 freq +137639638
+ts2phc[4194.777]: /dev/ptp0 offset -452574310 s2 freq -418603812
+ts2phc[4195.314]: /dev/ptp0 offset  308834070 s2 freq +207032276
+ts2phc[4195.777]: /dev/ptp0 offset -323695040 s2 freq -332846614
+ts2phc[4195.778]: /dev/ptp0 offset -323695010 s2 freq -429955096
+ts2phc[4196.314]: /dev/ptp0 offset  443757975 s2 freq +240389386
+ts2phc[4196.777]: /dev/ptp0 offset -204204965 s2 freq -274446161
+ts2phc[4196.778]: /dev/ptp0 offset -204204940 s2 freq -335707626
+ts2phc[4197.314]: /dev/ptp0 offset  512697620 s2 freq +319933452
+ts2phc[4197.777]: /dev/ptp0 offset -172107010 s2 freq -211061892
+ts2phc[4197.778]: /dev/ptp0 offset -172106985 s2 freq -262693970
+ts2phc[4198.314]: /dev/ptp0 offset  505577390 s2 freq +363358310
+ts2phc[4198.777]: /dev/ptp0 offset -199345480 s2 freq -189891343
+ts2phc[4199.314]: /dev/ptp0 offset  439279385 s2 freq +388929878
+ts2phc[4199.777]: /dev/ptp0 offset -277505070 s2 freq -196070762
+ts2phc[4200.314]: /dev/ptp0 offset  364428465 s2 freq +362611252
+ts2phc[4200.777]: /dev/ptp0 offset -340172135 s2 freq -232660808
+ts2phc[4201.314]: /dev/ptp0 offset  321397275 s2 freq +326856962
+ts2phc[4202.314]: /dev/ptp0 offset   -5256715 s2 freq +96622154
+ts2phc[4202.777]: /dev/ptp0 offset -586951365 s2 freq -486649510
+ts2phc[4203.314]: /dev/ptp0 offset  210989115 s2 freq +135205560
+ts2phc[4204.314]: /dev/ptp0 offset   76009020 s2 freq +63522200
+ts2phc[4204.777]: /dev/ptp0 offset -490305405 s2 freq -479989520
+ts2phc[4205.314]: /dev/ptp0 offset  304067295 s2 freq +167291559
+ts2phc[4206.314]: /dev/ptp0 offset  137005330 s2 freq +91449782
+ts2phc[4206.777]: /dev/ptp0 offset -442244290 s2 freq -446698238
+ts2phc[4207.314]: /dev/ptp0 offset  334274615 s2 freq +197147380
+ts2phc[4207.777]: /dev/ptp0 offset -293678570 s2 freq -330523421
+ts2phc[4208.314]: /dev/ptp0 offset  420452870 s2 freq +295504448
+ts2phc[4208.777]: /dev/ptp0 offset -253050720 s2 freq -251863281
+ts2phc[4209.314]: /dev/ptp0 offset  418852690 s2 freq +344124913
+ts2phc[4209.777]: /dev/ptp0 offset -277178565 s2 freq -226250535
+ts2phc[4210.314]: /dev/ptp0 offset  380962970 s2 freq +348737430
+ts2phc[4210.777]: /dev/ptp0 offset -317221620 s2 freq -235158268
+ts2phc[4211.314]: /dev/ptp0 offset  345699555 s2 freq +332596420
+ts2phc[4212.314]: /dev/ptp0 offset   13308140 s2 freq +103914872
+ts2phc[4213.314]: /dev/ptp0 offset  -90685725 s2 freq +3913449
+ts2phc[4213.777]: /dev/ptp0 offset -629403355 s2 freq -562009898
+ts2phc[4214.314]: /dev/ptp0 offset  209003965 s2 freq +87576415
+ts2phc[4214.777]: /dev/ptp0 offset -368194550 s2 freq -426920910
+ts2phc[4215.314]: /dev/ptp0 offset  397703595 s2 freq +228518870
+ts2phc[4215.777]: /dev/ptp0 offset -244757960 s2 freq -294631607
+ts2phc[4216.314]: /dev/ptp0 offset  450108165 s2 freq +326807130
+ts2phc[4216.777]: /dev/ptp0 offset -237888375 s2 freq -226156960
+ts2phc[4217.314]: /dev/ptp0 offset  420215220 s2 freq +360580122
+ts2phc[4217.777]: /dev/ptp0 offset -283443945 s2 freq -217014477
+ts2phc[4218.314]: /dev/ptp0 offset  369733700 s2 freq +351129984
+ts2phc[4218.777]: /dev/ptp0 offset -329557040 s2 freq -237240646
+ts2phc[4219.314]: /dev/ptp0 offset  334472410 s2 freq +327921692
+ts2phc[4219.777]: /dev/ptp0 offset -354065480 s2 freq -260274474
+ts2phc[4220.314]: /dev/ptp0 offset  322334840 s2 freq +309906202
+ts2phc[4220.777]: /dev/ptp0 offset -357864670 s2 freq -273592856
+ts2phc[4220.778]: /dev/ptp0 offset -357864650 s2 freq -380952238
+ts2phc[4221.314]: /dev/ptp0 offset  383272050 s2 freq +252825067
+ts2phc[4222.314]: /dev/ptp0 offset  130668320 s2 freq +115202952
+ts2phc[4222.777]: /dev/ptp0 offset -459603880 s2 freq -435868752
+ts2phc[4223.314]: /dev/ptp0 offset  311094275 s2 freq +196948240
+ts2phc[4224.314]: /dev/ptp0 offset  114371095 s2 freq +93553342
+ts2phc[4225.314]: /dev/ptp0 offset   20784665 s2 freq +34278240
+ts2phc[4225.777]: /dev/ptp0 offset -531980410 s2 freq -512251435
+ts2phc[4226.314]: /dev/ptp0 offset  279718040 s2 freq +139852892
+ts2phc[4227.314]: /dev/ptp0 offset  140081495 s2 freq +84131759
+ts2phc[4227.778]: /dev/ptp0 offset -435770275 s2 freq -449695562
+ts2phc[4228.314]: /dev/ptp0 offset  342351875 s2 freq +197695505
+ts2phc[4229.314]: /dev/ptp0 offset  144881175 s2 freq +102930368
+ts2phc[4229.777]: /dev/ptp0 offset -439691575 s2 freq -438178030
+ts2phc[4230.314]: /dev/ptp0 offset  332193290 s2 freq +201799362
+ts2phc[4230.778]: /dev/ptp0 offset -297912210 s2 freq -328648150
+ts2phc[4231.314]: /dev/ptp0 offset  415228510 s2 freq +295118906
+ts2phc[4231.778]: /dev/ptp0 offset -258095770 s2 freq -253636820
+ts2phc[4232.314]: /dev/ptp0 offset  414765495 s2 freq +341795714
+ts2phc[4232.778]: /dev/ptp0 offset -280200695 s2 freq -228740828
+ts2phc[4233.314]: /dev/ptp0 offset  379291920 s2 freq +346691578
+ts2phc[4233.778]: /dev/ptp0 offset -317955805 s2 freq -236768570
+ts2phc[4234.314]: /dev/ptp0 offset  345844000 s2 freq +331644493
+ts2phc[4234.778]: /dev/ptp0 offset -344436920 s2 freq -254883227
+ts2phc[4235.314]: /dev/ptp0 offset  329085025 s2 freq +315307642
+ts2phc[4235.778]: /dev/ptp0 offset -353629280 s2 freq -268681156
+ts2phc[4236.314]: /dev/ptp0 offset  327306255 s2 freq +306165596
+ts2phc[4236.778]: /dev/ptp0 offset -351160270 s2 freq -274109053
+ts2phc[4237.314]: /dev/ptp0 offset  332678715 s2 freq +304381851
+ts2phc[4238.314]: /dev/ptp0 offset   28489055 s2 freq +99995806
+ts2phc[4238.778]: /dev/ptp0 offset -554757765 s2 freq -474704298
+ts2phc[4238.778]: /dev/ptp0 offset -554757735 s2 freq -641131598
+ts2phc[4239.314]: /dev/ptp0 offset  326045725 s2 freq +73244542
+ts2phc[4239.778]: /dev/ptp0 offset -244524920 s2 freq -399512386
+ts2phc[4240.314]: /dev/ptp0 offset  506685005 s2 freq +278340064
+ts2phc[4240.778]: /dev/ptp0 offset -158866445 s2 freq -235205885
+ts2phc[4240.778]: /dev/ptp0 offset -158866420 s2 freq -282865794
+ts2phc[4241.314]: /dev/ptp0 offset  529686755 s2 freq +358027456
+ts2phc[4241.778]: /dev/ptp0 offset -172781565 s2 freq -185534838
+ts2phc[4242.314]: /dev/ptp0 offset  463524155 s2 freq +398936412
+ts2phc[4242.778]: /dev/ptp0 offset -257918550 s2 freq -183449046
+ts2phc[4243.314]: /dev/ptp0 offset  377249690 s2 freq +374343629
+ts2phc[4244.314]: /dev/ptp0 offset    3096290 s2 freq +113365136
+ts2phc[4244.778]: /dev/ptp0 offset -586364885 s2 freq -475167152
+ts2phc[4245.314]: /dev/ptp0 offset  205405140 s2 freq +140693408
+ts2phc[4246.314]: /dev/ptp0 offset   64913285 s2 freq +61823094
+ts2phc[4247.314]: /dev/ptp0 offset    3065830 s2 freq +19449625
+ts2phc[4247.778]: /dev/ptp0 offset -542826265 s2 freq -525522721
+ts2phc[4248.314]: /dev/ptp0 offset  276005505 s2 freq +130461170
+ts2phc[4248.778]: /dev/ptp0 offset -321075985 s2 freq -383818669
+ts2phc[4249.314]: /dev/ptp0 offset  421685375 s2 freq +262619896
+ts2phc[4250.314]: /dev/ptp0 offset  159278275 s2 freq +126718408
+ts2phc[4250.778]: /dev/ptp0 offset -436321905 s2 freq -421098290
+ts2phc[4251.314]: /dev/ptp0 offset  326438165 s2 freq +210765209
+ts2phc[4251.778]: /dev/ptp0 offset -307826995 s2 freq -325568502
+ts2phc[4252.314]: /dev/ptp0 offset  403655915 s2 freq +293566310
+ts2phc[4252.778]: /dev/ptp0 offset -268975760 s2 freq -257968590
+ts2phc[4253.314]: /dev/ptp0 offset  406224785 s2 freq +336539226
+ts2phc[4254.314]: /dev/ptp0 offset   69879535 s2 freq +122061412
+ts2phc[4254.778]: /dev/ptp0 offset -523590555 s2 freq -450444818
+ts2phc[4255.314]: /dev/ptp0 offset  254920290 s2 freq +170988861
+ts2phc[4256.314]: /dev/ptp0 offset   84128465 s2 freq +76673123
+ts2phc[4257.314]: /dev/ptp0 offset    7426630 s2 freq +25209828
+ts2phc[4257.778]: /dev/ptp0 offset -541135225 s2 freq -521124038
+ts2phc[4258.314]: /dev/ptp0 offset  275350200 s2 freq +133020819
+ts2phc[4258.778]: /dev/ptp0 offset -322905600 s2 freq -382629921
+ts2phc[4259.314]: /dev/ptp0 offset  419227285 s2 freq +262631284
+ts2phc[4259.778]: /dev/ptp0 offset -239052615 s2 freq -269880430
+ts2phc[4260.314]: /dev/ptp0 offset  442547875 s2 freq +340004275
+ts2phc[4260.778]: /dev/ptp0 offset -251590805 s2 freq -221370042
+ts2phc[4261.314]: /dev/ptp0 offset  403945240 s2 freq +358688761
+ts2phc[4261.778]: /dev/ptp0 offset -298856185 s2 freq -222929092
+ts2phc[4262.314]: /dev/ptp0 offset  357524000 s2 freq +343794238
+ts2phc[4262.778]: /dev/ptp0 offset -338378750 s2 freq -244851312
+ts2phc[4263.314]: /dev/ptp0 offset  329756205 s2 freq +321770018
+ts2phc[4264.314]: /dev/ptp0 offset    8172480 s2 freq +99113154
+ts2phc[4264.778]: /dev/ptp0 offset -574674370 s2 freq -481281952
+ts2phc[4265.314]: /dev/ptp0 offset  220397195 s2 freq +141387302
+ts2phc[4265.778]: /dev/ptp0 offset -381751470 s2 freq -394642204
+ts2phc[4266.314]: /dev/ptp0 offset  366819115 s2 freq +239402939
+ts2phc[4267.314]: /dev/ptp0 offset  127635505 s2 freq +110265064
+ts2phc[4268.314]: /dev/ptp0 offset   17330650 s2 freq +38250860
+ts2phc[4269.314]: /dev/ptp0 offset  -20942650 s2 freq +5176756
+ts2phc[4269.778]: /dev/ptp0 offset -560220945 s2 freq -540384334
+ts2phc[4270.314]: /dev/ptp0 offset  266599765 s2 freq +118370092
+ts2phc[4270.778]: /dev/ptp0 offset -324857150 s2 freq -393106894
+ts2phc[4271.314]: /dev/ptp0 offset  422905650 s2 freq +257198762
+ts2phc[4271.778]: /dev/ptp0 offset -232857435 s2 freq -271692628
+ts2phc[4272.314]: /dev/ptp0 offset  449712500 s2 freq +341020076
+ts2phc[4272.778]: /dev/ptp0 offset -244900565 s2 freq -218679239
+ts2phc[4273.314]: /dev/ptp0 offset  409195325 s2 freq +361946482
+^Croot@ls1028ardb:/home/debian/linuxptp# 

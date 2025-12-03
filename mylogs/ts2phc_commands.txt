@@ -1,0 +1,5 @@
+ts2phc -m  -s nmea --ts2phc.nmea_serialport /dev/ttyS3 --ts2phc.nmea_baudrate 38400 -c /dev/ptp1 --leapfile "${BASE_DIR}/_generic/leap-seconds.list"
+
+grep -r 38400/baudrate/9000
+
+wget -O /tmp/leap-seconds.list https://www.ietf.org/timezones/data/leap-seconds.list   

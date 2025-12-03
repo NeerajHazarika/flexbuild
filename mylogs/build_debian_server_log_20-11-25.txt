@@ -1,0 +1,86 @@
+[root@fbdebian flexbuild]$ flex-builder -m ls1028ardb -r debian:server
+Time of fetching repo: Thu Nov 20 17:00:18 CET 2025
+Flexbuild HEAD commit: 8d6294a nov 18 log update 1
+Time of build: Thu Nov 20 17:00:18 CET 2025
+
+Building linux with lf-6.6.52-2.2.0 ... 
+Compiler = aarch64-linux-gnu-gcc (Debian 12.2.0-14) 12.2.0 
+Total Config List = defconfig lsdk.config  
+linux lf-6.6.52-2.2.0 in /home/nhazarik/Projects/flexbuild/build_lsdk2506/linux/linux/arm64/LS  [Done] 
+
+Generating initial rootfs: /home/nhazarik/Projects/flexbuild/build_lsdk2506/rfs/rootfs_lsdk2506_debian_server_arm64 ... 
+This might take some time, please be patient 
+/home/nhazarik/Projects/flexbuild/build_lsdk2506/rfs/rootfs_lsdk2506_debian_server_arm64     [Done] 
+
+Building cryptodev_linux ... 
+cryptodev_linux  [Done] 
+
+Building mdio-proxy-module ... 
+mdio_proxy_module  [Done] 
+linux-modules  [Done] 
+/home/nhazarik/Projects/flexbuild/build_lsdk2506/images/lsdk2506_poky_tiny_LS_arm64.itb     [Done] 
+bsp/u-boot/ls1028ardb/ls1028ardb_boot.scr     [Done] 
+
+Building ATF lf-6.6.52-2.2.0 for ls1028ardb ... 
+
+Building RCW for ls1028ardb ... 
+RCW  [Done] 
+
+Building u-boot lf-6.6.52-2.2.0 for ls1028ardb ... 
+config = ls1028ardb_tfa_defconfig 
+u-boot for ls1028ardb in /home/nhazarik/Projects/flexbuild/build_lsdk2506/bsp/u-boot/ls1028ardb  [Done] 
+config = ls1028ardb_tfa_SECURE_BOOT_defconfig 
+u-boot for ls1028ardb in /home/nhazarik/Projects/flexbuild/build_lsdk2506/bsp/u-boot/ls1028ardb  [Done] 
+ATF for ls1028ardb sd boot  [Done] 
+
+Building ATF lf-6.6.52-2.2.0 for ls1028ardb ... 
+ATF for ls1028ardb emmc boot  [Done] 
+
+Building ATF lf-6.6.52-2.2.0 for ls1028ardb ... 
+ATF for ls1028ardb flexspi_nor boot  [Done] 
+RCW  [Done] 
+mc_bin  [Done] 
+mc_utils  [Done] 
+fm_ucode  [Done] 
+qe_ucode  [Done] 
+dp_fw_cadence  [Done] 
+phy_cortina  [Done] 
+phy_inphi  [Done] 
+pfe_bin  [Done] 
+ddr_phy_bin  [Done] 
+/home/nhazarik/Projects/flexbuild/build_lsdk2506/images/firmware_ls1028ardb_sdboot.img     [Done] 
+
+/home/nhazarik/Projects/flexbuild/build_lsdk2506/images/firmware_ls1028ardb_emmcboot.img     [Done] 
+
+/home/nhazarik/Projects/flexbuild/build_lsdk2506/images/firmware_ls1028ardb_xspiboot.img     [Done] 
+
+Build all composite firmware     [Done] 
+
+Installing kernel and dtb ... 
+
+Installing kernel modules ... 
+
+Installing distro boot script ... 
+bsp/u-boot/ls1028ardb/ls1028ardb_boot.scr     [Done] 
+
+Building kernel tools/perf ... 
+kernel tools/perf  [Done] 
+/home/nhazarik/Projects/flexbuild/build_lsdk2506/images/boot_LS_arm64_lts_6.6.52_202511201815.tar.zst     [Done] 
+linux-headers  [Done] 
+
+Building gpu_viv  ... 
+gpu_viv  [Done] 
+
+Building libdrm ... 
+make[1]: *** [/home/nhazarik/Projects/flexbuild/src/apps/graphics/libdrm.mk:6: libdrm] Error 1
+make: *** [Makefile:11: apps] Error 2
+[root@fbdebian flexbuild]$ ls
+5gtsn_masterthesisproposal.pdf      docs
+LICENSE-Flexbuild-BSD-3-CLAUSE.txt  include
+LICENSE_SDK.txt                     logs
+README.md                           mylogs
+SCR.txt                             patch
+build_lsdk2506                      setup.env
+components_lsdk2506                 src
+configs                             tools
+docker

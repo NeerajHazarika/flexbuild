@@ -1,0 +1,2 @@
+$ip link set dev ethX up
+$dhclient ethX
