@@ -1,0 +1,9 @@
+/home/nhazarik/Projects/flexbuild# source .setup.env 
+/home/nhazarik/Projects/flexbuild# umount /dev/sdc1 /dev/sdc2 /dev/sdc3
+/home/nhazarik/Projects/flexbuild# sudo dd if=/dev/zero of=/dev/sdc bs=1M count=10
+/home/nhazarik/Projects/flexbuild# flex-installer -i pf -d /dev/sdc
+/home/nhazarik/Projects/flexbuild# cd build_lsdk2506/images/
+/home/nhazarik/Projects/flexbuild# flex-installer -d /dev/sdc -m l
+s1028ardb -f firmware_ls1028ardb_sdboot.img -b boot
+_LS_arm64_lts_6.6.52.tar.zst -r rootfs_lsdk2
+506_debian_server_arm64.tar.zst

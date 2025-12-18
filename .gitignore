@@ -11,3 +11,6 @@ tools/bld
 *.log
 *.o
 5g-tsn-scripts-develop/
+linuxptp-ivesk/
+oai-cn5g-upf/
+linuxptp/

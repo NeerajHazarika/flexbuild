@@ -1,0 +1,1 @@
+ phc2sys -f "5g-tsn-scripts-develop/_generic/gPTP.cfg" -c CLOCK_REALTIME -s /dev/ptp0 -m -O 0

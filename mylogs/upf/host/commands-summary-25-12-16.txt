@@ -1,0 +1,178 @@
+sudo apt-get install -y libcurl4-openssl-dev
+
+# C++ libconfig
+sudo apt-get install -y libconfig++-dev
+
+# Netlink v3 libraries
+sudo apt-get install -y \
+  libnl-3-dev \
+  libnl-genl-3-dev \
+  libnl-nf-3-dev \
+  libnl-route-3-dev
+
+# BPF compiler
+sudo apt-get install -y clang llvm
+
+# nlohmann/json headers
+sudo apt-get install -y nlohmann-json3-dev
+
+# fmt library headers
+sudo apt-get install -y libfmt-dev
+
+sudo apt-get install -y libspdlog-dev libyaml-cpp-dev
+sudo apt-get install -y linux-libc-dev linux-headers-$(uname -r) libc6-dev
+
+# for installing folly we need fast_float if not possible via apt then build from src 
+## fast folly build from src 
+cd ~
+git clone https://github.com/fastfloat/fast_float.git
+cd fast_float
+
+mkdir -p build
+cd build
+cmake ..
+cmake --build . -- -j"$(nproc)"
+sudo cmake --install .
+
+## install folly from src (not present in apt package in ubuntu) [6%]
+sudo apt-get install -y \
+  git cmake pkg-config \
+  libboost-all-dev \
+  libdouble-conversion-dev \
+  libgflags-dev \
+  libgoogle-glog-dev \
+  libevent-dev \
+  libiberty-dev \
+  liblz4-dev \
+  liblzma-dev \
+  libsnappy-dev \
+  zlib1g-dev \
+  libssl-dev \
+  libunwind-dev \
+  libjemalloc-dev \
+  libfmt-dev \
+  libzstd-dev \
+  libboost-context-dev
+cd ~
+git clone https://github.com/facebook/folly.git
+cd folly
+
+mkdir -p _build
+cd _build
+cmake ..
+cmake --build . -- -j"$(nproc)"
+sudo cmake --install .
+ls /usr/local/include/folly/MPMCQueue.h
+
+## Install 32‑bit glibc headers (quick and dirty) [10%]
+sudo dpkg --add-architecture i386
+sudo apt-get install -y libc6-dev-i386
+
+## Install bpftool for your kernel [43%]
+sudo apt-get install -y \
+  linux-tools-6.14.0-35-generic \
+  linux-cloud-tools-6.14.0-35-generic
+bpftool version
+
+find /usr -maxdepth 6 -type f -name 'bpftool' 2>/dev/null # if bpftool version doesnt work
+export PATH=/usr/lib/linux-hwe-6.14-tools-6.14.0-37:$PATH
+bpftool version
+
+#  Patch the OAI source to not use ssl::NPN (since this version of cpr using ssl::NPN in the headers is obsolete) [80%]
+grep -r cpr::ssl::NPN
+- Both ALPN and NPN are TLS extension mechanisms that let client and server agree on an application protocol (e.g. HTTP/1.1 vs HTTP/2) during the TLS handshake:
+
+- NPN = Next Protocol Negotiation
+An older, non‑standard extension originally proposed by Google.
+Implemented in earlier OpenSSL versions and some browsers.
+Considered obsolete; replaced by ALPN.
+
+- ALPN = Application‑Layer Protocol Negotiation
+The IETF‑standard way to negotiate protocols in TLS.
+Used today for HTTP/2, HTTP/3, etc.
+Supported widely and is the mechanism you actually want in a modern stack.
+
+- CPR’s SSL options mirror these TLS features:
+cpr::ssl::ALPN{...} controls ALPN behavior.
+cpr::ssl::NPN{...} controls NPN behavior (when supported).
+
+- you’re telling CPR:
+ALPN{false}: disable ALPN
+NPN{false}: disable NPN
+
+- then:
+You’re still disabling ALPN exactly as before.
+You’re no longer explicitly touching NPN.
+In practice:
+On modern OpenSSL / curl stacks:
+NPN is usually compiled out or deprecated.
+ALPN is the standard extension.
+If NPN is unsupported, the old code cpr::ssl::NPN{false} didn’t have a real effect anyway (or would be guarded out).
+By not setting NPN, you’re just leaving it at whatever default CPR/curl/OpenSSL uses—which on current systems is typically “no NPN”.
+
+- Risk of behavior change is very small to zero. NPN is obsolete and not needed for normal HTTP/1.1/OAI signaling.
+Your CPR version still has the type ssl::NPN in one header, but the higher‑level API that OAI expects doesn’t match exactly, leading to the compile error.
+OAI’s intent was “turn off ALPN/NPN quirks”, not “depend critically on NPN”. OAI upstream itself may eventually drop the NPN piece for newer CPR; you’re effectively making that change locally.
+
+- but since your current CPR headers don’t expose cpr::ssl::NPN in the way OAI expects, the simple “drop NPN” version is fine and keeps the code clean.
+
+- So in plain language: removing cpr::ssl::NPN{false} just stops you from explicitly disabling an old, unused TLS feature; ALPN is still disabled as before, and your HTTP behavior should remain effectively the same.
+
+src/common-src/http/http_client.cpp:        cpr::Ssl(cpr::ssl::ALPN{false}, cpr::ssl::NPN{false});
+remove it to: src/common-src/http/http_client.cpp:        cpr::Ssl(cpr::ssl::ALPN{false});
+
+## small type/signature mismatch between the header and source for the FQDN helper [37%]
+- That means the header isn’t including <cstdint> (or <stdint.h>) before using uint32_t / uint8_t.
+
+- Add <cstdint> include in fqdn.hpp
+#include <string>
+#include <cstdint>   // <-- add this line
+
+- Similarly add for 
+nano src/common-src/utils/fqdn.hpp
+nano src/common-src/utils/output_wrapper.hpp 
+nano src/common-src/utils/mime_parser.hpp 
+
+## Build libbpf manually into the expected path
+sudo apt-get install -y libelf-dev
+
+cd ~/Projects/flexbuild/oai-cn5g-upf
+mkdir -p build/ext
+
+cd ~/Projects/flexbuild/oai-cn5g-upf/build/ext
+git clone https://github.com/libbpf/libbpf.git
+cd libbpf/src
+
+make -j"$(nproc)" \
+  BUILD_SHARED=1 \
+  BUILD_STATIC_ONLY=0 \
+  CFLAGS="-fPIC" \
+  LIBBPF_VERSION=0.8.0
+
+ls libbpf.a
+
+- Now build a shared library from the PIC archive
+gcc -shared -o libbpf.so \
+  -Wl,--whole-archive libbpf.a -Wl,--no-whole-archive \
+  -lelf -lz
+
+ls libbpf.so
+ln -sf libbpf.so libbpf.so.1
+ls -l libbpf.so*
+
+##
+
+cd 
+git clone https://github.com/libcpr/cpr.git
+
+cd cpr
+
+cmake -S . -B build -DCPR_USE_SYSTEM_CURL=ON -DBUILD_SHARED_LIBS=ON
+cmake --build build --config Release -- -j"$(nproc)"
+sudo cmake --install build
+
+cd Projects/flexbuild/oai-cn5g-upf/
+make setup 
+make install
+
+
